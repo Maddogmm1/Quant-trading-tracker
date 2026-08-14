@@ -1,0 +1,199 @@
+# Phase 1 configuration.
+#
+# Per the approved architecture: universe filter thresholds must be
+# configurable here, not hardcoded in Python, and must NOT be tuned
+# based on backtest performance (see design principle #10 from Phase 1
+# approval). These are reasonable starting defaults, not the product of
+# any optimization.
+
+universe_filters:
+  min_price_usd: 5.0                 # exclude penny-stock-range names
+  min_avg_dollar_volume_usd: 1000000 # 20-day avg $ volume floor for tradability
+  min_historical_days: 252           # ~1 trading year of price history required
+  max_missing_pct: 0.05              # exclude if >5% of expected trading days are missing
+
+data:
+  price_start_date: "2015-01-01"
+  price_end_date: "2023-12-31"
+
+indices:
+  - SP500
+  # SP400 intentionally absent -- interface exists (see
+  # src/universe/membership_sources.py) but is not populated yet.
+
+schema_version: 1
+
+# Phase 3: backtesting engine configuration.
+# Per PHASE3_SPECIFICATION.md guiding principles -- every threshold here is
+# fixed BEFORE any backtest result is evaluated, and must never be tuned
+# based on observed performance. Changing a value here after seeing results
+# invalidates the run it was "improved" for.
+backtest:
+  data_quality_policies:
+    STRICT:
+      min_completeness_pct: 0.95
+      require_full_history: true
+      exclude_unresolved_identity: true
+      exclude_identity_review_flagged: true
+      exclude_severe_ohlc_flagged: true
+      severe_ohlc_bad_row_pct_threshold: null
+    PERMISSIVE:
+      min_completeness_pct: 0.80
+      require_full_history: false
+      exclude_unresolved_identity: false
+      exclude_identity_review_flagged: false
+      exclude_severe_ohlc_flagged: false
+      severe_ohlc_bad_row_pct_threshold: 0.10
+
+  benchmarks:
+    top_n_momentum:
+      n: 20
+      lookback_days: 252   # ~12 trading months, fixed -- never retuned to flatter a future model
+    bottom_n_momentum:
+      n: 20
+      lookback_days: 252
+
+  execution:
+    signal_basis: "close"        # signal computed from data through T's close
+    execution_timing: "next_open"  # trade fills at T+1's open
+    lookback_days_required: 252
+
+  costs:
+    commission_pct: 0.0            # Trading 212: commission-free on stock trades
+    fx_cost_pct: 0.0015            # GBP->USD conversion, ~0.15% -- the real, non-zero cost for a UK ISA buying US stocks
+    stamp_duty_sdrt_pct: 0.0       # N/A: applies to UK-listed equities only
+    ptm_levy_gbp: 0.0              # N/A: applies to LSE trades above threshold only
+    sec_finra_fee_pct: 0.0000221   # approx SEC Section 31 fee on US equity sell proceeds
+    bid_ask_spread_bps: 5          # conservative fixed assumption -- no intraday/quote data to derive empirically
+    slippage_bps: 0                # known V1 simplification, see PHASE3_SPECIFICATION.md section 20
+
+  rebalance_frequency: "monthly"   # fixed for V1 validation runs, not optimized
+
+  random_benchmark:
+    headline_seed: 42
+    distribution_seed_count: 200
+    distribution_seeds_fixed_at: "phase3_spec_approval"  # seeds generated once, never re-picked post hoc
+
+  portfolio:
+    default_size: 20               # matches top_n_momentum N, for like-for-like comparison
+    accounting_tolerance: 1.0e-6   # relative tolerance for sum(positions)+cash == portfolio_value
+
+# Phase 4: predictive-modelling research configuration.
+# Per PHASE4_SPECIFICATION.md's guiding principles -- every value below is
+# fixed BEFORE any feature is computed, any model is trained, or the locked
+# test period is touched. In particular: universe/, split/, and
+# success_framework/ were explicitly reviewed and approved before
+# implementation began (see the user's sign-off on PHASE4_SPECIFICATION.md
+# section 23's stop/go gate). Changing any of these after seeing a
+# validation or test result invalidates whatever run it was "improved" for
+# -- exactly the failure mode section 17 (multiple-testing control) exists
+# to prevent.
+phase4:
+  # Section 2: STRICT is not a parallel research track -- it is retained
+  # only as a degenerate-case sanity check (see PHASE3_200SEED_FINAL_REPORT.md:
+  # STRICT's eligible universe is ~1 security for the whole period).
+  primary_universe_policy: "PERMISSIVE"
+  sanity_check_policy: "STRICT"
+
+  target:
+    # Section 3: excess return over the point-in-time equal-weighted
+    # eligible universe (== equal_weight_sp500's own construction), using
+    # total_return prices exclusively. Horizons are expressed in rebalance
+    # periods (months), not calendar days.
+    benchmark: "equal_weighted_eligible_universe"
+    primary_horizon_months: 3
+    secondary_horizon_months: [1, 6]
+    truncated_label_terminal_value: "last_available_total_return"  # section 3.4 -- never impute, never silently drop
+
+  # Section 9: expanding-window walk-forward split, chosen (not the only
+  # option considered -- see PHASE4_SPECIFICATION.md section 5.3 and the
+  # user's explicit approval of this split over 70/15/15 and 50/25/25).
+  walk_forward:
+    train_fraction: 0.60
+    validation_fraction: 0.15
+    test_fraction: 0.25            # the LOCKED test period -- see success_framework below
+    embargo_purge_months: "primary_horizon_months"  # purge the last h months of each earlier window at every split boundary
+    retrain_frequency_months: "primary_horizon_months"  # never retrain more often than the label horizon
+
+  # Section 6 -- V1 feature set. Every key here must have a matching,
+  # documented entry in PHASE4_SPECIFICATION.md section 6 tagged "Yes" for
+  # V1. Adding a feature here without a corresponding spec update is not
+  # permitted -- this list IS the spec's V1 commitment, kept in sync
+  # deliberately rather than duplicated informally in code comments.
+  v1_features:
+    price_momentum:
+      - "return_1m"
+      - "return_3m"
+      - "return_6m"
+      - "return_12m"
+      - "momentum_acceleration"
+      - "distance_from_200d_ma"
+    volatility_risk:
+      - "realised_volatility_63d"
+      - "downside_volatility_63d"
+      - "max_drawdown_252d"
+    volume_liquidity:
+      - "dollar_volume"
+      - "rolling_avg_dollar_volume_20d"
+      - "volume_trend_20d_100d"
+    relative_cross_sectional:
+      - "return_relative_to_eligible_mean_63d"
+      - "momentum_percentile_rank"
+      - "volatility_percentile_rank"
+    market_regime:
+      - "proxy_index_trend"
+      - "proxy_index_volatility"
+      - "breadth_proxy"
+    # Section 6.6: data-quality/identity-resolution metadata is NEVER a
+    # feature, regardless of availability. Enforced here as a literal
+    # denylist so a future edit can't silently reintroduce it.
+    explicitly_excluded:
+      - "identifier_quality"
+      - "identity_review_queue_flag"
+      - "price_data_quality"
+
+  # Section 17: exploratory experiments are unlimited against
+  # train/validation data; confirmatory experiments against the LOCKED
+  # test set are capped, derived from section 5's ~9-independent-block
+  # finding at the primary 3-month horizon.
+  experiment_tracking:
+    max_confirmatory_test_experiments: 5
+    max_confirmatory_per_robustness_axis: 1
+
+  # Section 20: the pre-registered success framework. These thresholds are
+  # evaluated ONLY against the locked test period, ONLY after every
+  # confirmatory experiment config is frozen in ml_experiments (section 18),
+  # and must NEVER be edited after a locked-test result has been seen.
+  success_framework:
+    random_distribution_reference: "phase3_200_seed_permissive"  # the actual measured distribution, not an abstract one
+    ic_significance: "block_bootstrap_ci_excludes_zero"          # by rebalance-date block, per section 5.4 -- never i.i.d. row resampling
+    failure:
+      ic_ci_excludes_zero: false          # OR
+      net_sharpe_percentile_max: 50       # net Sharpe at/below the random distribution's 50th percentile
+    inconclusive:
+      ic_abs_min: 0.0
+      ic_abs_max: 0.03
+      net_sharpe_percentile_min: 50
+      net_sharpe_percentile_max: 75
+    genuine_predictive_value:
+      ic_abs_min: 0.03
+      net_sharpe_percentile_min: 75
+      must_survive_leave_one_feature_family_out: true   # section 16
+      must_survive_price_history_length_diagnostic: true # section 8.6
+
+  # Section 12: pre-specified portfolio construction, not tuned after
+  # seeing results. 30/50-stock and alternate-weighting variants are
+  # declared robustness runs (section 16), never a post-hoc substitute for
+  # this default.
+  portfolio_construction:
+    default_size: 20               # matches Phase 3's existing benchmarks exactly
+    weighting: "equal_weight"
+    robustness_variant_sizes: [30, 50]
+    robustness_variant_weightings: ["confidence_weighted", "volatility_adjusted", "capped"]
+
+  # Section 11: hard exclusion, not a placeholder for future config.
+  excluded_model_families:
+    - "lstm"
+    - "tcn"
+    - "transformer"
+    - "neural_network_any"

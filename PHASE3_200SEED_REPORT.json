@@ -1,0 +1,689 @@
+{
+  "generated_at": "2026-08-13T14:20:56.988675Z",
+  "source_validation_report": "C:\\Users\\Matthew\\Documents\\quant_trader_phase1\\PHASE3_VALIDATION_REPORT.json",
+  "policies": {
+    "STRICT": {
+      "seed_bookkeeping": {
+        "seeds_attempted": 200,
+        "successful_seed_count": 200,
+        "failed_seed_count": 0,
+        "failed_seeds": [],
+        "persisted_run_count_in_db": 200,
+        "expected_run_id_count_from_validation_json": 200
+      },
+      "distribution_statistics": {
+        "seed_count": 200,
+        "cumulative_return": {
+          "mean": 1.2563501300523914,
+          "median": 1.2563501300523914,
+          "stdev": 0.0,
+          "min": 1.2563501300523914,
+          "max": 1.2563501300523914,
+          "percentiles": {
+            "5": 1.2563501300523914,
+            "25": 1.2563501300523914,
+            "75": 1.2563501300523914,
+            "95": 1.2563501300523914
+          }
+        },
+        "cagr": {
+          "mean": 0.09561114848924523,
+          "median": 0.09561114848924523
+        },
+        "sharpe_ratio": {
+          "mean": 0.5003154657587809,
+          "median": 0.5003154657587809
+        },
+        "max_drawdown": {
+          "mean": -0.3645986984815714,
+          "median": -0.3645986984815714
+        },
+        "total_transaction_costs": {
+          "mean": 200.40523943465408,
+          "median": 200.40523943465408
+        },
+        "avg_turnover_pct_mean": 0.009276931507934499,
+        "number_of_trades_mean": 5.0
+      },
+      "deterministic_benchmark_comparison": {
+        "buy_and_hold": {
+          "annualized_volatility": 0.23781671260150705,
+          "avg_turnover_pct": 0.009259259259259259,
+          "cagr": 0.09573654604946036,
+          "calmar_ratio": 0.24442313446714375,
+          "cumulative_return": 1.2586526136509146,
+          "max_drawdown": -0.3916836524421939,
+          "number_of_trades": 1.0,
+          "sharpe_ratio": 0.5031019733013232,
+          "sortino_ratio": 0.8059033091665266,
+          "total_transaction_costs": 200.0,
+          "win_rate": 0.5700934579439252
+        },
+        "equal_weight_sp500": {
+          "annualized_volatility": 0.23955250166646297,
+          "avg_turnover_pct": 0.009276931507934499,
+          "cagr": 0.09561114848924523,
+          "calmar_ratio": 0.26223666976166643,
+          "cumulative_return": 1.2563501300523914,
+          "max_drawdown": -0.3645986984815714,
+          "number_of_trades": 5.0,
+          "sharpe_ratio": 0.5003154657587809,
+          "sortino_ratio": 0.8039211815322268,
+          "total_transaction_costs": 200.40523943465408,
+          "win_rate": 0.5794392523364486
+        },
+        "top_n_momentum": {
+          "annualized_volatility": 0.23955250166646297,
+          "avg_turnover_pct": 0.009276931507934499,
+          "cagr": 0.09561114848924523,
+          "calmar_ratio": 0.26223666976166643,
+          "cumulative_return": 1.2563501300523914,
+          "max_drawdown": -0.3645986984815714,
+          "number_of_trades": 5.0,
+          "sharpe_ratio": 0.5003154657587809,
+          "sortino_ratio": 0.8039211815322268,
+          "total_transaction_costs": 200.40523943465408,
+          "win_rate": 0.5794392523364486
+        },
+        "bottom_n_momentum": {
+          "annualized_volatility": 0.23955250166646297,
+          "avg_turnover_pct": 0.009276931507934499,
+          "cagr": 0.09561114848924523,
+          "calmar_ratio": 0.26223666976166643,
+          "cumulative_return": 1.2563501300523914,
+          "max_drawdown": -0.3645986984815714,
+          "number_of_trades": 5.0,
+          "sharpe_ratio": 0.5003154657587809,
+          "sortino_ratio": 0.8039211815322268,
+          "total_transaction_costs": 200.40523943465408,
+          "win_rate": 0.5794392523364486
+        }
+      },
+      "duplicate_holding_sets": {
+        "sample_date": "2019-07-01",
+        "num_runs_checked": 200,
+        "num_distinct_holding_sets": 1,
+        "run_ids_per_duplicate_group": [
+          [
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262,
+            263,
+            264,
+            265,
+            266,
+            267,
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            277,
+            278,
+            279,
+            280,
+            281,
+            282,
+            283,
+            284,
+            285,
+            286,
+            287,
+            288,
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            295,
+            296,
+            297,
+            298,
+            299,
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            306,
+            307,
+            308,
+            309,
+            310,
+            311,
+            312,
+            313,
+            314,
+            315,
+            316,
+            317,
+            318,
+            319,
+            320,
+            321,
+            322,
+            323,
+            324,
+            325,
+            326,
+            327,
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344,
+            345,
+            346,
+            347,
+            348,
+            349,
+            350,
+            351,
+            352
+          ]
+        ]
+      },
+      "execution_timing": {
+        "dates_checked": 108,
+        "anomalous_gap_count": 0,
+        "anomalous_gaps": [],
+        "max_gap_days": 4
+      },
+      "strategy_comparison_fairness": {
+        "checked": true,
+        "equal_weight_run_id": 150,
+        "dates_checked": 21600,
+        "violations": [],
+        "fair": true
+      },
+      "transaction_cost_sanity": {
+        "ordered_by_turnover": [
+          {
+            "strategy": "buy_and_hold",
+            "avg_turnover_pct": 0.009259259259259259,
+            "total_transaction_costs": 200.0
+          },
+          {
+            "strategy": "equal_weight_sp500",
+            "avg_turnover_pct": 0.009276931507934499,
+            "total_transaction_costs": 200.40523943465408
+          },
+          {
+            "strategy": "top_n_momentum",
+            "avg_turnover_pct": 0.009276931507934499,
+            "total_transaction_costs": 200.40523943465408
+          },
+          {
+            "strategy": "bottom_n_momentum",
+            "avg_turnover_pct": 0.009276931507934499,
+            "total_transaction_costs": 200.40523943465408
+          }
+        ],
+        "cost_increases_monotonically_with_turnover": true
+      },
+      "randomness_sanity": {
+        "num_distinct_securities_ever_selected": 1,
+        "selection_count_mean": 21600,
+        "selection_count_stdev": 0.0,
+        "selection_count_min": 21600,
+        "selection_count_max": 21600,
+        "correlation_selection_freq_vs_security_id_order": 0.0,
+        "correlation_selection_freq_vs_alphabetical_ticker_order": 0.0,
+        "correlation_selection_freq_vs_price_history_length": 0.0,
+        "sector_bias_checkable": false,
+        "sector_bias_note": "securities.sector is unpopulated in this database (Phase 1/2 never sourced sector data) -- documented limitation, not attempted here."
+      },
+      "price_history_length_opportunity_vs_selection_rate_analysis": {
+        "checked": true,
+        "num_securities_analyzed": 1,
+        "correlation_selection_RATE_vs_price_history_length": 0.0,
+        "correlation_opportunity_count_vs_price_history_length": 0.0,
+        "interpretation": "If correlation_opportunity_count_vs_price_history_length is large but correlation_selection_RATE_vs_price_history_length is near zero, the raw selection-count correlation seen in the diagnostic is explained by (B) -- longer-history securities simply stay eligible for more dates -- not by any per-opportunity selection preference (A). A materially non-zero RATE correlation would indicate (A) actually exists and would warrant investigation (not a methodology change during this run).",
+        "selection_rate_summary": {
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "performance_distribution_outliers": {
+        "min_return_run_id": 153,
+        "min_return": 1.2563501300523914,
+        "max_return_run_id": 153,
+        "max_return": 1.2563501300523914
+      },
+      "reproducibility_spot_check": {
+        "seed": 478163327,
+        "identical": true,
+        "report_a": {
+          "cumulative_return": 1.2563501300523914,
+          "cagr": 0.09561114848924523,
+          "annualized_volatility": 0.23955250166646297,
+          "sharpe_ratio": 0.5003154657587809,
+          "sortino_ratio": 0.8039211815322268,
+          "max_drawdown": -0.3645986984815714,
+          "calmar_ratio": 0.26223666976166643,
+          "win_rate": 0.5794392523364486,
+          "avg_turnover_pct": 0.009276931507934499,
+          "total_transaction_costs": 200.40523943465408,
+          "number_of_trades": 5,
+          "annual_returns": {
+            "2015": 0.09285222380163316,
+            "2016": -0.22646510258172858,
+            "2017": 0.0582253964411108,
+            "2018": -0.05338153977031235,
+            "2019": 0.1797179314976567,
+            "2020": 0.21203573107664142,
+            "2021": 0.20000000000000617,
+            "2022": 0.31194389986428095,
+            "2023": 0.242254549881312
+          }
+        },
+        "report_b": {
+          "cumulative_return": 1.2563501300523914,
+          "cagr": 0.09561114848924523,
+          "annualized_volatility": 0.23955250166646297,
+          "sharpe_ratio": 0.5003154657587809,
+          "sortino_ratio": 0.8039211815322268,
+          "max_drawdown": -0.3645986984815714,
+          "calmar_ratio": 0.26223666976166643,
+          "win_rate": 0.5794392523364486,
+          "avg_turnover_pct": 0.009276931507934499,
+          "total_transaction_costs": 200.40523943465408,
+          "number_of_trades": 5,
+          "annual_returns": {
+            "2015": 0.09285222380163316,
+            "2016": -0.22646510258172858,
+            "2017": 0.0582253964411108,
+            "2018": -0.05338153977031235,
+            "2019": 0.1797179314976567,
+            "2020": 0.21203573107664142,
+            "2021": 0.20000000000000617,
+            "2022": 0.31194389986428095,
+            "2023": 0.242254549881312
+          }
+        }
+      },
+      "runtime": {
+        "deterministic_strategy_elapsed_seconds": [
+          14.9,
+          27.8,
+          27.9,
+          28.0
+        ],
+        "note": "Per-seed elapsed_seconds for the 200-run random distribution is not persisted in PHASE3_VALIDATION_REPORT.json (only console output shows periodic progress) -- if you want per-seed timing recorded going forward, that's a small follow-up change to run_phase3_validation.py, not made here since it wasn't requested."
+      },
+      "cache_hit_miss_statistics": {
+        "note": "Computed analytically, not instrumented in engine.py (would require a code change not requested for this run).",
+        "total_universe_lookups_estimate": 22140,
+        "unique_cache_entries_estimate": 108,
+        "explanation": "build_eligible_universe(date, policy) is a pure function of (date, policy) at a fixed policy, so the cache has exactly one entry per rebalance date; every strategy/seed after the first to reach a given date is a cache hit."
+      }
+    },
+    "PERMISSIVE": {
+      "seed_bookkeeping": {
+        "seeds_attempted": 200,
+        "successful_seed_count": 200,
+        "failed_seed_count": 0,
+        "failed_seeds": [],
+        "persisted_run_count_in_db": 200,
+        "expected_run_id_count_from_validation_json": 200
+      },
+      "distribution_statistics": {
+        "seed_count": 200,
+        "cumulative_return": {
+          "mean": 0.5686716005028609,
+          "median": 0.44653905919317893,
+          "stdev": 0.523654518400469,
+          "min": -0.05725280975806146,
+          "max": 3.4558981430515514,
+          "percentiles": {
+            "5": 0.06919825405860078,
+            "25": 0.26201447876000145,
+            "75": 0.6727098568653515,
+            "95": 1.549625857514436
+          }
+        },
+        "cagr": {
+          "mean": 0.04747551303175081,
+          "median": 0.042255988446952664
+        },
+        "sharpe_ratio": {
+          "mean": 0.31708915402563315,
+          "median": 0.3179394603780146
+        },
+        "max_drawdown": {
+          "mean": -0.3213168701224093,
+          "median": -0.32027068832884553
+        },
+        "total_transaction_costs": {
+          "mean": 50932.81791341112,
+          "median": 50799.501669383404
+        },
+        "avg_turnover_pct_mean": 1.9042220361170064,
+        "number_of_trades_mean": 4199.96
+      },
+      "deterministic_benchmark_comparison": {
+        "buy_and_hold": {
+          "annualized_volatility": 0.20616445301904765,
+          "avg_turnover_pct": 0.009259259259259224,
+          "cagr": 0.1746685946243658,
+          "calmar_ratio": 0.6607528853601912,
+          "cumulative_return": 3.1982180909245104,
+          "max_drawdown": -0.2643478348628777,
+          "number_of_trades": 367.0,
+          "sharpe_ratio": 0.8870334561966554,
+          "sortino_ratio": 1.5088911680022041,
+          "total_transaction_costs": 199.99999999999932,
+          "win_rate": 0.6728971962616822
+        },
+        "equal_weight_sp500": {
+          "annualized_volatility": 0.18016286594306738,
+          "avg_turnover_pct": 0.0681077725355801,
+          "cagr": 0.09960287304211501,
+          "calmar_ratio": 0.32945696448404926,
+          "cumulative_return": 1.3324940086724242,
+          "max_drawdown": -0.30232438157165537,
+          "number_of_trades": 46351.0,
+          "sharpe_ratio": 0.6209618031140688,
+          "sortino_ratio": 0.9519331010431547,
+          "total_transaction_costs": 2186.468305872264,
+          "win_rate": 0.5981308411214953
+        },
+        "top_n_momentum": {
+          "annualized_volatility": 0.2123376068593134,
+          "avg_turnover_pct": 0.6668002333029914,
+          "cagr": 0.07834394454206195,
+          "calmar_ratio": 0.23421720982143862,
+          "cumulative_return": 0.9597129393007582,
+          "max_drawdown": -0.3344926899342257,
+          "number_of_trades": 2837.0,
+          "sharpe_ratio": 0.4629059394691562,
+          "sortino_ratio": 0.6931062710316365,
+          "total_transaction_costs": 19914.79236176599,
+          "win_rate": 0.5887850467289719
+        },
+        "bottom_n_momentum": {
+          "annualized_volatility": 0.39567273299338973,
+          "avg_turnover_pct": 0.6123442382345737,
+          "cagr": 0.0140555510139726,
+          "calmar_ratio": 0.02190106212811476,
+          "cumulative_return": 0.1325836376913334,
+          "max_drawdown": -0.6417748569339591,
+          "number_of_trades": 2740.0,
+          "sharpe_ratio": 0.24156969339955098,
+          "sortino_ratio": 0.3808154003721482,
+          "total_transaction_costs": 13539.816209102444,
+          "win_rate": 0.5046728971962616
+        }
+      },
+      "duplicate_holding_sets": {
+        "sample_date": "2019-07-01",
+        "num_runs_checked": 200,
+        "num_distinct_holding_sets": 200,
+        "run_ids_per_duplicate_group": []
+      },
+      "execution_timing": {
+        "dates_checked": 108,
+        "anomalous_gap_count": 0,
+        "anomalous_gaps": [],
+        "max_gap_days": 4
+      },
+      "strategy_comparison_fairness": {
+        "checked": true,
+        "equal_weight_run_id": 354,
+        "dates_checked": 21600,
+        "violations": [],
+        "fair": true
+      },
+      "transaction_cost_sanity": {
+        "ordered_by_turnover": [
+          {
+            "strategy": "buy_and_hold",
+            "avg_turnover_pct": 0.009259259259259224,
+            "total_transaction_costs": 199.99999999999932
+          },
+          {
+            "strategy": "equal_weight_sp500",
+            "avg_turnover_pct": 0.0681077725355801,
+            "total_transaction_costs": 2186.468305872264
+          },
+          {
+            "strategy": "bottom_n_momentum",
+            "avg_turnover_pct": 0.6123442382345737,
+            "total_transaction_costs": 13539.816209102444
+          },
+          {
+            "strategy": "top_n_momentum",
+            "avg_turnover_pct": 0.6668002333029914,
+            "total_transaction_costs": 19914.79236176599
+          }
+        ],
+        "cost_increases_monotonically_with_turnover": true
+      },
+      "randomness_sanity": {
+        "num_distinct_securities_ever_selected": 544,
+        "selection_count_mean": 794.0992647058823,
+        "selection_count_stdev": 310.8191773857686,
+        "selection_count_min": 16,
+        "selection_count_max": 1103,
+        "correlation_selection_freq_vs_security_id_order": -0.0433,
+        "correlation_selection_freq_vs_alphabetical_ticker_order": -0.0026,
+        "correlation_selection_freq_vs_price_history_length": 0.3858,
+        "sector_bias_checkable": false,
+        "sector_bias_note": "securities.sector is unpopulated in this database (Phase 1/2 never sourced sector data) -- documented limitation, not attempted here."
+      },
+      "price_history_length_opportunity_vs_selection_rate_analysis": {
+        "checked": true,
+        "num_securities_analyzed": 544,
+        "correlation_selection_RATE_vs_price_history_length": 0.2013,
+        "correlation_opportunity_count_vs_price_history_length": 0.3843,
+        "interpretation": "If correlation_opportunity_count_vs_price_history_length is large but correlation_selection_RATE_vs_price_history_length is near zero, the raw selection-count correlation seen in the diagnostic is explained by (B) -- longer-history securities simply stay eligible for more dates -- not by any per-opportunity selection preference (A). A materially non-zero RATE correlation would indicate (A) actually exists and would warrant investigation (not a methodology change during this run).",
+        "selection_rate_summary": {
+          "mean": 0.0465,
+          "median": 0.0467,
+          "min": 0.0267,
+          "max": 0.0675
+        }
+      },
+      "performance_distribution_outliers": {
+        "min_return_run_id": 411,
+        "min_return": -0.05725280975806146,
+        "max_return_run_id": 459,
+        "max_return": 3.4558981430515514
+      },
+      "reproducibility_spot_check": {
+        "seed": 478163327,
+        "identical": true,
+        "report_a": {
+          "cumulative_return": 0.8842501547242188,
+          "cagr": 0.07360719667379745,
+          "annualized_volatility": 0.18210093735628186,
+          "sharpe_ratio": 0.4834486558880061,
+          "sortino_ratio": 0.7305178633271117,
+          "max_drawdown": -0.26846027287019425,
+          "calmar_ratio": 0.27418282745092776,
+          "win_rate": 0.5607476635514018,
+          "avg_turnover_pct": 1.9080157754939338,
+          "total_transaction_costs": 61413.58189687064,
+          "number_of_trades": 4205,
+          "annual_returns": {
+            "2015": -0.067956141847069,
+            "2016": 0.1990460449925453,
+            "2017": 0.11160637912027771,
+            "2018": 0.12246190177004146,
+            "2019": 0.18620563294454184,
+            "2020": 0.08618768036607705,
+            "2021": 0.15009103978718707,
+            "2022": -0.09314355033087995,
+            "2023": 0.02937866828754343
+          }
+        },
+        "report_b": {
+          "cumulative_return": 0.8842501547242188,
+          "cagr": 0.07360719667379745,
+          "annualized_volatility": 0.18210093735628186,
+          "sharpe_ratio": 0.4834486558880061,
+          "sortino_ratio": 0.7305178633271117,
+          "max_drawdown": -0.26846027287019425,
+          "calmar_ratio": 0.27418282745092776,
+          "win_rate": 0.5607476635514018,
+          "avg_turnover_pct": 1.9080157754939338,
+          "total_transaction_costs": 61413.58189687064,
+          "number_of_trades": 4205,
+          "annual_returns": {
+            "2015": -0.067956141847069,
+            "2016": 0.1990460449925453,
+            "2017": 0.11160637912027771,
+            "2018": 0.12246190177004146,
+            "2019": 0.18620563294454184,
+            "2020": 0.08618768036607705,
+            "2021": 0.15009103978718707,
+            "2022": -0.09314355033087995,
+            "2023": 0.02937866828754343
+          }
+        }
+      },
+      "runtime": {
+        "deterministic_strategy_elapsed_seconds": [
+          153.8,
+          37.0,
+          38.7,
+          38.8
+        ],
+        "note": "Per-seed elapsed_seconds for the 200-run random distribution is not persisted in PHASE3_VALIDATION_REPORT.json (only console output shows periodic progress) -- if you want per-seed timing recorded going forward, that's a small follow-up change to run_phase3_validation.py, not made here since it wasn't requested."
+      },
+      "cache_hit_miss_statistics": {
+        "note": "Computed analytically, not instrumented in engine.py (would require a code change not requested for this run).",
+        "total_universe_lookups_estimate": 22140,
+        "unique_cache_entries_estimate": 108,
+        "explanation": "build_eligible_universe(date, policy) is a pure function of (date, policy) at a fixed policy, so the cache has exactly one entry per rebalance date; every strategy/seed after the first to reach a given date is a cache hit."
+      }
+    }
+  }
+}

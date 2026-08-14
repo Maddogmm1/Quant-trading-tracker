@@ -1,0 +1,29 @@
+# Databases -- regenerated locally via the ingestion pipeline (run_stage_ingestion.py),
+# not source-controlled. The real database also exceeds GitHub's practical size limits.
+data/database/*.db
+data/database/*.db-journal
+data/database/*.db-wal
+data/database/*.db-shm
+
+# Raw / vendored market data. Large, regenerable, or third-party.
+# data/raw/sp500-master is a vendored copy of github.com/fja05680/sp500 (MIT
+# licensed) -- its README.md and LICENSE are kept for attribution, but the
+# multi-MB CSVs/notebooks are excluded; see that README for how to fetch them.
+data/raw/*.csv
+data/raw/sp500-master/*.csv
+data/raw/sp500-master/*.ipynb
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# OS cruft
+.DS_Store
+Thumbs.db

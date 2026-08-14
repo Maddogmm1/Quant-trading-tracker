@@ -1,0 +1,156 @@
+{
+  "generated_at": "2026-08-13T15:06:11.106159Z",
+  "rebalance_date_count": 108,
+  "policies": {
+    "PERMISSIVE": {
+      "eligible_count_min": 367,
+      "eligible_count_max": 477,
+      "eligible_count_mean": 428.5,
+      "split": {
+        "train_dates_count": 62,
+        "train_purged_count": 3,
+        "validation_dates_count": 13,
+        "validation_purged_count": 3,
+        "test_dates_count": 27,
+        "test_date_range": [
+          "2021-10-01",
+          "2023-12-01"
+        ]
+      },
+      "by_horizon_months": {
+        "3": {
+          "train": {
+            "months_in_window": 62,
+            "raw_security_date_pairs": 25184,
+            "effective_independent_time_blocks": 20
+          },
+          "validation": {
+            "months_in_window": 13,
+            "raw_security_date_pairs": 5811,
+            "effective_independent_time_blocks": 4
+          },
+          "test_LOCKED": {
+            "months_in_window": 27,
+            "raw_security_date_pairs": 12602,
+            "effective_independent_time_blocks": 9
+          }
+        },
+        "1": {
+          "train": {
+            "months_in_window": 62,
+            "raw_security_date_pairs": 25184,
+            "effective_independent_time_blocks": 62
+          },
+          "validation": {
+            "months_in_window": 13,
+            "raw_security_date_pairs": 5811,
+            "effective_independent_time_blocks": 13
+          },
+          "test_LOCKED": {
+            "months_in_window": 27,
+            "raw_security_date_pairs": 12602,
+            "effective_independent_time_blocks": 27
+          }
+        },
+        "6": {
+          "train": {
+            "months_in_window": 62,
+            "raw_security_date_pairs": 25184,
+            "effective_independent_time_blocks": 10
+          },
+          "validation": {
+            "months_in_window": 13,
+            "raw_security_date_pairs": 5811,
+            "effective_independent_time_blocks": 2
+          },
+          "test_LOCKED": {
+            "months_in_window": 27,
+            "raw_security_date_pairs": 12602,
+            "effective_independent_time_blocks": 4
+          }
+        }
+      },
+      "confirmatory_experiment_cap_check": {
+        "configured_max_confirmatory_test_experiments": 5,
+        "effective_independent_test_blocks_at_primary_horizon": 9,
+        "cap_is_within_available_evidence": true,
+        "note": "PASS: the configured confirmatory-experiment cap does not exceed the number of independent test blocks available."
+      }
+    },
+    "STRICT": {
+      "eligible_count_min": 0,
+      "eligible_count_max": 1,
+      "eligible_count_mean": 1.0,
+      "split": {
+        "train_dates_count": 62,
+        "train_purged_count": 3,
+        "validation_dates_count": 13,
+        "validation_purged_count": 3,
+        "test_dates_count": 27,
+        "test_date_range": [
+          "2021-10-01",
+          "2023-12-01"
+        ]
+      },
+      "by_horizon_months": {
+        "3": {
+          "train": {
+            "months_in_window": 62,
+            "raw_security_date_pairs": 62,
+            "effective_independent_time_blocks": 20
+          },
+          "validation": {
+            "months_in_window": 13,
+            "raw_security_date_pairs": 13,
+            "effective_independent_time_blocks": 4
+          },
+          "test_LOCKED": {
+            "months_in_window": 27,
+            "raw_security_date_pairs": 23,
+            "effective_independent_time_blocks": 9
+          }
+        },
+        "1": {
+          "train": {
+            "months_in_window": 62,
+            "raw_security_date_pairs": 62,
+            "effective_independent_time_blocks": 62
+          },
+          "validation": {
+            "months_in_window": 13,
+            "raw_security_date_pairs": 13,
+            "effective_independent_time_blocks": 13
+          },
+          "test_LOCKED": {
+            "months_in_window": 27,
+            "raw_security_date_pairs": 23,
+            "effective_independent_time_blocks": 27
+          }
+        },
+        "6": {
+          "train": {
+            "months_in_window": 62,
+            "raw_security_date_pairs": 62,
+            "effective_independent_time_blocks": 10
+          },
+          "validation": {
+            "months_in_window": 13,
+            "raw_security_date_pairs": 13,
+            "effective_independent_time_blocks": 2
+          },
+          "test_LOCKED": {
+            "months_in_window": 27,
+            "raw_security_date_pairs": 23,
+            "effective_independent_time_blocks": 4
+          }
+        }
+      },
+      "confirmatory_experiment_cap_check": {
+        "configured_max_confirmatory_test_experiments": 5,
+        "effective_independent_test_blocks_at_primary_horizon": 9,
+        "cap_is_within_available_evidence": true,
+        "note": "PASS: the configured confirmatory-experiment cap does not exceed the number of independent test blocks available."
+      }
+    }
+  }
+}

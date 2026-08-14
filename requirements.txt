@@ -1,0 +1,10 @@
+pyyaml>=6.0
+pytest>=7.0
+yfinance>=0.2   # live price ingestion (src/ingestion/price_sources.py)
+
+# Modelling stage only (src/ml/) -- deliberately CPU-only, no GPU/cluster
+# dependency. numpy/scikit-learn cover the linear baselines and the two
+# tree ensembles; no scipy, XGBoost, or LightGBM needed for the current
+# model set.
+numpy>=1.26
+scikit-learn>=1.4

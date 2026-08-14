@@ -1,0 +1,341 @@
+{
+  "stage": 1,
+  "price_source": "yfinance (Yahoo Finance, unofficial)",
+  "security_counts": {
+    "total_securities": 50,
+    "resolved_via_known_identifier_cik": 5,
+    "unresolved_identity": 45
+  },
+  "identity_review_queue": {
+    "total_flags": 0,
+    "unresolved_flags": 0,
+    "flagged_tickers": []
+  },
+  "membership": {
+    "total_membership_claims": 50,
+    "conflicting_claims": 0,
+    "unresolved_membership_claims": 0
+  },
+  "price_coverage": {
+    "total_raw_price_rows": 157845,
+    "earliest_date": "2010-01-04",
+    "latest_date": "2023-12-29",
+    "securities_with_zero_price_data": [
+      "MON",
+      "ABMD",
+      "AABA",
+      "AAMRQ"
+    ],
+    "count_zero_price_data": 4
+  },
+  "data_quality": {
+    "bad_ohlc_flagged": 0,
+    "negative_volume_flagged": 0,
+    "flagged_rows_sample": []
+  },
+  "dividends": {
+    "total_dividend_events": 2007,
+    "securities_with_dividends": 38,
+    "securities_without_dividends": 12
+  },
+  "splits": {
+    "total_split_events": 24,
+    "details": [
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2010-12-13",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "NDSN",
+        "ex_date": "2011-04-13",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "CHD",
+        "ex_date": "2011-06-02",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "KO",
+        "ex_date": "2012-08-13",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "NKE",
+        "ex_date": "2012-12-26",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "MA",
+        "ex_date": "2014-01-22",
+        "ratio_or_value": 10.0
+      },
+      {
+        "primary_ticker": "GOOGL",
+        "ex_date": "2014-04-03",
+        "ratio_or_value": 1.998
+      },
+      {
+        "primary_ticker": "AAPL",
+        "ex_date": "2014-06-09",
+        "ratio_or_value": 7.0
+      },
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2015-03-11",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "V",
+        "ex_date": "2015-03-19",
+        "ratio_or_value": 4.0
+      },
+      {
+        "primary_ticker": "NKE",
+        "ex_date": "2015-12-24",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "CHD",
+        "ex_date": "2016-09-02",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "LEN",
+        "ex_date": "2017-11-09",
+        "ratio_or_value": 1.017
+      },
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2018-12-11",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "AAPL",
+        "ex_date": "2020-08-31",
+        "ratio_or_value": 4.0
+      },
+      {
+        "primary_ticker": "TSLA",
+        "ex_date": "2020-08-31",
+        "ratio_or_value": 5.0
+      },
+      {
+        "primary_ticker": "PFE",
+        "ex_date": "2020-11-17",
+        "ratio_or_value": 1.054
+      },
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2020-12-11",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "NVDA",
+        "ex_date": "2021-07-20",
+        "ratio_or_value": 4.0
+      },
+      {
+        "primary_ticker": "IBM",
+        "ex_date": "2021-11-04",
+        "ratio_or_value": 1.046
+      },
+      {
+        "primary_ticker": "T",
+        "ex_date": "2022-04-11",
+        "ratio_or_value": 1.324
+      },
+      {
+        "primary_ticker": "AMZN",
+        "ex_date": "2022-06-06",
+        "ratio_or_value": 20.0
+      },
+      {
+        "primary_ticker": "GOOGL",
+        "ex_date": "2022-07-18",
+        "ratio_or_value": 20.0
+      },
+      {
+        "primary_ticker": "TSLA",
+        "ex_date": "2022-08-25",
+        "ratio_or_value": 3.0
+      }
+    ]
+  },
+  "unsupported_corporate_actions": [
+    {
+      "primary_ticker": "PFE",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.054 on 2020-11-17, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "LEN",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.017 on 2017-11-09, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "T",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.324 on 2022-04-11, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "IBM",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.046 on 2021-11-04, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "ABBV",
+      "unsupported_corporate_action_note": "AbbVie spun off from Abbott Laboratories (ABT). Source: Abbott 8-K Item 2.01, https://www.sec.gov/Archives/edgar/data/0000001800/000110465913001016/a13-2169_18k.htm"
+    }
+  ],
+  "delisted_securities": [
+    {
+      "primary_ticker": "MON",
+      "delisted_date": "2018-06-07",
+      "delisting_reason": "acquired",
+      "delisting_confidence": "verified"
+    },
+    {
+      "primary_ticker": "ABMD",
+      "delisted_date": "2022-12-22",
+      "delisting_reason": "acquired",
+      "delisting_confidence": "verified"
+    },
+    {
+      "primary_ticker": "AABA",
+      "delisted_date": "2019-10-02",
+      "delisting_reason": "dissolved",
+      "delisting_confidence": "verified"
+    },
+    {
+      "primary_ticker": "AAMRQ",
+      "delisted_date": "2012-01-30",
+      "delisting_reason": "bankrupt",
+      "delisting_confidence": "verified"
+    }
+  ],
+  "survivorship_style_breakdown": {
+    "total_securities_in_universe": 50,
+    "securities_with_usable_price_data": 46,
+    "known_delisted_with_no_price_data": 4,
+    "known_delisted_WITH_price_data": 0
+  },
+  "point_in_time_spot_checks": [
+    {
+      "ticker": "AAPL",
+      "as_of_date": "2016-01-04",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AAPL",
+      "as_of_date": "2020-01-02",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AAPL",
+      "as_of_date": "2023-01-03",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "MSFT",
+      "as_of_date": "2016-01-04",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "MSFT",
+      "as_of_date": "2020-01-02",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "MSFT",
+      "as_of_date": "2023-01-03",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "GOOGL",
+      "as_of_date": "2016-01-04",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "GOOGL",
+      "as_of_date": "2020-01-02",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "GOOGL",
+      "as_of_date": "2023-01-03",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AMZN",
+      "as_of_date": "2016-01-04",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AMZN",
+      "as_of_date": "2020-01-02",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AMZN",
+      "as_of_date": "2023-01-03",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "NVDA",
+      "as_of_date": "2016-01-04",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "NVDA",
+      "as_of_date": "2020-01-02",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "NVDA",
+      "as_of_date": "2023-01-03",
+      "eligible": true,
+      "has_any_historical_data": true
+    }
+  ],
+  "timing": {
+    "securities_processed": 50,
+    "securities_freshly_fetched": 4,
+    "securities_skipped_resume": 46,
+    "total_wall_seconds_including_skips": 3.69,
+    "total_wall_seconds_fresh_fetch_only": 3.66,
+    "avg_seconds_per_security_INCLUDING_skips_MISLEADING": 0.0737,
+    "avg_seconds_per_security_FRESH_FETCH_ONLY": 0.915,
+    "min_seconds_fresh_fetch": 0.28,
+    "max_seconds_fresh_fetch": 1.6,
+    "errors_encountered": 0,
+    "error_details": [],
+    "extrapolated_estimates_based_on_fresh_fetch_avg": {
+      "200_securities_minutes": 3.0,
+      "500_securities_minutes": 7.6,
+      "1200_securities_minutes": 18.3
+    }
+  },
+  "source_reliability_stats": {
+    "total_retry_attempts": 0,
+    "rate_limit_events": 0,
+    "transient_errors": 0,
+    "permanent_errors": 0,
+    "tickers_with_any_retry": 0
+  },
+  "resumability": {
+    "tickers_skipped_as_already_ingested": 46,
+    "tickers_freshly_fetched": 4
+  }
+}

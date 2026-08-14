@@ -1,0 +1,1820 @@
+{
+  "stage": 2,
+  "price_source": "yfinance (Yahoo Finance, unofficial)",
+  "security_counts": {
+    "total_securities": 200,
+    "resolved_via_known_identifier_cik": 5,
+    "unresolved_identity": 195
+  },
+  "identity_review_queue": {
+    "total_flags": 8,
+    "unresolved_flags": 8,
+    "flagged_tickers": [
+      {
+        "review_id": 1,
+        "ticker": "AMD",
+        "flag_reason": "Ticker 'AMD' has two usage periods separated by 1274 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2013-09-23",
+        "period_2_start": "2017-03-20",
+        "period_2_end": null,
+        "gap_days": 1274,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:27:10.278930+00:00"
+      },
+      {
+        "review_id": 2,
+        "ticker": "PTC",
+        "flag_reason": "Ticker 'PTC' has two usage periods separated by 5221 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1997-04-03",
+        "period_1_end": "2007-01-03",
+        "period_2_start": "2021-04-20",
+        "period_2_end": null,
+        "gap_days": 5221,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:27:10.322333+00:00"
+      },
+      {
+        "review_id": 3,
+        "ticker": "FMC",
+        "flag_reason": "Ticker 'FMC' has two usage periods separated by 2786 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2002-01-02",
+        "period_2_start": "2009-08-19",
+        "period_2_end": "2025-03-24",
+        "gap_days": 2786,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:27:10.363126+00:00"
+      },
+      {
+        "review_id": 4,
+        "ticker": "PCG",
+        "flag_reason": "Ticker 'PCG' has two usage periods separated by 1354 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2019-01-18",
+        "period_2_start": "2022-10-03",
+        "period_2_end": null,
+        "gap_days": 1354,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:27:10.414961+00:00"
+      },
+      {
+        "review_id": 5,
+        "ticker": "AMD",
+        "flag_reason": "Ticker 'AMD' has two usage periods separated by 1274 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2013-09-23",
+        "period_2_start": "2017-03-20",
+        "period_2_end": null,
+        "gap_days": 1274,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:37:57.600100+00:00"
+      },
+      {
+        "review_id": 6,
+        "ticker": "PTC",
+        "flag_reason": "Ticker 'PTC' has two usage periods separated by 5221 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1997-04-03",
+        "period_1_end": "2007-01-03",
+        "period_2_start": "2021-04-20",
+        "period_2_end": null,
+        "gap_days": 5221,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:37:57.606087+00:00"
+      },
+      {
+        "review_id": 7,
+        "ticker": "FMC",
+        "flag_reason": "Ticker 'FMC' has two usage periods separated by 2786 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2002-01-02",
+        "period_2_start": "2009-08-19",
+        "period_2_end": "2025-03-24",
+        "gap_days": 2786,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:37:57.610965+00:00"
+      },
+      {
+        "review_id": 8,
+        "ticker": "PCG",
+        "flag_reason": "Ticker 'PCG' has two usage periods separated by 1354 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2019-01-18",
+        "period_2_start": "2022-10-03",
+        "period_2_end": null,
+        "gap_days": 1354,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:37:57.614150+00:00"
+      }
+    ]
+  },
+  "membership": {
+    "total_membership_claims": 204,
+    "conflicting_claims": 0,
+    "unresolved_membership_claims": 0
+  },
+  "price_coverage": {
+    "total_raw_price_rows": 456601,
+    "earliest_date": "2010-01-04",
+    "latest_date": "2023-12-29",
+    "securities_with_zero_price_data": [
+      "MON",
+      "ABMD",
+      "AABA",
+      "AAMRQ",
+      "USW",
+      "RBD",
+      "OWENQ",
+      "MYL",
+      "ARG",
+      "XLNX",
+      "MJN",
+      "CPNLQ",
+      "ABKFQ",
+      "WIN",
+      "SFA",
+      "LDW.B",
+      "ACS",
+      "QEP",
+      "OMX",
+      "JNPR",
+      "FBF",
+      "SK",
+      "UN",
+      "ETS",
+      "BRCM",
+      "LUB",
+      "SOTR",
+      "KSE",
+      "CHA",
+      "HMA",
+      "MER",
+      "LLL",
+      "TXU",
+      "SWN",
+      "LVLT",
+      "NAE",
+      "AHM",
+      "FLT",
+      "DALRQ",
+      "DCNAQ",
+      "AMTM",
+      "LLTC",
+      "TOS",
+      "PMI",
+      "BMGCA",
+      "KRFT",
+      "BTUUQ",
+      "WAMUQ",
+      "UPR",
+      "HCP",
+      "AT",
+      "FDC"
+    ],
+    "count_zero_price_data": 52
+  },
+  "data_quality": {
+    "bad_ohlc_flagged": 6,
+    "negative_volume_flagged": 0,
+    "flagged_rows_sample": [
+      {
+        "primary_ticker": "RYC",
+        "date": "2011-10-31",
+        "open": 35.24,
+        "high": 35.24,
+        "low": 35.24,
+        "close": 35.13,
+        "volume": 0.0
+      },
+      {
+        "primary_ticker": "PZE",
+        "date": "2012-05-23",
+        "open": 4.63,
+        "high": 4.645,
+        "low": 4.54,
+        "close": 4.685,
+        "volume": 162706.0
+      },
+      {
+        "primary_ticker": "PBG",
+        "date": "2012-12-14",
+        "open": 6.45,
+        "high": 6.25,
+        "low": 6.57,
+        "close": 6.28,
+        "volume": 219912.0
+      },
+      {
+        "primary_ticker": "PBG",
+        "date": "2013-01-18",
+        "open": 6.2,
+        "high": 5.84,
+        "low": 6.5,
+        "close": 6.26,
+        "volume": 3275.0
+      },
+      {
+        "primary_ticker": "PBG",
+        "date": "2013-01-29",
+        "open": 5.82,
+        "high": 5.55,
+        "low": 5.83,
+        "close": 5.66,
+        "volume": 96513.0
+      },
+      {
+        "primary_ticker": "PBG",
+        "date": "2013-01-31",
+        "open": 5.65,
+        "high": 5.64,
+        "low": 5.76,
+        "close": 5.7,
+        "volume": 190.0
+      }
+    ],
+    "note": "Scoped to adj_type='raw' only -- the same root problem in raw data also propagates to its derived split_adjusted/total_return copies, which would otherwise inflate this count up to 3x for the same issue."
+  },
+  "dividends": {
+    "total_dividend_events": 5194,
+    "securities_with_dividends": 104,
+    "securities_without_dividends": 96
+  },
+  "splits": {
+    "total_split_events": 49,
+    "details": [
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2010-12-13",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "MSI",
+        "ex_date": "2011-01-04",
+        "ratio_or_value": 0.24737167594310452
+      },
+      {
+        "primary_ticker": "FCX",
+        "ex_date": "2011-02-02",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "NDSN",
+        "ex_date": "2011-04-13",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "C",
+        "ex_date": "2011-05-09",
+        "ratio_or_value": 0.1
+      },
+      {
+        "primary_ticker": "MOH",
+        "ex_date": "2011-05-23",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "CHD",
+        "ex_date": "2011-06-02",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "FMC",
+        "ex_date": "2012-05-25",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "KO",
+        "ex_date": "2012-08-13",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "JCI",
+        "ex_date": "2012-10-01",
+        "ratio_or_value": 2.011667672500503
+      },
+      {
+        "primary_ticker": "PZE",
+        "ex_date": "2012-10-03",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "THC",
+        "ex_date": "2012-10-11",
+        "ratio_or_value": 0.25
+      },
+      {
+        "primary_ticker": "NKE",
+        "ex_date": "2012-12-26",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "EFU",
+        "ex_date": "2013-06-10",
+        "ratio_or_value": 0.25
+      },
+      {
+        "primary_ticker": "MUR",
+        "ex_date": "2013-09-03",
+        "ratio_or_value": 1.158
+      },
+      {
+        "primary_ticker": "VFC",
+        "ex_date": "2013-12-23",
+        "ratio_or_value": 4.0
+      },
+      {
+        "primary_ticker": "MA",
+        "ex_date": "2014-01-22",
+        "ratio_or_value": 10.0
+      },
+      {
+        "primary_ticker": "GOOGL",
+        "ex_date": "2014-04-03",
+        "ratio_or_value": 1.998
+      },
+      {
+        "primary_ticker": "SLM",
+        "ex_date": "2014-05-01",
+        "ratio_or_value": 2.798
+      },
+      {
+        "primary_ticker": "AAPL",
+        "ex_date": "2014-06-09",
+        "ratio_or_value": 7.0
+      },
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2015-03-11",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "V",
+        "ex_date": "2015-03-19",
+        "ratio_or_value": 4.0
+      },
+      {
+        "primary_ticker": "GHC",
+        "ex_date": "2015-07-01",
+        "ratio_or_value": 1.655
+      },
+      {
+        "primary_ticker": "NKE",
+        "ex_date": "2015-12-24",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "CHD",
+        "ex_date": "2016-09-02",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "JCI",
+        "ex_date": "2016-09-06",
+        "ratio_or_value": 0.955
+      },
+      {
+        "primary_ticker": "YUM",
+        "ex_date": "2016-11-01",
+        "ratio_or_value": 1.391
+      },
+      {
+        "primary_ticker": "CPWR",
+        "ex_date": "2017-03-28",
+        "ratio_or_value": 0.004
+      },
+      {
+        "primary_ticker": "CPWR",
+        "ex_date": "2017-05-25",
+        "ratio_or_value": 2.16759
+      },
+      {
+        "primary_ticker": "SVU",
+        "ex_date": "2017-08-02",
+        "ratio_or_value": 0.14285714285714285
+      },
+      {
+        "primary_ticker": "LEN",
+        "ex_date": "2017-11-09",
+        "ratio_or_value": 1.017
+      },
+      {
+        "primary_ticker": "PNR",
+        "ex_date": "2018-05-01",
+        "ratio_or_value": 1.489
+      },
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2018-12-11",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "FMC",
+        "ex_date": "2019-03-04",
+        "ratio_or_value": 1.153
+      },
+      {
+        "primary_ticker": "VFC",
+        "ex_date": "2019-05-23",
+        "ratio_or_value": 1.062
+      },
+      {
+        "primary_ticker": "TEN",
+        "ex_date": "2020-07-01",
+        "ratio_or_value": 0.2
+      },
+      {
+        "primary_ticker": "MTCH",
+        "ex_date": "2020-07-01",
+        "ratio_or_value": 3.502
+      },
+      {
+        "primary_ticker": "AAPL",
+        "ex_date": "2020-08-31",
+        "ratio_or_value": 4.0
+      },
+      {
+        "primary_ticker": "TSLA",
+        "ex_date": "2020-08-31",
+        "ratio_or_value": 5.0
+      },
+      {
+        "primary_ticker": "PFE",
+        "ex_date": "2020-11-17",
+        "ratio_or_value": 1.054
+      },
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2020-12-11",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "NVDA",
+        "ex_date": "2021-07-20",
+        "ratio_or_value": 4.0
+      },
+      {
+        "primary_ticker": "IBM",
+        "ex_date": "2021-11-04",
+        "ratio_or_value": 1.046
+      },
+      {
+        "primary_ticker": "T",
+        "ex_date": "2022-04-11",
+        "ratio_or_value": 1.324
+      },
+      {
+        "primary_ticker": "AMZN",
+        "ex_date": "2022-06-06",
+        "ratio_or_value": 20.0
+      },
+      {
+        "primary_ticker": "EHC",
+        "ex_date": "2022-07-01",
+        "ratio_or_value": 1.257
+      },
+      {
+        "primary_ticker": "GOOGL",
+        "ex_date": "2022-07-18",
+        "ratio_or_value": 20.0
+      },
+      {
+        "primary_ticker": "TSLA",
+        "ex_date": "2022-08-25",
+        "ratio_or_value": 3.0
+      },
+      {
+        "primary_ticker": "PCAR",
+        "ex_date": "2023-02-08",
+        "ratio_or_value": 1.5
+      }
+    ]
+  },
+  "unsupported_corporate_actions": [
+    {
+      "primary_ticker": "PFE",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.054 on 2020-11-17, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "LEN",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.017 on 2017-11-09, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "T",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.324 on 2022-04-11, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "IBM",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.046 on 2021-11-04, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "ABBV",
+      "unsupported_corporate_action_note": "AbbVie spun off from Abbott Laboratories (ABT). Source: Abbott 8-K Item 2.01, https://www.sec.gov/Archives/edgar/data/0000001800/000110465913001016/a13-2169_18k.htm"
+    },
+    {
+      "primary_ticker": "SLM",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 2.798 on 2014-05-01, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "JCI",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 0.955 on 2016-09-06, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "YUM",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.391 on 2016-11-01, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "CPWR",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 0.004 on 2017-03-28, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. | yfinance reported a 'split' ratio of 2.16759 on 2017-05-25, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "MUR",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.158 on 2013-09-03, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "VFC",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.062 on 2019-05-23, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "FMC",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.153 on 2019-03-04, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "GHC",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.655 on 2015-07-01, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "EHC",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.257 on 2022-07-01, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "MTCH",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 3.502 on 2020-07-01, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    }
+  ],
+  "delisted_securities": [
+    {
+      "primary_ticker": "MON",
+      "delisted_date": "2018-06-07",
+      "delisting_reason": "acquired",
+      "delisting_confidence": "verified"
+    },
+    {
+      "primary_ticker": "ABMD",
+      "delisted_date": "2022-12-22",
+      "delisting_reason": "acquired",
+      "delisting_confidence": "verified"
+    },
+    {
+      "primary_ticker": "AABA",
+      "delisted_date": "2019-10-02",
+      "delisting_reason": "dissolved",
+      "delisting_confidence": "verified"
+    },
+    {
+      "primary_ticker": "AAMRQ",
+      "delisted_date": "2012-01-30",
+      "delisting_reason": "bankrupt",
+      "delisting_confidence": "verified"
+    }
+  ],
+  "survivorship_style_breakdown": {
+    "total_securities_in_universe": 200,
+    "securities_with_usable_price_data": 148,
+    "known_delisted_with_no_price_data": 4,
+    "known_delisted_WITH_price_data": 0
+  },
+  "point_in_time_spot_checks": [
+    {
+      "ticker": "AABA",
+      "as_of_date": "2016-01-04",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AABA",
+      "as_of_date": "2020-01-02",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AABA",
+      "as_of_date": "2023-01-03",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AAMRQ",
+      "as_of_date": "2016-01-04",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AAMRQ",
+      "as_of_date": "2020-01-02",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AAMRQ",
+      "as_of_date": "2023-01-03",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AAPL",
+      "as_of_date": "2016-01-04",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AAPL",
+      "as_of_date": "2020-01-02",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AAPL",
+      "as_of_date": "2023-01-03",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "ABBV",
+      "as_of_date": "2016-01-04",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "ABBV",
+      "as_of_date": "2020-01-02",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "ABBV",
+      "as_of_date": "2023-01-03",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "ABC",
+      "as_of_date": "2016-01-04",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "ABC",
+      "as_of_date": "2020-01-02",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "ABC",
+      "as_of_date": "2023-01-03",
+      "eligible": true,
+      "has_any_historical_data": true
+    }
+  ],
+  "timing": {
+    "securities_processed": 200,
+    "securities_freshly_fetched": 62,
+    "securities_freshly_fetched_WITH_data": 10,
+    "securities_freshly_fetched_ZERO_data_fast_failures": 52,
+    "securities_skipped_resume": 138,
+    "total_wall_seconds_including_skips": 38.98,
+    "total_wall_seconds_fresh_fetch_only": 38.88,
+    "avg_seconds_per_security_INCLUDING_skips_MISLEADING": 0.1949,
+    "avg_seconds_per_security_ALL_FRESH_STILL_MISLEADING_IF_MANY_ZERO_DATA": 0.6271,
+    "avg_seconds_per_security_FRESH_WITH_DATA_ONLY_HONEST_METRIC": 2.126,
+    "min_seconds_fresh_fetch": 0.18,
+    "max_seconds_fresh_fetch": 2.44,
+    "errors_encountered": 0,
+    "error_details": [],
+    "extrapolated_estimates_based_on_fresh_WITH_DATA_avg": {
+      "200_securities_minutes": 7.1,
+      "500_securities_minutes": 17.7,
+      "1200_securities_minutes": 42.5
+    }
+  },
+  "source_reliability_stats": {
+    "total_retry_attempts": 0,
+    "rate_limit_events": 0,
+    "transient_errors": 0,
+    "permanent_errors": 0,
+    "tickers_with_any_retry": 0
+  },
+  "resumability": {
+    "tickers_skipped_as_already_ingested": 138,
+    "tickers_freshly_fetched": 62
+  },
+  "stage2_selection_detail": [
+    {
+      "ticker": "AABA",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "historically_delisted"
+      ]
+    },
+    {
+      "ticker": "AAMRQ",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "historically_delisted"
+      ]
+    },
+    {
+      "ticker": "AAPL",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "mega_cap"
+      ]
+    },
+    {
+      "ticker": "ABBV",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "spinoff_example"
+      ]
+    },
+    {
+      "ticker": "ABC",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "ticker_changes"
+      ]
+    },
+    {
+      "ticker": "ABMD",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "historically_delisted"
+      ]
+    },
+    {
+      "ticker": "ABX",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "ticker_changes"
+      ]
+    },
+    {
+      "ticker": "ALGN",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "mega_cap"
+      ]
+    },
+    {
+      "ticker": "BA",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "BAC",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "CAT",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "CHD",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "CHRW",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "CSCO",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "CVX",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "dividends"
+      ]
+    },
+    {
+      "ticker": "DIS",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "EXPD",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "mega_cap"
+      ]
+    },
+    {
+      "ticker": "GS",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "HD",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "IBM",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "dividends"
+      ]
+    },
+    {
+      "ticker": "IEX",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "JKHY",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "JNJ",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "JPM",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "mega_cap"
+      ]
+    },
+    {
+      "ticker": "KO",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "LEN",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "MA",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "MCD",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "META",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "mega_cap"
+      ]
+    },
+    {
+      "ticker": "MMM",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "dividends"
+      ]
+    },
+    {
+      "ticker": "MON",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "historically_delisted"
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "mega_cap"
+      ]
+    },
+    {
+      "ticker": "NDSN",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "NKE",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "mega_cap"
+      ]
+    },
+    {
+      "ticker": "PAYX",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "PFE",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "PG",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "POOL",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "ROL",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "T",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "dividends"
+      ]
+    },
+    {
+      "ticker": "TSLA",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "splits"
+      ]
+    },
+    {
+      "ticker": "TXT",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "UNH",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "V",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "WAT",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "smaller_sp500"
+      ]
+    },
+    {
+      "ticker": "WMT",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "XOM",
+      "selection_reason": "stage1_hand_curated",
+      "categories": [
+        "large_cap"
+      ]
+    },
+    {
+      "ticker": "EC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MSI",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ROK",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "OK",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "HST",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "WFC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "USW",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "RBD",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "OWENQ",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MYL",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ATO",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ARG",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "FDX",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "NSI",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "XLNX",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MJN",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MII",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "BCO",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "CPNLQ",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ABKFQ",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "WIN",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "CRL",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "SYF",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MRNA",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "VRTS",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MOH",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "STI",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "SFA",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "LW",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "CPT",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "CVNA",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "LDW.B",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ES",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ACS",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "BEAM",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "QEP",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "C",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "OMX",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "SLM",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "CCL",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "JNPR",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "FCN",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "JCI",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "FBF",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "SK",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "EMR",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "UN",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "AMCR",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "YUM",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ETS",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "FCX",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "BRCM",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MPWR",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "NSM",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "LUB",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "SOTR",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PBG",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "GDW",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "TE",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "KSE",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PZE",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PLD",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "CRWD",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "CHA",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ADM",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PARA",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ILMN",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "AMD",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "DLR",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "DEC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PEP",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "CPB",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "HMA",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "CMG",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PD",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MER",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "CPWR",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "LLL",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "TKO",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PRU",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "TXU",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "EG",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "SWN",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ACN",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MUR",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "UNM",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "LVLT",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PM",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MCK",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "RHI",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "NAE",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "AHM",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "FLT",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "AZO",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "UPS",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "RYAN",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PTC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "DALRQ",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "NYT",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "SPGI",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ADI",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ORX",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "AIZ",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "LMT",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "GEN",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "DCNAQ",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "AMTM",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "LLTC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "SVU",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "TWX",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "VFC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "TOS",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "AON",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PCAR",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PMI",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "THC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "LHX",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MOLX",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "BMGCA",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "KRFT",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "FB",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "FMC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "TEN",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PNR",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "LNC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "DDOG",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "PCG",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "LLY",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "ESS",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "BTUUQ",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "TLAB",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "AEE",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "WAMUQ",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "GHC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "UPR",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MDLZ",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "EHC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "MTCH",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "HCP",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "WSM",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "NOW",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "EFU",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "RYC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "KSS",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "AT",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "FDC",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "IQV",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "TTWO",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "FRT",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    },
+    {
+      "ticker": "AMAT",
+      "selection_reason": "stage2_random_addition_seed_42",
+      "categories": []
+    }
+  ]
+}

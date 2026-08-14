@@ -1,0 +1,4 @@
+old_ticker,new_ticker,effective_date,source,confidence,notes
+FB,META,2022-06-09,manual/public record,verified,Facebook Inc renamed to Meta Platforms Inc; ticker change same date as name change.
+ABC,COR,2023-08-30,SEC EDGAR 8-K (Cencora Inc, CIK 1140859) https://www.sec.gov/Archives/edgar/data/1140859/000110465923096698/tm2324358d1_ex99-1.htm,verified,AmerisourceBergen Corp renamed to Cencora Inc; ticker changed ABC->COR effective 2023-08-30 per primary-source 8-K press release exhibit.
+ABX,GOLD,2019-01-02,SEC EDGAR 6-K (Barrick Gold Corp) https://www.sec.gov/Archives/edgar/data/756894/000119312519000759/d675256dex994.htm,verified,Barrick Gold's NYSE ticker changed from ABX to GOLD effective 2019-01-02 following the Randgold Resources merger (TSX ticker remained ABX). NOTE: as of a later 2025 event Barrick further renamed to Barrick Mining Corp under NYSE ticker "B" -- that second rename is NOT captured here (out of scope for this registry pass).

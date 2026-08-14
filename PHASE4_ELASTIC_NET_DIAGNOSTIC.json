@@ -1,0 +1,81 @@
+{
+  "n_features": 18,
+  "feature_names": [
+    "return_1m",
+    "return_3m",
+    "return_6m",
+    "return_12m",
+    "momentum_acceleration",
+    "distance_from_200d_ma",
+    "realised_volatility_63d",
+    "downside_volatility_63d",
+    "max_drawdown_252d",
+    "dollar_volume",
+    "rolling_avg_dollar_volume_20d",
+    "volume_trend_20d_100d",
+    "return_relative_to_eligible_mean_63d",
+    "momentum_percentile_rank",
+    "volatility_percentile_rank",
+    "proxy_index_trend",
+    "proxy_index_volatility",
+    "breadth_proxy"
+  ],
+  "runs": [
+    {
+      "alpha": 0.01,
+      "n_nonzero_coefficients": 0,
+      "intercept": -6.868404398503305e-07,
+      "validation_prediction_stdev": 2.117582368135751e-22,
+      "validation_mean_ic": null,
+      "validation_mean_hit_rate": 0.5494627988229233
+    },
+    {
+      "alpha": 0.003,
+      "n_nonzero_coefficients": 7,
+      "intercept": -6.868404398438351e-07,
+      "validation_prediction_stdev": 0.007603130395144017,
+      "validation_mean_ic": -0.16198908224399494,
+      "validation_mean_hit_rate": 0.4214396293489043
+    },
+    {
+      "alpha": 0.001,
+      "n_nonzero_coefficients": 11,
+      "intercept": -6.868404401562997e-07,
+      "validation_prediction_stdev": 0.013535249200286821,
+      "validation_mean_ic": -0.15063376095497616,
+      "validation_mean_hit_rate": 0.4168095609019727
+    },
+    {
+      "alpha": 0.0003,
+      "n_nonzero_coefficients": 16,
+      "intercept": -6.868404408721135e-07,
+      "validation_prediction_stdev": 0.016358497505941205,
+      "validation_mean_ic": -0.11851737038316307,
+      "validation_mean_hit_rate": 0.4425777185870614
+    },
+    {
+      "alpha": 0.0001,
+      "n_nonzero_coefficients": 17,
+      "intercept": -6.868404410382874e-07,
+      "validation_prediction_stdev": 0.018482693513533523,
+      "validation_mean_ic": -0.11978858905229695,
+      "validation_mean_hit_rate": 0.44634579090102194
+    },
+    {
+      "alpha": 3e-05,
+      "n_nonzero_coefficients": 17,
+      "intercept": -6.86840441116862e-07,
+      "validation_prediction_stdev": 0.01947599452694036,
+      "validation_mean_ic": -0.1168711570912522,
+      "validation_mean_hit_rate": 0.44841329535607327
+    },
+    {
+      "alpha": 1e-05,
+      "n_nonzero_coefficients": 18,
+      "intercept": -6.868404411775691e-07,
+      "validation_prediction_stdev": 0.019760281601594255,
+      "validation_mean_ic": -0.11933692844409458,
+      "validation_mean_hit_rate": 0.4468643750345668
+    }
+  ]
+}

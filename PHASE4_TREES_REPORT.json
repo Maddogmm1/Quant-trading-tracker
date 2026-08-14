@@ -1,0 +1,1428 @@
+{
+  "generated_at": "2026-08-14T10:06:50.874530Z",
+  "policy": "PERMISSIVE",
+  "horizon_months": 3,
+  "meaningful_ic_improvement_threshold": 0.02,
+  "frozen_grids": {
+    "random_forest": [
+      {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "min_samples_leaf": 20
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "min_samples_leaf": 50
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 5,
+        "min_samples_leaf": 20
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 5,
+        "min_samples_leaf": 50
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 8,
+        "min_samples_leaf": 20
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 8,
+        "min_samples_leaf": 50
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 3,
+        "min_samples_leaf": 20
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 3,
+        "min_samples_leaf": 50
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 5,
+        "min_samples_leaf": 20
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 5,
+        "min_samples_leaf": 50
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 8,
+        "min_samples_leaf": 20
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 8,
+        "min_samples_leaf": 50
+      }
+    ],
+    "hist_gb": [
+      {
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "max_iter": 50,
+        "min_samples_leaf": 20
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "max_iter": 50,
+        "min_samples_leaf": 50
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "max_iter": 150,
+        "min_samples_leaf": 20
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "max_iter": 150,
+        "min_samples_leaf": 50
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.05,
+        "max_iter": 50,
+        "min_samples_leaf": 20
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.05,
+        "max_iter": 50,
+        "min_samples_leaf": 50
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.05,
+        "max_iter": 150,
+        "min_samples_leaf": 20
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.05,
+        "max_iter": 150,
+        "min_samples_leaf": 50
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.01,
+        "max_iter": 50,
+        "min_samples_leaf": 20
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.01,
+        "max_iter": 50,
+        "min_samples_leaf": 50
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.01,
+        "max_iter": 150,
+        "min_samples_leaf": 20
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.01,
+        "max_iter": 150,
+        "min_samples_leaf": 50
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "max_iter": 50,
+        "min_samples_leaf": 20
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "max_iter": 50,
+        "min_samples_leaf": 50
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "max_iter": 150,
+        "min_samples_leaf": 20
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "max_iter": 150,
+        "min_samples_leaf": 50
+      }
+    ]
+  },
+  "train_stats": {
+    "rows_built": 25181,
+    "rows_dropped_missing_feature": 3,
+    "rows_dropped_no_label": 0,
+    "excluded_no_price_total": 0,
+    "truncated_total": 21
+  },
+  "validation_stats": {
+    "rows_built": 5811,
+    "rows_dropped_missing_feature": 0,
+    "rows_dropped_no_label": 0,
+    "excluded_no_price_total": 0,
+    "truncated_total": 0
+  },
+  "results": {
+    "price_only": {
+      "random_forest": {
+        "experiment_id": 52,
+        "selected_hyperparameters": {
+          "n_estimators": 100,
+          "max_depth": 3,
+          "min_samples_leaf": 50
+        },
+        "full_13_months": {
+          "mean_ic": -0.13273164936776832,
+          "median_ic": -0.06991798645445406
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.0852362175609789,
+          "median_ic": -0.005347789924575776
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": 0.015765548706293955,
+          "residual_per_date_ic": -0.01253625295216421,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.028589195493445917,
+            "hit_rate": 0.5327313769751693,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.048430681606682145,
+            "hit_rate": 0.48089887640449436,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.19619777704951283,
+            "hit_rate": 0.4337078651685393,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.3511139247768423,
+            "hit_rate": 0.3393258426966292,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.196691680330793,
+            "hit_rate": 0.38738738738738737,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.21438210157503002,
+            "hit_rate": 0.34606741573033706,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.47130896547488643,
+            "hit_rate": 0.3609865470852018,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.06991798645445406,
+            "hit_rate": 0.3991031390134529,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.05532365018877904,
+            "hit_rate": 0.48214285714285715,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": -0.005347789924575776,
+            "hit_rate": 0.5245535714285714,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.009519535468390497,
+            "hit_rate": 0.49667405764966743,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.26621600475301643,
+            "hit_rate": 0.37610619469026546,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.01444902617838309,
+            "hit_rate": 0.46578366445916114,
+            "n_securities": 453
+          }
+        }
+      },
+      "hist_gb": {
+        "experiment_id": 53,
+        "selected_hyperparameters": {
+          "max_depth": 3,
+          "learning_rate": 0.05,
+          "max_iter": 150,
+          "min_samples_leaf": 50
+        },
+        "full_13_months": {
+          "mean_ic": -0.10560232019534951,
+          "median_ic": -0.019857840438896865
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.05277971234545254,
+          "median_ic": 0.02024277213729081
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": 0.032270067182373414,
+          "residual_per_date_ic": -0.004248860667173145,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.05306292576466011,
+            "hit_rate": 0.5372460496613995,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.04123836006189263,
+            "hit_rate": 0.47415730337078654,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.20072407745551799,
+            "hit_rate": 0.44269662921348313,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.34138398823639277,
+            "hit_rate": 0.33707865168539325,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.19611114014105793,
+            "hit_rate": 0.3783783783783784,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.1595935455975021,
+            "hit_rate": 0.35730337078651686,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.3995954566450113,
+            "hit_rate": 0.3632286995515695,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.03293440960878489,
+            "hit_rate": 0.4192825112107623,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.010099683494730198,
+            "hit_rate": 0.48214285714285715,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.02024277213729081,
+            "hit_rate": 0.5334821428571429,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.04190933913636776,
+            "hit_rate": 0.48558758314855877,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.23485223723943072,
+            "hit_rate": 0.38716814159292035,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": -0.019857840438896865,
+            "hit_rate": 0.445916114790287,
+            "n_securities": 453
+          }
+        }
+      }
+    },
+    "price_plus_volatility": {
+      "random_forest": {
+        "experiment_id": 54,
+        "selected_hyperparameters": {
+          "n_estimators": 100,
+          "max_depth": 3,
+          "min_samples_leaf": 20
+        },
+        "full_13_months": {
+          "mean_ic": -0.04043588016728255,
+          "median_ic": -0.059902492410717816
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.03920435900348172,
+          "median_ic": -0.06708902574682497
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": -0.03839105485842502,
+          "residual_per_date_ic": 0.038160642505342096,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.059902492410717816,
+            "hit_rate": 0.46952595936794583,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.11653293036741459,
+            "hit_rate": 0.501123595505618,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.12100399587948692,
+            "hit_rate": 0.5617977528089888,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.04426520079981951,
+            "hit_rate": 0.5685393258426966,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": 0.013619856767645313,
+            "hit_rate": 0.6148648648648649,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.021177871231676533,
+            "hit_rate": 0.6606741573033708,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.12706973701521604,
+            "hit_rate": 0.625560538116592,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.19601582926691252,
+            "hit_rate": 0.6053811659192825,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.14609102405079305,
+            "hit_rate": 0.5424107142857143,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": -0.06708902574682497,
+            "hit_rate": 0.4888392857142857,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.00048251929255865004,
+            "hit_rate": 0.5121951219512195,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": 0.11892756667452388,
+            "hit_rate": 0.5464601769911505,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.24141676044457827,
+            "hit_rate": 0.5695364238410596,
+            "n_securities": 453
+          }
+        }
+      },
+      "hist_gb": {
+        "experiment_id": 55,
+        "selected_hyperparameters": {
+          "max_depth": 3,
+          "learning_rate": 0.01,
+          "max_iter": 50,
+          "min_samples_leaf": 50
+        },
+        "full_13_months": {
+          "mean_ic": -0.05791271181640658,
+          "median_ic": -0.0516126005780767
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.06448154773157531,
+          "median_ic": -0.06249885658198588
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": -0.031525435875457294,
+          "residual_per_date_ic": 0.05774814181864635,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.06249885658198588,
+            "hit_rate": 0.5530474040632054,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.08867058649210338,
+            "hit_rate": 0.5078651685393258,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.1433817487984571,
+            "hit_rate": 0.5573033707865168,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.0516126005780767,
+            "hit_rate": 0.5573033707865168,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": 0.07271956585812146,
+            "hit_rate": 0.6373873873873874,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.050256540510695294,
+            "hit_rate": 0.6382022471910113,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.33380632895342316,
+            "hit_rate": 0.594170403587444,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.29211532002975893,
+            "hit_rate": 0.57847533632287,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.22517632808959856,
+            "hit_rate": 0.5223214285714286,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.004092694532040626,
+            "hit_rate": 0.48660714285714285,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.01992301399248243,
+            "hit_rate": 0.5144124168514412,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": 0.13643688694255737,
+            "hit_rate": 0.5442477876106194,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.2614808950956116,
+            "hit_rate": 0.5673289183222958,
+            "n_securities": 453
+          }
+        }
+      }
+    },
+    "price_plus_volume": {
+      "random_forest": {
+        "experiment_id": 56,
+        "selected_hyperparameters": {
+          "n_estimators": 100,
+          "max_depth": 3,
+          "min_samples_leaf": 50
+        },
+        "full_13_months": {
+          "mean_ic": -0.04051192697830231,
+          "median_ic": -0.06214856057524298
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.0339593294051383,
+          "median_ic": -0.06214856057524298
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": -0.008925993601294833,
+          "residual_per_date_ic": 0.020516887787858172,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.02927860950968054,
+            "hit_rate": 0.4582392776523702,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.1080703199047391,
+            "hit_rate": 0.49887640449438203,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.11960584711384041,
+            "hit_rate": 0.5191011235955056,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.08872855162696372,
+            "hit_rate": 0.5303370786516854,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.014214353552247733,
+            "hit_rate": 0.5585585585585585,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": 0.0015276662213665638,
+            "hit_rate": 0.6157303370786517,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.06214856057524298,
+            "hit_rate": 0.5672645739910314,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.12903864940415424,
+            "hit_rate": 0.5582959641255605,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.1732697650684445,
+            "hit_rate": 0.5044642857142857,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": -0.13684972396143893,
+            "hit_rate": 0.4642857142857143,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.002708098965123305,
+            "hit_rate": 0.5121951219512195,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": 0.11198525751584136,
+            "hit_rate": 0.5265486725663717,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.2237445052267375,
+            "hit_rate": 0.5562913907284768,
+            "n_securities": 453
+          }
+        }
+      },
+      "hist_gb": {
+        "experiment_id": 57,
+        "selected_hyperparameters": {
+          "max_depth": 2,
+          "learning_rate": 0.01,
+          "max_iter": 150,
+          "min_samples_leaf": 50
+        },
+        "full_13_months": {
+          "mean_ic": -0.022752066870118055,
+          "median_ic": -0.043216660519733184
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.02790471797512134,
+          "median_ic": -0.08089945459553864
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": -0.01735529550255124,
+          "residual_per_date_ic": 0.015686774702234188,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.043216660519733184,
+            "hit_rate": 0.5553047404063205,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.1051620250706351,
+            "hit_rate": 0.5056179775280899,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.06558957616738557,
+            "hit_rate": 0.5415730337078651,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.03822451257306891,
+            "hit_rate": 0.5348314606741573,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": 0.03505324027561776,
+            "hit_rate": 0.5743243243243243,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": 0.024126440929394064,
+            "hit_rate": 0.6179775280898876,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.16112305228062718,
+            "hit_rate": 0.5448430493273543,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.08974855989199688,
+            "hit_rate": 0.5717488789237668,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.08089945459553864,
+            "hit_rate": 0.5267857142857143,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": -0.0885147347557199,
+            "hit_rate": 0.4642857142857143,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.020267371313083198,
+            "hit_rate": 0.5099778270509978,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": 0.07711566026349737,
+            "hit_rate": 0.5110619469026548,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.22013899376157825,
+            "hit_rate": 0.5518763796909493,
+            "n_securities": 453
+          }
+        }
+      }
+    },
+    "price_plus_market_regime": {
+      "random_forest": {
+        "experiment_id": 58,
+        "selected_hyperparameters": {
+          "n_estimators": 100,
+          "max_depth": 5,
+          "min_samples_leaf": 50
+        },
+        "full_13_months": {
+          "mean_ic": -0.03562227634520895,
+          "median_ic": -0.08956398765177832
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.035129935341830426,
+          "median_ic": -0.08956398765177832
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": -0.0038751729742266066,
+          "residual_per_date_ic": 0.020487820841410685,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.005385787258168271,
+            "hit_rate": 0.417607223476298,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.08956398765177832,
+            "hit_rate": 0.49887640449438203,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.11102550086864088,
+            "hit_rate": 0.5258426966292135,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.11810509817983703,
+            "hit_rate": 0.5370786516853933,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.018070053642490695,
+            "hit_rate": 0.5608108108108109,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": 0.10028047827972607,
+            "hit_rate": 0.6247191011235955,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.09946982659928551,
+            "hit_rate": 0.5807174887892377,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.139513759092759,
+            "hit_rate": 0.5672645739910314,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.1610892624786889,
+            "hit_rate": 0.5200892857142857,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": -0.1334563475113177,
+            "hit_rate": 0.46651785714285715,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.0033152175654865214,
+            "hit_rate": 0.5033259423503326,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": 0.09671403723124654,
+            "hit_rate": 0.5221238938053098,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.2189107328497639,
+            "hit_rate": 0.5562913907284768,
+            "n_securities": 453
+          }
+        }
+      },
+      "hist_gb": {
+        "experiment_id": 59,
+        "selected_hyperparameters": {
+          "max_depth": 3,
+          "learning_rate": 0.01,
+          "max_iter": 50,
+          "min_samples_leaf": 50
+        },
+        "full_13_months": {
+          "mean_ic": -0.0488936935201032,
+          "median_ic": -0.08137704093491419
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.04360692973915171,
+          "median_ic": -0.08137704093491419
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": -0.04352668721365411,
+          "residual_per_date_ic": 0.047552195773867115,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.02406521418171677,
+            "hit_rate": 0.5688487584650113,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.08137704093491419,
+            "hit_rate": 0.5101123595505618,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.10417564103931008,
+            "hit_rate": 0.5258426966292135,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.10939460502721154,
+            "hit_rate": 0.5123595505617977,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": 0.03217008326665654,
+            "hit_rate": 0.5720720720720721,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.06175548530911109,
+            "hit_rate": 0.6,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.20702404985651948,
+            "hit_rate": 0.5291479820627802,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.23364940285370378,
+            "hit_rate": 0.5269058295964125,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.1834515966362631,
+            "hit_rate": 0.47544642857142855,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": -0.10929017805993188,
+            "hit_rate": 0.4642857142857143,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.017211893033241856,
+            "hit_rate": 0.5099778270509978,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": 0.15283301301751126,
+            "hit_rate": 0.5309734513274337,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.22821978045649716,
+            "hit_rate": 0.5584988962472406,
+            "n_securities": 453
+          }
+        }
+      }
+    },
+    "full_v1_feature_set": {
+      "random_forest": {
+        "experiment_id": 60,
+        "selected_hyperparameters": {
+          "n_estimators": 100,
+          "max_depth": 8,
+          "min_samples_leaf": 50
+        },
+        "full_13_months": {
+          "mean_ic": -0.008197919701189774,
+          "median_ic": -0.08513578540262538
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.02705834993932142,
+          "median_ic": -0.08513578540262538
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": 0.011602619116721058,
+          "residual_per_date_ic": 0.020516499197301287,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.059883534048545684,
+            "hit_rate": 0.44243792325056436,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.13619841355276094,
+            "hit_rate": 0.4898876404494382,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.13748515841936323,
+            "hit_rate": 0.4943820224719101,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.08745443180874228,
+            "hit_rate": 0.5325842696629214,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": 0.06730413399324153,
+            "hit_rate": 0.5135135135135135,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": 0.2945876495732897,
+            "hit_rate": 0.5146067415730337,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.12025721602473688,
+            "hit_rate": 0.5695067264573991,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.08513578540262538,
+            "hit_rate": 0.5739910313901345,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.10113798213565035,
+            "hit_rate": 0.5178571428571429,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": -0.08979165910396386,
+            "hit_rate": 0.47544642857142855,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.020952978958590877,
+            "hit_rate": 0.5144124168514412,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": 0.11589904648064528,
+            "hit_rate": 0.5287610619469026,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.21202741537515415,
+            "hit_rate": 0.5562913907284768,
+            "n_securities": 453
+          }
+        }
+      },
+      "hist_gb": {
+        "experiment_id": 61,
+        "selected_hyperparameters": {
+          "max_depth": 2,
+          "learning_rate": 0.01,
+          "max_iter": 150,
+          "min_samples_leaf": 50
+        },
+        "full_13_months": {
+          "mean_ic": 0.016162182371239762,
+          "median_ic": -0.030253119734600476
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.010948048420169693,
+          "median_ic": -0.036247888074589396
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": -0.05562099525413348,
+          "residual_per_date_ic": -0.014866771510309686,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.058412424973374476,
+            "hit_rate": 0.4040632054176072,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.09861567538384224,
+            "hit_rate": 0.49887640449438203,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.04098105565577524,
+            "hit_rate": 0.5303370786516854,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": 0.1617488010278203,
+            "hit_rate": 0.5438202247191011,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": 0.0656257808400434,
+            "hit_rate": 0.5720720720720721,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": 0.12224728039555567,
+            "hit_rate": 0.6382022471910113,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.06571174327790759,
+            "hit_rate": 0.5672645739910314,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.030253119734600476,
+            "hit_rate": 0.5874439461883408,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.036247888074589396,
+            "hit_rate": 0.5200892857142857,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": -0.07301911259636304,
+            "hit_rate": 0.46651785714285715,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.030953436701178602,
+            "hit_rate": 0.5121951219512195,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": 0.06256396345534598,
+            "hit_rate": 0.5154867256637168,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.1702101281026254,
+            "hit_rate": 0.5496688741721855,
+            "n_securities": 453
+          }
+        }
+      }
+    },
+    "full_v1_minus_volume_liquidity": {
+      "random_forest": {
+        "experiment_id": 62,
+        "selected_hyperparameters": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "min_samples_leaf": 50
+        },
+        "full_13_months": {
+          "mean_ic": -0.029793565641164196,
+          "median_ic": -0.06771693034697325
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.029550600872439957,
+          "median_ic": -0.06771693034697325
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": 0.005448049793713863,
+          "residual_per_date_ic": 0.022590436697945766,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.07958284410457889,
+            "hit_rate": 0.4469525959367946,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.1075522340499415,
+            "hit_rate": 0.501123595505618,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.17859231834998282,
+            "hit_rate": 0.48314606741573035,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.14582420380777814,
+            "hit_rate": 0.4247191011235955,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.027507010904175275,
+            "hit_rate": 0.44594594594594594,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": 0.2305625875787613,
+            "hit_rate": 0.5146067415730337,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.16069245161728837,
+            "hit_rate": 0.6098654708520179,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.0930603005610369,
+            "hit_rate": 0.5717488789237668,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.06771693034697325,
+            "hit_rate": 0.546875,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": -0.045045103959582077,
+            "hit_rate": 0.4799107142857143,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.0171541445100694,
+            "hit_rate": 0.5121951219512195,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": 0.06630573303862963,
+            "hit_rate": 0.5088495575221239,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.20423457923874233,
+            "hit_rate": 0.5584988962472406,
+            "n_securities": 453
+          }
+        }
+      },
+      "hist_gb": {
+        "experiment_id": 63,
+        "selected_hyperparameters": {
+          "max_depth": 3,
+          "learning_rate": 0.05,
+          "max_iter": 150,
+          "min_samples_leaf": 20
+        },
+        "full_13_months": {
+          "mean_ic": -0.02130704627199851,
+          "median_ic": -0.018578616309179737
+        },
+        "excluding_aug_nov_2020": {
+          "n_months": 9,
+          "mean_ic": -0.03209669859534999,
+          "median_ic": -0.018578616309179737
+        },
+        "price_history_length_diagnostic": {
+          "raw_pooled_correlation": -0.05352669697651871,
+          "residual_per_date_ic": 0.05660747841068018,
+          "phase3_raw_benchmark": 0.386,
+          "phase3_residual_benchmark": 0.2,
+          "approaches_phase3_raw_benchmark": "False",
+          "approaches_phase3_residual_benchmark": false
+        },
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.1059907786925616,
+            "hit_rate": 0.40857787810383744,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.10263928880673985,
+            "hit_rate": 0.5056179775280899,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.12547630093397957,
+            "hit_rate": 0.5123595505617977,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.02142497730978922,
+            "hit_rate": 0.503370786516854,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.0012084008537743126,
+            "hit_rate": 0.4774774774774775,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": 0.15998836491971238,
+            "hit_rate": 0.4584269662921348,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.40015543158739986,
+            "hit_rate": 0.5695067264573991,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.049565214483135285,
+            "hit_rate": 0.5448430493273543,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.018578616309179737,
+            "hit_rate": 0.5133928571428571,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.05636467245004034,
+            "hit_rate": 0.5,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.08722175285431484,
+            "hit_rate": 0.5676274944567627,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": 0.03150953768185029,
+            "hit_rate": 0.5110619469026548,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.21296307953466093,
+            "hit_rate": 0.5386313465783664,
+            "n_securities": 453
+          }
+        }
+      }
+    }
+  },
+  "decision_table_application": {
+    "meaningful_ic_improvement_threshold": 0.02,
+    "regime_attribution_fail_fraction": 0.8,
+    "leave_one_out_attribution_fail_fraction": 0.8,
+    "per_combination": {
+      "random_forest_price_only": {
+        "delta_vs_best_linear_baseline_full13": 0.02619797389921308,
+        "gates": {
+          "clears_threshold": true,
+          "price_history_length_ok": true,
+          "regime_robust": false,
+          "fraction_of_gain_from_regime_window": 2.687102149184688,
+          "leave_one_out_robust": null
+        },
+        "survives": false
+      },
+      "hist_gb_price_only": {
+        "delta_vs_best_linear_baseline_full13": 0.05332730307163189,
+        "gates": {
+          "clears_threshold": true,
+          "price_history_length_ok": true,
+          "regime_robust": false,
+          "fraction_of_gain_from_regime_window": 1.2201902623567469,
+          "leave_one_out_robust": null
+        },
+        "survives": false
+      },
+      "random_forest_price_plus_volatility": {
+        "delta_vs_best_linear_baseline_full13": 0.07667646624669894,
+        "gates": {
+          "clears_threshold": true,
+          "price_history_length_ok": true,
+          "regime_robust": false,
+          "fraction_of_gain_from_regime_window": 1.1896029039116203,
+          "leave_one_out_robust": null
+        },
+        "survives": false
+      },
+      "hist_gb_price_plus_volatility": {
+        "delta_vs_best_linear_baseline_full13": 0.0591996345975749,
+        "gates": {
+          "clears_threshold": true,
+          "price_history_length_ok": true,
+          "regime_robust": false,
+          "fraction_of_gain_from_regime_window": 1.6725593774489287,
+          "leave_one_out_robust": null
+        },
+        "survives": false
+      },
+      "random_forest_price_plus_volume": {
+        "delta_vs_best_linear_baseline_full13": 0.0719655654171911,
+        "gates": {
+          "clears_threshold": true,
+          "price_history_length_ok": true,
+          "regime_robust": false,
+          "fraction_of_gain_from_regime_window": 1.2866938185686498,
+          "leave_one_out_robust": null
+        },
+        "survives": false
+      },
+      "hist_gb_price_plus_volume": {
+        "delta_vs_best_linear_baseline_full13": 0.08972542552537535,
+        "gates": {
+          "clears_threshold": true,
+          "price_history_length_ok": true,
+          "regime_robust": false,
+          "fraction_of_gain_from_regime_window": 1.1624675641216866,
+          "leave_one_out_robust": null
+        },
+        "survives": false
+      },
+      "random_forest_price_plus_market_regime": {
+        "delta_vs_best_linear_baseline_full13": 0.08731647433739312,
+        "gates": {
+          "clears_threshold": true,
+          "price_history_length_ok": true,
+          "regime_robust": false,
+          "fraction_of_gain_from_regime_window": 1.1240022027280916,
+          "leave_one_out_robust": null
+        },
+        "survives": false
+      },
+      "hist_gb_price_plus_market_regime": {
+        "delta_vs_best_linear_baseline_full13": 0.07404505716249887,
+        "gates": {
+          "clears_threshold": true,
+          "price_history_length_ok": true,
+          "regime_robust": false,
+          "fraction_of_gain_from_regime_window": 1.2607119271613703,
+          "leave_one_out_robust": null
+        },
+        "survives": false
+      },
+      "random_forest_full_v1_feature_set": {
+        "delta_vs_best_linear_baseline_full13": 0.10867323739006243,
+        "gates": {
+          "clears_threshold": true,
+          "price_history_length_ok": true,
+          "regime_robust": false,
+          "fraction_of_gain_from_regime_window": 1.2793282348810213,
+          "leave_one_out_robust": true,
+          "fraction_of_gain_from_volume_liquidity_family": 0.19872092208370362
+        },
+        "survives": false
+      },
+      "hist_gb_full_v1_feature_set": {
+        "delta_vs_best_linear_baseline_full13": 0.13303333946249196,
+        "gates": {
+          "clears_threshold": true,
+          "price_history_length_ok": true,
+          "regime_robust": false,
+          "fraction_of_gain_from_regime_window": 1.1070799403922125,
+          "leave_one_out_robust": true,
+          "fraction_of_gain_from_volume_liquidity_family": 0.2816529209492069
+        },
+        "survives": false
+      }
+    },
+    "survivors": [],
+    "outcome": "NO_IMPROVEMENT_OR_FAILS_ROBUSTNESS",
+    "note": "This classification is mechanical, applying rules frozen before any tree experiment was run. It does NOT constitute evidence of genuine predictive value on its own -- per the standing instruction, this stage only determines whether validation evidence is strong enough to justify requesting a confirmatory test-set slot. The locked test set has not been accessed."
+  }
+}

@@ -1,0 +1,2165 @@
+{
+  "generated_at": "2026-08-14T10:35:11.726671Z",
+  "policy": "PERMISSIVE",
+  "horizon_months": 1,
+  "train_stats": {
+    "rows_built": 26057,
+    "rows_dropped_missing_feature": 3,
+    "rows_dropped_no_label": 0,
+    "excluded_no_price_total": 0,
+    "truncated_total": 7
+  },
+  "validation_stats": {
+    "rows_built": 6718,
+    "rows_dropped_missing_feature": 0,
+    "rows_dropped_no_label": 0,
+    "excluded_no_price_total": 0,
+    "truncated_total": 0
+  },
+  "results": {
+    "historical_mean": {
+      "experiment_id": 64,
+      "dates_evaluated": 15,
+      "dates_skipped_too_few_securities": 0,
+      "mean_ic": -0.0615260698223778,
+      "median_ic": -0.04314968972095994,
+      "stdev_ic": 0.22866819132783728,
+      "mean_hit_rate": 0.47723569134958627,
+      "per_date": {
+        "2020-06-01": {
+          "ic": 0.1731795480965578,
+          "hit_rate": 0.5575620767494357,
+          "n_securities": 443
+        },
+        "2020-07-01": {
+          "ic": 0.3149010198287167,
+          "hit_rate": 0.6112359550561798,
+          "n_securities": 445
+        },
+        "2020-08-01": {
+          "ic": -0.04314968972095994,
+          "hit_rate": 0.4966292134831461,
+          "n_securities": 445
+        },
+        "2020-09-01": {
+          "ic": 0.027308504655206928,
+          "hit_rate": 0.5438202247191011,
+          "n_securities": 445
+        },
+        "2020-10-01": {
+          "ic": -0.14057111363525746,
+          "hit_rate": 0.4436936936936937,
+          "n_securities": 444
+        },
+        "2020-11-01": {
+          "ic": -0.5240379443281645,
+          "hit_rate": 0.29213483146067415,
+          "n_securities": 445
+        },
+        "2020-12-01": {
+          "ic": -0.006783910336896046,
+          "hit_rate": 0.4461883408071749,
+          "n_securities": 446
+        },
+        "2021-01-01": {
+          "ic": 0.014513376322153063,
+          "hit_rate": 0.4910313901345291,
+          "n_securities": 446
+        },
+        "2021-02-01": {
+          "ic": -0.25602008938580895,
+          "hit_rate": 0.3794642857142857,
+          "n_securities": 448
+        },
+        "2021-03-01": {
+          "ic": -0.3392829116370245,
+          "hit_rate": 0.453125,
+          "n_securities": 448
+        },
+        "2021-04-01": {
+          "ic": -0.0821151292767956,
+          "hit_rate": 0.5077605321507761,
+          "n_securities": 451
+        },
+        "2021-05-01": {
+          "ic": 0.19228519638906966,
+          "hit_rate": 0.48672566371681414,
+          "n_securities": 452
+        },
+        "2021-06-01": {
+          "ic": -0.29038744987802395,
+          "hit_rate": 0.4260485651214128,
+          "n_securities": 453
+        },
+        "2021-07-01": {
+          "ic": -0.1442158768450993,
+          "hit_rate": 0.49448123620309054,
+          "n_securities": 453
+        },
+        "2021-08-01": {
+          "ic": 0.1814854224166591,
+          "hit_rate": 0.5286343612334802,
+          "n_securities": 454
+        }
+      }
+    },
+    "momentum_only": {
+      "experiment_id": 65,
+      "selected_feature": "return_12m",
+      "train_ic": 0.00381345248212272,
+      "dates_evaluated": 15,
+      "dates_skipped_too_few_securities": 0,
+      "mean_ic": -0.0615260698223778,
+      "median_ic": -0.04314968972095994,
+      "stdev_ic": 0.22866819132783728,
+      "mean_hit_rate": 0.47723569134958627,
+      "per_date": {
+        "2020-06-01": {
+          "ic": 0.1731795480965578,
+          "hit_rate": 0.5575620767494357,
+          "n_securities": 443
+        },
+        "2020-07-01": {
+          "ic": 0.3149010198287167,
+          "hit_rate": 0.6112359550561798,
+          "n_securities": 445
+        },
+        "2020-08-01": {
+          "ic": -0.04314968972095994,
+          "hit_rate": 0.4966292134831461,
+          "n_securities": 445
+        },
+        "2020-09-01": {
+          "ic": 0.027308504655206928,
+          "hit_rate": 0.5438202247191011,
+          "n_securities": 445
+        },
+        "2020-10-01": {
+          "ic": -0.14057111363525746,
+          "hit_rate": 0.4436936936936937,
+          "n_securities": 444
+        },
+        "2020-11-01": {
+          "ic": -0.5240379443281645,
+          "hit_rate": 0.29213483146067415,
+          "n_securities": 445
+        },
+        "2020-12-01": {
+          "ic": -0.006783910336896046,
+          "hit_rate": 0.4461883408071749,
+          "n_securities": 446
+        },
+        "2021-01-01": {
+          "ic": 0.014513376322153063,
+          "hit_rate": 0.4910313901345291,
+          "n_securities": 446
+        },
+        "2021-02-01": {
+          "ic": -0.25602008938580895,
+          "hit_rate": 0.3794642857142857,
+          "n_securities": 448
+        },
+        "2021-03-01": {
+          "ic": -0.3392829116370245,
+          "hit_rate": 0.453125,
+          "n_securities": 448
+        },
+        "2021-04-01": {
+          "ic": -0.0821151292767956,
+          "hit_rate": 0.5077605321507761,
+          "n_securities": 451
+        },
+        "2021-05-01": {
+          "ic": 0.19228519638906966,
+          "hit_rate": 0.48672566371681414,
+          "n_securities": 452
+        },
+        "2021-06-01": {
+          "ic": -0.29038744987802395,
+          "hit_rate": 0.4260485651214128,
+          "n_securities": 453
+        },
+        "2021-07-01": {
+          "ic": -0.1442158768450993,
+          "hit_rate": 0.49448123620309054,
+          "n_securities": 453
+        },
+        "2021-08-01": {
+          "ic": 0.1814854224166591,
+          "hit_rate": 0.5286343612334802,
+          "n_securities": 454
+        }
+      }
+    },
+    "price_only": {
+      "ridge": {
+        "experiment_id": 66,
+        "selected_hyperparameters": {
+          "alpha": 0.3
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "alpha": 10.0
+            },
+            "mean_ic_across_folds": 0.030843535032698106,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 3.0
+            },
+            "mean_ic_across_folds": 0.03122921148605974,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 1.0
+            },
+            "mean_ic_across_folds": 0.03132889570375258,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.3
+            },
+            "mean_ic_across_folds": 0.03139982670113822,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.1
+            },
+            "mean_ic_across_folds": 0.03139927652114424,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.09147457709036985,
+        "median_ic": -0.07166135495335833,
+        "stdev_ic": 0.20236728850031022,
+        "mean_hit_rate": 0.47330950173822484,
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.06079721489361644,
+            "hit_rate": 0.5349887133182845,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.07636786279906146,
+            "hit_rate": 0.4898876404494382,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.17383047883879243,
+            "hit_rate": 0.5056179775280899,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": 0.08608204112814381,
+            "hit_rate": 0.5056179775280899,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.1819044296027074,
+            "hit_rate": 0.46396396396396394,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.3942822048127636,
+            "hit_rate": 0.34606741573033706,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.1544773896144431,
+            "hit_rate": 0.5044843049327354,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.05554065784459166,
+            "hit_rate": 0.4910313901345291,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.2813616388394793,
+            "hit_rate": 0.36160714285714285,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.29961315440512315,
+            "hit_rate": 0.6205357142857143,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.03794138231004193,
+            "hit_rate": 0.4789356984478936,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.06996804460007539,
+            "hit_rate": 0.49557522123893805,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": -0.08684207604831123,
+            "hit_rate": 0.4282560706401766,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.49825058780611164,
+            "hit_rate": 0.37527593818984545,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.07166135495335833,
+            "hit_rate": 0.4977973568281938,
+            "n_securities": 454
+          }
+        }
+      },
+      "logistic": {
+        "experiment_id": 67,
+        "selected_hyperparameters": {
+          "C": 1.0
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "C": 0.03
+            },
+            "mean_ic_across_folds": 0.03708087786019079,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 0.1
+            },
+            "mean_ic_across_folds": 0.03755830600255017,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 0.3
+            },
+            "mean_ic_across_folds": 0.03829002462750071,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 1.0
+            },
+            "mean_ic_across_folds": 0.03851577753941096,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 3.0
+            },
+            "mean_ic_across_folds": 0.038488299690523406,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.08540106137134476,
+        "median_ic": -0.053465377464854906,
+        "stdev_ic": 0.18220590139350937,
+        "mean_hit_rate": 0.47065487165961745,
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.04086767073090271,
+            "hit_rate": 0.46952595936794583,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.04779849633479905,
+            "hit_rate": 0.5056179775280899,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.1377348881102597,
+            "hit_rate": 0.47191011235955055,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": 0.034596419364898226,
+            "hit_rate": 0.5101123595505618,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.18184753348473637,
+            "hit_rate": 0.44594594594594594,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.3332241648611881,
+            "hit_rate": 0.3685393258426966,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.16014517772368012,
+            "hit_rate": 0.5,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.06741633902035132,
+            "hit_rate": 0.48654708520179374,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.32115684796511695,
+            "hit_rate": 0.328125,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.20264497968213163,
+            "hit_rate": 0.5959821428571429,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.09307589165996248,
+            "hit_rate": 0.4700665188470067,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": 0.10538654650504135,
+            "hit_rate": 0.5575221238938053,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": -0.053465377464854906,
+            "hit_rate": 0.434878587196468,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.4549544432513765,
+            "hit_rate": 0.4326710816777042,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.044122047687120476,
+            "hit_rate": 0.48237885462555063,
+            "n_securities": 454
+          }
+        }
+      },
+      "elastic_net": {
+        "experiment_id": 68,
+        "selected_hyperparameters": {
+          "alpha": 3e-05,
+          "l1_ratio": 0.5
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "alpha": 0.01,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": null,
+            "n_folds_with_ic": 0
+          },
+          {
+            "candidate": {
+              "alpha": 0.003,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.02139689534490231,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.001,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.022348891847563807,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.0003,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.02579362815118271,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.0001,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.0289435959453212,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 3e-05,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.031215078766020504,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.08840543268019355,
+        "median_ic": -0.08845036575001275,
+        "stdev_ic": 0.2051031406208939,
+        "mean_hit_rate": 0.4769032491292006,
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.057273042733140996,
+            "hit_rate": 0.5372460496613995,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.0851731965754236,
+            "hit_rate": 0.49213483146067416,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.16160982870309218,
+            "hit_rate": 0.5213483146067416,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": 0.09264917156789983,
+            "hit_rate": 0.5146067415730337,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.16816669054475628,
+            "hit_rate": 0.4617117117117117,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.3790068347180253,
+            "hit_rate": 0.36179775280898874,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.15802073783909998,
+            "hit_rate": 0.5089686098654709,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.035255543836523906,
+            "hit_rate": 0.4910313901345291,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.2901947867531342,
+            "hit_rate": 0.359375,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.3238186969231722,
+            "hit_rate": 0.6205357142857143,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.00514974916442648,
+            "hit_rate": 0.5055432372505543,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.10743854813250436,
+            "hit_rate": 0.49336283185840707,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": -0.06168446500801254,
+            "hit_rate": 0.4282560706401766,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.5005291352259997,
+            "hit_rate": 0.36423841059602646,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.08845036575001275,
+            "hit_rate": 0.4933920704845815,
+            "n_securities": 454
+          }
+        }
+      }
+    },
+    "price_plus_volatility": {
+      "ridge": {
+        "experiment_id": 69,
+        "selected_hyperparameters": {
+          "alpha": 0.1
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "alpha": 10.0
+            },
+            "mean_ic_across_folds": 0.028751975905666832,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 3.0
+            },
+            "mean_ic_across_folds": 0.02924545226857357,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 1.0
+            },
+            "mean_ic_across_folds": 0.02947235814996472,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.3
+            },
+            "mean_ic_across_folds": 0.029528976456742316,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.1
+            },
+            "mean_ic_across_folds": 0.029580643977775857,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.07709211953047426,
+        "median_ic": -0.023417235066420086,
+        "stdev_ic": 0.16777134698782512,
+        "mean_hit_rate": 0.4904490831281711,
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.04665428633029217,
+            "hit_rate": 0.45598194130925507,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.08088103723212303,
+            "hit_rate": 0.5303370786516854,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.1020824169763556,
+            "hit_rate": 0.5168539325842697,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": 0.05380607594040354,
+            "hit_rate": 0.5078651685393258,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.14804013438451763,
+            "hit_rate": 0.4864864864864865,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.37542088871760865,
+            "hit_rate": 0.43820224719101125,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.06696564287267394,
+            "hit_rate": 0.5538116591928252,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.10591934337953803,
+            "hit_rate": 0.5919282511210763,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.25455216876963194,
+            "hit_rate": 0.453125,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.09496881853143346,
+            "hit_rate": 0.5022321428571429,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.12157748431868874,
+            "hit_rate": 0.4634146341463415,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.01910774639385826,
+            "hit_rate": 0.5154867256637168,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": -0.023417235066420086,
+            "hit_rate": 0.46357615894039733,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.43927711788988255,
+            "hit_rate": 0.3554083885209713,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": 0.011829481018733287,
+            "hit_rate": 0.5220264317180616,
+            "n_securities": 454
+          }
+        }
+      },
+      "logistic": {
+        "experiment_id": 70,
+        "selected_hyperparameters": {
+          "C": 0.3
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "C": 0.03
+            },
+            "mean_ic_across_folds": 0.004097056126973868,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 0.1
+            },
+            "mean_ic_across_folds": 0.004060881866416918,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 0.3
+            },
+            "mean_ic_across_folds": 0.004328228260730477,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 1.0
+            },
+            "mean_ic_across_folds": 0.004238846266878411,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 3.0
+            },
+            "mean_ic_across_folds": 0.004294139654040221,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.0696223527769646,
+        "median_ic": -0.054628652159409784,
+        "stdev_ic": 0.2321247002334834,
+        "mean_hit_rate": 0.4984072370347175,
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.05795891189597205,
+            "hit_rate": 0.5237020316027088,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.07214842191412958,
+            "hit_rate": 0.5078651685393258,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.21581857970229007,
+            "hit_rate": 0.5460674157303371,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": 0.08532585086724252,
+            "hit_rate": 0.46292134831460674,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.20103578354523133,
+            "hit_rate": 0.48423423423423423,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.35814616954839656,
+            "hit_rate": 0.45617977528089887,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.17956339148851128,
+            "hit_rate": 0.547085201793722,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.0046589294005179895,
+            "hit_rate": 0.5426008968609866,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.5868847785747385,
+            "hit_rate": 0.421875,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.21486252607797882,
+            "hit_rate": 0.5223214285714286,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.054628652159409784,
+            "hit_rate": 0.48337028824833705,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.020738977882018804,
+            "hit_rate": 0.47123893805309736,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.37575481482074335,
+            "hit_rate": 0.5916114790286976,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.148204593446262,
+            "hit_rate": 0.4260485651214128,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.08070596148315902,
+            "hit_rate": 0.4889867841409692,
+            "n_securities": 454
+          }
+        }
+      },
+      "elastic_net": {
+        "experiment_id": 71,
+        "selected_hyperparameters": {
+          "alpha": 3e-05,
+          "l1_ratio": 0.5
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "alpha": 0.01,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": null,
+            "n_folds_with_ic": 0
+          },
+          {
+            "candidate": {
+              "alpha": 0.003,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.013165358701890542,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.001,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.01569814813106149,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.0003,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.024261181464420287,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.0001,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.026278061168538293,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 3e-05,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.028454744237933077,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.07439523673254668,
+        "median_ic": -0.06998947352653202,
+        "stdev_ic": 0.17506085809511052,
+        "mean_hit_rate": 0.4946219385605342,
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.04456148128967144,
+            "hit_rate": 0.45598194130925507,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.0878251052987789,
+            "hit_rate": 0.5235955056179775,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.06998947352653202,
+            "hit_rate": 0.5303370786516854,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": 0.057781760195223186,
+            "hit_rate": 0.5056179775280899,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.14603437485219,
+            "hit_rate": 0.5067567567567568,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.37215318810522113,
+            "hit_rate": 0.44269662921348313,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.07029297616700646,
+            "hit_rate": 0.5538116591928252,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.11843035462901938,
+            "hit_rate": 0.594170403587444,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.2697554702364048,
+            "hit_rate": 0.453125,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.1484514965610166,
+            "hit_rate": 0.5111607142857143,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.100133560949447,
+            "hit_rate": 0.4789356984478936,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.09459609250341727,
+            "hit_rate": 0.5199115044247787,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.006701518936948096,
+            "hit_rate": 0.4768211920529801,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.4488348568830566,
+            "hit_rate": 0.3487858719646799,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.007890274675582608,
+            "hit_rate": 0.5176211453744494,
+            "n_securities": 454
+          }
+        }
+      }
+    },
+    "price_plus_volume": {
+      "ridge": {
+        "experiment_id": 72,
+        "selected_hyperparameters": {
+          "alpha": 0.3
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "alpha": 10.0
+            },
+            "mean_ic_across_folds": 0.0276267963469793,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 3.0
+            },
+            "mean_ic_across_folds": 0.028044245537422213,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 1.0
+            },
+            "mean_ic_across_folds": 0.02838207721648068,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.3
+            },
+            "mean_ic_across_folds": 0.028426509862368842,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.1
+            },
+            "mean_ic_across_folds": 0.028417678336632217,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.06546827733489627,
+        "median_ic": -0.03700892911856785,
+        "stdev_ic": 0.15991259900398797,
+        "mean_hit_rate": 0.49605568054020444,
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.018196444301875187,
+            "hit_rate": 0.45372460496614,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.12045145362019448,
+            "hit_rate": 0.5258426966292135,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.03700892911856785,
+            "hit_rate": 0.4966292134831461,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": 0.025657496061083505,
+            "hit_rate": 0.5123595505617977,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.16683230520448666,
+            "hit_rate": 0.5,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.31026664796504067,
+            "hit_rate": 0.451685393258427,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.06576640156255759,
+            "hit_rate": 0.5582959641255605,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.06437332844583209,
+            "hit_rate": 0.5852017937219731,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.24665790816707847,
+            "hit_rate": 0.47767857142857145,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.12225527271640188,
+            "hit_rate": 0.5022321428571429,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.1173609612202317,
+            "hit_rate": 0.4434589800443459,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.057046191023145856,
+            "hit_rate": 0.5088495575221239,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.0951813453175986,
+            "hit_rate": 0.5320088300220751,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.41327604025610193,
+            "hit_rate": 0.3620309050772627,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.0139241159692191,
+            "hit_rate": 0.5308370044052864,
+            "n_securities": 454
+          }
+        }
+      },
+      "logistic": {
+        "experiment_id": 73,
+        "selected_hyperparameters": {
+          "C": 0.03
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "C": 0.03
+            },
+            "mean_ic_across_folds": 0.003933667244901723,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 0.1
+            },
+            "mean_ic_across_folds": 0.0037380425582513865,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 0.3
+            },
+            "mean_ic_across_folds": 0.0037176694684411937,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 1.0
+            },
+            "mean_ic_across_folds": 0.00388456177534137,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 3.0
+            },
+            "mean_ic_across_folds": 0.003923749087869791,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.05856256504640047,
+        "median_ic": -0.08956190533255076,
+        "stdev_ic": 0.22865220207210923,
+        "mean_hit_rate": 0.49685848134997646,
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.012886582996794125,
+            "hit_rate": 0.4898419864559819,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.1252418841978977,
+            "hit_rate": 0.5213483146067416,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.08956190533255076,
+            "hit_rate": 0.5235955056179775,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": 0.056576186202830024,
+            "hit_rate": 0.4584269662921348,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.19626432428319454,
+            "hit_rate": 0.4774774774774775,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.26591138425168753,
+            "hit_rate": 0.42921348314606744,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.16417763677366753,
+            "hit_rate": 0.531390134529148,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.011321847029101485,
+            "hit_rate": 0.5538116591928252,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.562284462969804,
+            "hit_rate": 0.484375,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.23013082230246404,
+            "hit_rate": 0.5223214285714286,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.041975289262144444,
+            "hit_rate": 0.4634146341463415,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.1706239808051887,
+            "hit_rate": 0.44026548672566373,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.436818620602943,
+            "hit_rate": 0.6313465783664459,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.13996368988622365,
+            "hit_rate": 0.4260485651214128,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.09800805140537323,
+            "hit_rate": 0.5,
+            "n_securities": 454
+          }
+        }
+      },
+      "elastic_net": {
+        "experiment_id": 74,
+        "selected_hyperparameters": {
+          "alpha": 3e-05,
+          "l1_ratio": 0.5
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "alpha": 0.01,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": null,
+            "n_folds_with_ic": 0
+          },
+          {
+            "candidate": {
+              "alpha": 0.003,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.013184519833237719,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.001,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.01460726328385179,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.0003,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.024631895814826558,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.0001,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.02605754147240822,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 3e-05,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.027687709539008575,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.06285891622015817,
+        "median_ic": -0.027393308619787015,
+        "stdev_ic": 0.16749893851011982,
+        "mean_hit_rate": 0.495328685701409,
+        "per_date": {
+          "2020-06-01": {
+            "ic": 0.017252045667926694,
+            "hit_rate": 0.45372460496614,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.12845674817761277,
+            "hit_rate": 0.5258426966292135,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.007720276330141801,
+            "hit_rate": 0.503370786516854,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": 0.029966405161648776,
+            "hit_rate": 0.5123595505617977,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.1652408590902516,
+            "hit_rate": 0.5,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.30423564593464325,
+            "hit_rate": 0.451685393258427,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.06123888011746235,
+            "hit_rate": 0.5426008968609866,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.058386860827613116,
+            "hit_rate": 0.5874439461883408,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.25471899309640905,
+            "hit_rate": 0.47767857142857145,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.16189860497494168,
+            "hit_rate": 0.5178571428571429,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.09307170561649303,
+            "hit_rate": 0.4611973392461197,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.12914524535590224,
+            "hit_rate": 0.4911504424778761,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.12238217479095996,
+            "hit_rate": 0.5275938189845475,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.41846166874198515,
+            "hit_rate": 0.3509933774834437,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.027393308619787015,
+            "hit_rate": 0.526431718061674,
+            "n_securities": 454
+          }
+        }
+      }
+    },
+    "price_plus_market_regime": {
+      "ridge": {
+        "experiment_id": 75,
+        "selected_hyperparameters": {
+          "alpha": 0.1
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "alpha": 10.0
+            },
+            "mean_ic_across_folds": 0.026338392991301036,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 3.0
+            },
+            "mean_ic_across_folds": 0.02689833898227033,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 1.0
+            },
+            "mean_ic_across_folds": 0.027077369649730024,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.3
+            },
+            "mean_ic_across_folds": 0.027154160332313323,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.1
+            },
+            "mean_ic_across_folds": 0.027202648183597848,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.06859058293358015,
+        "median_ic": -0.030432472846808282,
+        "stdev_ic": 0.1614695904876906,
+        "mean_hit_rate": 0.4936283745251775,
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.0059283720152130725,
+            "hit_rate": 0.49887133182844245,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.020304791111462144,
+            "hit_rate": 0.5146067415730337,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": 0.006444571240258245,
+            "hit_rate": 0.5146067415730337,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.02579135794231275,
+            "hit_rate": 0.4764044943820225,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.16058099847888566,
+            "hit_rate": 0.5045045045045045,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.22668386126843323,
+            "hit_rate": 0.4764044943820225,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.030432472846808282,
+            "hit_rate": 0.5448430493273543,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.07298660254301108,
+            "hit_rate": 0.5762331838565022,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.2073749164543772,
+            "hit_rate": 0.44642857142857145,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.19221552315041204,
+            "hit_rate": 0.5714285714285714,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.10811268305764316,
+            "hit_rate": 0.4523281596452328,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.12091033970496448,
+            "hit_rate": 0.4823008849557522,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.09405026875009197,
+            "hit_rate": 0.5143487858719646,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.4835615667359701,
+            "hit_rate": 0.32671081677704195,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.04548393229432993,
+            "hit_rate": 0.5044052863436124,
+            "n_securities": 454
+          }
+        }
+      },
+      "logistic": {
+        "experiment_id": 76,
+        "selected_hyperparameters": {
+          "C": 1.0
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "C": 0.03
+            },
+            "mean_ic_across_folds": -0.0024533891366761637,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 0.1
+            },
+            "mean_ic_across_folds": -0.002329815896718359,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 0.3
+            },
+            "mean_ic_across_folds": -0.0023631347835496126,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 1.0
+            },
+            "mean_ic_across_folds": -0.0022624855879340975,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 3.0
+            },
+            "mean_ic_across_folds": -0.002316550208421427,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.0802349267324618,
+        "median_ic": -0.06749445676274946,
+        "stdev_ic": 0.20519761067282313,
+        "mean_hit_rate": 0.4953611580612888,
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.046981830609502895,
+            "hit_rate": 0.5440180586907449,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.03220229349115327,
+            "hit_rate": 0.4898876404494382,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.05385401020509601,
+            "hit_rate": 0.4786516853932584,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": 0.002379554946693557,
+            "hit_rate": 0.4651685393258427,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.1775815585286252,
+            "hit_rate": 0.46846846846846846,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.20605442445519032,
+            "hit_rate": 0.46741573033707867,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.10821069774378018,
+            "hit_rate": 0.5560538116591929,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.035354826841444434,
+            "hit_rate": 0.5515695067264574,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.4851980111337222,
+            "hit_rate": 0.3794642857142857,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.2544766307144673,
+            "hit_rate": 0.5200892857142857,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.06749445676274946,
+            "hit_rate": 0.44124168514412415,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.15975321922293187,
+            "hit_rate": 0.4756637168141593,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.3289195701547595,
+            "hit_rate": 0.6445916114790287,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.37738494891050295,
+            "hit_rate": 0.45253863134657835,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.10993903258103743,
+            "hit_rate": 0.4955947136563877,
+            "n_securities": 454
+          }
+        }
+      },
+      "elastic_net": {
+        "experiment_id": 77,
+        "selected_hyperparameters": {
+          "alpha": 3e-05,
+          "l1_ratio": 0.5
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "alpha": 0.01,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": null,
+            "n_folds_with_ic": 0
+          },
+          {
+            "candidate": {
+              "alpha": 0.003,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.013184519833237719,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.001,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.014577183825744808,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.0003,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.022916549361011326,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.0001,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.02482062488270909,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 3e-05,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.026489899513782375,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.06684660697899696,
+        "median_ic": -0.031854898023571596,
+        "stdev_ic": 0.16400139443177272,
+        "mean_hit_rate": 0.4937452751629559,
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.0058560444963313115,
+            "hit_rate": 0.48306997742663654,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": 0.0048199809624710115,
+            "hit_rate": 0.4966292134831461,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": 0.016405910621661114,
+            "hit_rate": 0.5168539325842697,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.025901661221860748,
+            "hit_rate": 0.4696629213483146,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.15876484697343496,
+            "hit_rate": 0.5067567567567568,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.21201311655788402,
+            "hit_rate": 0.4786516853932584,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.031854898023571596,
+            "hit_rate": 0.5582959641255605,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.07484552125775606,
+            "hit_rate": 0.5695067264573991,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.21524235170518488,
+            "hit_rate": 0.44419642857142855,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.2045406378721651,
+            "hit_rate": 0.5803571428571429,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": -0.10293166938105426,
+            "hit_rate": 0.458980044345898,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.12662517268403914,
+            "hit_rate": 0.48451327433628316,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.1164214968059544,
+            "hit_rate": 0.5209713024282561,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.48400627784930733,
+            "hit_rate": 0.33112582781456956,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.0565366133122938,
+            "hit_rate": 0.5066079295154186,
+            "n_securities": 454
+          }
+        }
+      }
+    },
+    "full_v1_feature_set": {
+      "ridge": {
+        "experiment_id": 78,
+        "selected_hyperparameters": {
+          "alpha": 0.1
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "alpha": 10.0
+            },
+            "mean_ic_across_folds": 0.017312653451699467,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 3.0
+            },
+            "mean_ic_across_folds": 0.018025370742883316,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 1.0
+            },
+            "mean_ic_across_folds": 0.01826749163857579,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.3
+            },
+            "mean_ic_across_folds": 0.018299522077074463,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.1
+            },
+            "mean_ic_across_folds": 0.01830749020583745,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.08519364028474175,
+        "median_ic": -0.04776066480999818,
+        "stdev_ic": 0.17088416940269646,
+        "mean_hit_rate": 0.4646319480453579,
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.01141422108093201,
+            "hit_rate": 0.5237020316027088,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.050834696237024045,
+            "hit_rate": 0.5213483146067416,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": 0.03669286256075192,
+            "hit_rate": 0.4786516853932584,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.06180347223829866,
+            "hit_rate": 0.48764044943820223,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.1719391088148538,
+            "hit_rate": 0.4594594594594595,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.3771501990225223,
+            "hit_rate": 0.31235955056179776,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.03679186041675191,
+            "hit_rate": 0.4820627802690583,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.015569509431716389,
+            "hit_rate": 0.4484304932735426,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.3146352179232854,
+            "hit_rate": 0.3794642857142857,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.2975462677260858,
+            "hit_rate": 0.6026785714285714,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.00812144758615728,
+            "hit_rate": 0.5099778270509978,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.24276513814138367,
+            "hit_rate": 0.4225663716814159,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": -0.025910199078253923,
+            "hit_rate": 0.4503311258278146,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.29482991381253354,
+            "hit_rate": 0.4260485651214128,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.04776066480999818,
+            "hit_rate": 0.4647577092511013,
+            "n_securities": 454
+          }
+        }
+      },
+      "logistic": {
+        "experiment_id": 79,
+        "selected_hyperparameters": {
+          "C": 3.0
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "C": 0.03
+            },
+            "mean_ic_across_folds": -0.004407202947914343,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 0.1
+            },
+            "mean_ic_across_folds": -0.0036395982492522534,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 0.3
+            },
+            "mean_ic_across_folds": -0.003105749370281371,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 1.0
+            },
+            "mean_ic_across_folds": -0.002747814268362417,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "C": 3.0
+            },
+            "mean_ic_across_folds": -0.002609716494764232,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.08867115198695018,
+        "median_ic": -0.09295216514443601,
+        "stdev_ic": 0.20326396269838648,
+        "mean_hit_rate": 0.48602268256983927,
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.0539898702825273,
+            "hit_rate": 0.5395033860045146,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.09295216514443601,
+            "hit_rate": 0.48764044943820223,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": -0.038641553832766615,
+            "hit_rate": 0.43595505617977526,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.037001030859044666,
+            "hit_rate": 0.47191011235955055,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.1968568665045698,
+            "hit_rate": 0.44144144144144143,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.3143411966407885,
+            "hit_rate": 0.3775280898876405,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.11118607684355793,
+            "hit_rate": 0.5515695067264574,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": -0.020489022904413394,
+            "hit_rate": 0.531390134529148,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.5177542456123868,
+            "hit_rate": 0.28794642857142855,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.3106506522430799,
+            "hit_rate": 0.6026785714285714,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.006468614485018544,
+            "hit_rate": 0.49445676274944567,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.20331228486372332,
+            "hit_rate": 0.4446902654867257,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.25875448357873554,
+            "hit_rate": 0.6247240618101545,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.22169668714102,
+            "hit_rate": 0.5033112582781457,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.09772002948185228,
+            "hit_rate": 0.4955947136563877,
+            "n_securities": 454
+          }
+        }
+      },
+      "elastic_net": {
+        "experiment_id": 80,
+        "selected_hyperparameters": {
+          "alpha": 3e-05,
+          "l1_ratio": 0.5
+        },
+        "tuning_diagnostics": [
+          {
+            "candidate": {
+              "alpha": 0.01,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": null,
+            "n_folds_with_ic": 0
+          },
+          {
+            "candidate": {
+              "alpha": 0.003,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": -0.0032419390375889225,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.001,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.003521243340590008,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.0003,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.008146955346120751,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 0.0001,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.01312965337221917,
+            "n_folds_with_ic": 2
+          },
+          {
+            "candidate": {
+              "alpha": 3e-05,
+              "l1_ratio": 0.5
+            },
+            "mean_ic_across_folds": 0.016617190465639323,
+            "n_folds_with_ic": 2
+          }
+        ],
+        "dates_evaluated": 15,
+        "dates_skipped_too_few_securities": 0,
+        "mean_ic": -0.08487500674501437,
+        "median_ic": -0.054774114061682984,
+        "stdev_ic": 0.17284609606551876,
+        "mean_hit_rate": 0.4629966002434248,
+        "per_date": {
+          "2020-06-01": {
+            "ic": -0.011641831918023659,
+            "hit_rate": 0.5259593679458239,
+            "n_securities": 443
+          },
+          "2020-07-01": {
+            "ic": -0.07755028672043837,
+            "hit_rate": 0.49887640449438203,
+            "n_securities": 445
+          },
+          "2020-08-01": {
+            "ic": 0.04096908920811777,
+            "hit_rate": 0.48089887640449436,
+            "n_securities": 445
+          },
+          "2020-09-01": {
+            "ic": -0.06564760961899069,
+            "hit_rate": 0.4966292134831461,
+            "n_securities": 445
+          },
+          "2020-10-01": {
+            "ic": -0.17435575428828778,
+            "hit_rate": 0.45495495495495497,
+            "n_securities": 444
+          },
+          "2020-11-01": {
+            "ic": -0.3661172837068438,
+            "hit_rate": 0.31685393258426964,
+            "n_securities": 445
+          },
+          "2020-12-01": {
+            "ic": -0.039897497736881775,
+            "hit_rate": 0.47757847533632286,
+            "n_securities": 446
+          },
+          "2021-01-01": {
+            "ic": 0.0165286590065004,
+            "hit_rate": 0.4484304932735426,
+            "n_securities": 446
+          },
+          "2021-02-01": {
+            "ic": -0.322334227333779,
+            "hit_rate": 0.37276785714285715,
+            "n_securities": 448
+          },
+          "2021-03-01": {
+            "ic": 0.30880824437815374,
+            "hit_rate": 0.609375,
+            "n_securities": 448
+          },
+          "2021-04-01": {
+            "ic": 0.007239631366546974,
+            "hit_rate": 0.5055432372505543,
+            "n_securities": 451
+          },
+          "2021-05-01": {
+            "ic": -0.2416378432190708,
+            "hit_rate": 0.415929203539823,
+            "n_securities": 452
+          },
+          "2021-06-01": {
+            "ic": 0.002519814494148531,
+            "hit_rate": 0.4613686534216336,
+            "n_securities": 453
+          },
+          "2021-07-01": {
+            "ic": -0.2952340910246841,
+            "hit_rate": 0.4216335540838852,
+            "n_securities": 453
+          },
+          "2021-08-01": {
+            "ic": -0.054774114061682984,
+            "hit_rate": 0.4581497797356828,
+            "n_securities": 454
+          }
+        }
+      }
+    }
+  }
+}

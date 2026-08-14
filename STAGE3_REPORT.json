@@ -1,0 +1,1909 @@
+{
+  "stage": 3,
+  "price_source": "yfinance (Yahoo Finance, unofficial)",
+  "security_counts": {
+    "total_securities": 1205,
+    "resolved_via_known_identifier_cik": 5,
+    "unresolved_identity": 1200
+  },
+  "identity_review_queue": {
+    "total_flags": 49,
+    "unresolved_flags": 49,
+    "flagged_tickers": [
+      {
+        "review_id": 1,
+        "ticker": "AMD",
+        "flag_reason": "Ticker 'AMD' has two usage periods separated by 1274 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2013-09-23",
+        "period_2_start": "2017-03-20",
+        "period_2_end": null,
+        "gap_days": 1274,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:27:10.278930+00:00"
+      },
+      {
+        "review_id": 2,
+        "ticker": "PTC",
+        "flag_reason": "Ticker 'PTC' has two usage periods separated by 5221 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1997-04-03",
+        "period_1_end": "2007-01-03",
+        "period_2_start": "2021-04-20",
+        "period_2_end": null,
+        "gap_days": 5221,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:27:10.322333+00:00"
+      },
+      {
+        "review_id": 3,
+        "ticker": "FMC",
+        "flag_reason": "Ticker 'FMC' has two usage periods separated by 2786 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2002-01-02",
+        "period_2_start": "2009-08-19",
+        "period_2_end": "2025-03-24",
+        "gap_days": 2786,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:27:10.363126+00:00"
+      },
+      {
+        "review_id": 4,
+        "ticker": "PCG",
+        "flag_reason": "Ticker 'PCG' has two usage periods separated by 1354 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2019-01-18",
+        "period_2_start": "2022-10-03",
+        "period_2_end": null,
+        "gap_days": 1354,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:27:10.414961+00:00"
+      },
+      {
+        "review_id": 5,
+        "ticker": "AMD",
+        "flag_reason": "Ticker 'AMD' has two usage periods separated by 1274 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2013-09-23",
+        "period_2_start": "2017-03-20",
+        "period_2_end": null,
+        "gap_days": 1274,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:37:57.600100+00:00"
+      },
+      {
+        "review_id": 6,
+        "ticker": "PTC",
+        "flag_reason": "Ticker 'PTC' has two usage periods separated by 5221 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1997-04-03",
+        "period_1_end": "2007-01-03",
+        "period_2_start": "2021-04-20",
+        "period_2_end": null,
+        "gap_days": 5221,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:37:57.606087+00:00"
+      },
+      {
+        "review_id": 7,
+        "ticker": "FMC",
+        "flag_reason": "Ticker 'FMC' has two usage periods separated by 2786 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2002-01-02",
+        "period_2_start": "2009-08-19",
+        "period_2_end": "2025-03-24",
+        "gap_days": 2786,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:37:57.610965+00:00"
+      },
+      {
+        "review_id": 8,
+        "ticker": "PCG",
+        "flag_reason": "Ticker 'PCG' has two usage periods separated by 1354 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2019-01-18",
+        "period_2_start": "2022-10-03",
+        "period_2_end": null,
+        "gap_days": 1354,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T08:37:57.614150+00:00"
+      },
+      {
+        "review_id": 9,
+        "ticker": "AAL",
+        "flag_reason": "Ticker 'AAL' has two usage periods separated by 6641 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "1997-01-15",
+        "period_2_start": "2015-03-23",
+        "period_2_end": "2024-09-23",
+        "gap_days": 6641,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.042204+00:00"
+      },
+      {
+        "review_id": 10,
+        "ticker": "AMP",
+        "flag_reason": "Ticker 'AMP' has two usage periods separated by 2373 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "1999-04-05",
+        "period_2_start": "2005-10-03",
+        "period_2_end": null,
+        "gap_days": 2373,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.051048+00:00"
+      },
+      {
+        "review_id": 11,
+        "ticker": "AN",
+        "flag_reason": "Ticker 'AN' has two usage periods separated by 1512 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "1999-01-04",
+        "period_2_start": "2003-02-24",
+        "period_2_end": "2017-08-08",
+        "gap_days": 1512,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.054521+00:00"
+      },
+      {
+        "review_id": 12,
+        "ticker": "BR",
+        "flag_reason": "Ticker 'BR' has two usage periods separated by 4459 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2006-04-03",
+        "period_2_start": "2018-06-18",
+        "period_2_end": null,
+        "gap_days": 4459,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.066022+00:00"
+      },
+      {
+        "review_id": 13,
+        "ticker": "CBE",
+        "flag_reason": "Ticker 'CBE' has two usage periods separated by 805 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2009-09-09",
+        "period_2_start": "2011-11-23",
+        "period_2_end": "2012-12-03",
+        "gap_days": 805,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.071832+00:00"
+      },
+      {
+        "review_id": 14,
+        "ticker": "CCI",
+        "flag_reason": "Ticker 'CCI' has two usage periods separated by 4905 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "1998-10-08",
+        "period_2_start": "2012-03-13",
+        "period_2_end": null,
+        "gap_days": 4905,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.075502+00:00"
+      },
+      {
+        "review_id": 15,
+        "ticker": "CE",
+        "flag_reason": "Ticker 'CE' has two usage periods separated by 5414 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2001-04-02",
+        "period_1_end": "2004-02-27",
+        "period_2_start": "2018-12-24",
+        "period_2_end": "2025-03-24",
+        "gap_days": 5414,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.080066+00:00"
+      },
+      {
+        "review_id": 16,
+        "ticker": "CEG",
+        "flag_reason": "Ticker 'CEG' has two usage periods separated by 3613 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2012-03-13",
+        "period_2_start": "2022-02-02",
+        "period_2_end": null,
+        "gap_days": 3613,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.083572+00:00"
+      },
+      {
+        "review_id": 17,
+        "ticker": "CF",
+        "flag_reason": "Ticker 'CF' has two usage periods separated by 1456 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2000-06-19",
+        "period_1_end": "2004-09-01",
+        "period_2_start": "2008-08-27",
+        "period_2_end": null,
+        "gap_days": 1456,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.086779+00:00"
+      },
+      {
+        "review_id": 18,
+        "ticker": "CIEN",
+        "flag_reason": "Ticker 'CIEN' has two usage periods separated by 5894 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2001-08-30",
+        "period_1_end": "2009-12-21",
+        "period_2_start": "2026-02-09",
+        "period_2_end": null,
+        "gap_days": 5894,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.090826+00:00"
+      },
+      {
+        "review_id": 19,
+        "ticker": "CNC",
+        "flag_reason": "Ticker 'CNC' has two usage periods separated by 4997 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1997-01-15",
+        "period_1_end": "2002-07-25",
+        "period_2_start": "2016-03-30",
+        "period_2_end": null,
+        "gap_days": 4997,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.095685+00:00"
+      },
+      {
+        "review_id": 20,
+        "ticker": "COV",
+        "flag_reason": "Ticker 'COV' has two usage periods separated by 3972 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "1996-08-16",
+        "period_2_start": "2007-07-02",
+        "period_2_end": "2009-06-05",
+        "gap_days": 3972,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.101125+00:00"
+      },
+      {
+        "review_id": 21,
+        "ticker": "DELL",
+        "flag_reason": "Ticker 'DELL' has two usage periods separated by 3982 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-09-06",
+        "period_1_end": "2013-10-29",
+        "period_2_start": "2024-09-23",
+        "period_2_end": null,
+        "gap_days": 3982,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.107506+00:00"
+      },
+      {
+        "review_id": 22,
+        "ticker": "DG",
+        "flag_reason": "Ticker 'DG' has two usage periods separated by 1974 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1998-07-16",
+        "period_1_end": "2007-07-09",
+        "period_2_start": "2012-12-03",
+        "period_2_end": null,
+        "gap_days": 1974,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.110588+00:00"
+      },
+      {
+        "review_id": 23,
+        "ticker": "EQT",
+        "flag_reason": "Ticker 'EQT' has two usage periods separated by 1420 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2008-12-19",
+        "period_1_end": "2018-11-13",
+        "period_2_start": "2022-10-03",
+        "period_2_end": null,
+        "gap_days": 1420,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.118354+00:00"
+      },
+      {
+        "review_id": 24,
+        "ticker": "ESV",
+        "flag_reason": "Ticker 'ESV' has two usage periods separated by 951 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2007-01-04",
+        "period_1_end": "2009-12-23",
+        "period_2_start": "2012-07-31",
+        "period_2_end": "2016-03-30",
+        "gap_days": 951,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.122884+00:00"
+      },
+      {
+        "review_id": 25,
+        "ticker": "FISV",
+        "flag_reason": "Ticker 'FISV' has two usage periods separated by 888 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2001-04-02",
+        "period_1_end": "2023-06-07",
+        "period_2_start": "2025-11-11",
+        "period_2_end": null,
+        "gap_days": 888,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.130076+00:00"
+      },
+      {
+        "review_id": 26,
+        "ticker": "FL",
+        "flag_reason": "Ticker 'FL' has two usage periods separated by 6300 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "1999-01-04",
+        "period_2_start": "2016-04-04",
+        "period_2_end": "2019-08-09",
+        "gap_days": 6300,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.135364+00:00"
+      },
+      {
+        "review_id": 27,
+        "ticker": "FSLR",
+        "flag_reason": "Ticker 'FSLR' has two usage periods separated by 2100 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2009-10-16",
+        "period_1_end": "2017-03-20",
+        "period_2_start": "2022-12-19",
+        "period_2_end": null,
+        "gap_days": 2100,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.139984+00:00"
+      },
+      {
+        "review_id": 28,
+        "ticker": "GGP",
+        "flag_reason": "Ticker 'GGP' has two usage periods separated by 1853 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2007-07-02",
+        "period_1_end": "2008-11-13",
+        "period_2_start": "2013-12-10",
+        "period_2_end": "2018-08-28",
+        "gap_days": 1853,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.144636+00:00"
+      },
+      {
+        "review_id": 29,
+        "ticker": "H",
+        "flag_reason": "Ticker 'H' has two usage periods separated by 1859 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2001-06-29",
+        "period_2_start": "2006-08-01",
+        "period_2_end": "2007-04-10",
+        "gap_days": 1859,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.150838+00:00"
+      },
+      {
+        "review_id": 30,
+        "ticker": "HCA",
+        "flag_reason": "Ticker 'HCA' has two usage periods separated by 2990 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2006-11-20",
+        "period_2_start": "2015-01-27",
+        "period_2_end": null,
+        "gap_days": 2990,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.154547+00:00"
+      },
+      {
+        "review_id": 31,
+        "ticker": "HLT",
+        "flag_reason": "Ticker 'HLT' has two usage periods separated by 3525 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2007-10-25",
+        "period_2_start": "2017-06-19",
+        "period_2_end": null,
+        "gap_days": 3525,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.160000+00:00"
+      },
+      {
+        "review_id": 32,
+        "ticker": "HP",
+        "flag_reason": "Ticker 'HP' has two usage periods separated by 3713 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "1999-12-31",
+        "period_2_start": "2010-03-01",
+        "period_2_end": "2020-05-22",
+        "gap_days": 3713,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.163700+00:00"
+      },
+      {
+        "review_id": 33,
+        "ticker": "HRS",
+        "flag_reason": "Ticker 'HRS' has two usage periods separated by 3241 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "1999-11-08",
+        "period_2_start": "2008-09-22",
+        "period_2_end": "2019-06-01",
+        "gap_days": 3241,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.167839+00:00"
+      },
+      {
+        "review_id": 34,
+        "ticker": "JBL",
+        "flag_reason": "Ticker 'JBL' has two usage periods separated by 3330 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2001-01-30",
+        "period_1_end": "2014-11-05",
+        "period_2_start": "2023-12-18",
+        "period_2_end": null,
+        "gap_days": 3330,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.175149+00:00"
+      },
+      {
+        "review_id": 35,
+        "ticker": "KDP",
+        "flag_reason": "Ticker 'KDP' has two usage periods separated by 1450 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2008-10-07",
+        "period_1_end": "2018-07-02",
+        "period_2_start": "2022-06-21",
+        "period_2_end": null,
+        "gap_days": 1450,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.180408+00:00"
+      },
+      {
+        "review_id": 36,
+        "ticker": "KMI",
+        "flag_reason": "Ticker 'KMI' has two usage periods separated by 1821 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2000-12-12",
+        "period_1_end": "2007-05-31",
+        "period_2_start": "2012-05-25",
+        "period_2_end": null,
+        "gap_days": 1821,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.184347+00:00"
+      },
+      {
+        "review_id": 37,
+        "ticker": "KSU",
+        "flag_reason": "Ticker 'KSU' has two usage periods separated by 4698 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1999-04-05",
+        "period_1_end": "2000-07-13",
+        "period_2_start": "2013-05-24",
+        "period_2_end": "2021-12-14",
+        "gap_days": 4698,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.188025+00:00"
+      },
+      {
+        "review_id": 38,
+        "ticker": "LDOS",
+        "flag_reason": "Ticker 'LDOS' has two usage periods separated by 2146 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2009-12-21",
+        "period_1_end": "2013-09-23",
+        "period_2_start": "2019-08-09",
+        "period_2_end": null,
+        "gap_days": 2146,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.191439+00:00"
+      },
+      {
+        "review_id": 39,
+        "ticker": "MEE",
+        "flag_reason": "Ticker 'MEE' has two usage periods separated by 2740 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2000-12-22",
+        "period_2_start": "2008-06-23",
+        "period_2_end": "2011-06-02",
+        "gap_days": 2740,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.199999+00:00"
+      },
+      {
+        "review_id": 40,
+        "ticker": "MXIM",
+        "flag_reason": "Ticker 'MXIM' has two usage periods separated by 4085 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2000-05-10",
+        "period_1_end": "2007-09-27",
+        "period_2_start": "2018-12-03",
+        "period_2_end": "2021-08-30",
+        "gap_days": 4085,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.206746+00:00"
+      },
+      {
+        "review_id": 41,
+        "ticker": "OI",
+        "flag_reason": "Ticker 'OI' has two usage periods separated by 2944 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1997-08-04",
+        "period_1_end": "2000-12-11",
+        "period_2_start": "2009-01-02",
+        "period_2_end": "2016-12-02",
+        "gap_days": 2944,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.214977+00:00"
+      },
+      {
+        "review_id": 42,
+        "ticker": "OKE",
+        "flag_reason": "Ticker 'OKE' has two usage periods separated by 3119 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1996-01-02",
+        "period_1_end": "2001-08-30",
+        "period_2_start": "2010-03-15",
+        "period_2_end": null,
+        "gap_days": 3119,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.219096+00:00"
+      },
+      {
+        "review_id": 43,
+        "ticker": "Q",
+        "flag_reason": "Ticker 'Q' has two usage periods separated by 5330 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2000-07-06",
+        "period_1_end": "2011-04-01",
+        "period_2_start": "2025-11-03",
+        "period_2_end": null,
+        "gap_days": 5330,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.228107+00:00"
+      },
+      {
+        "review_id": 44,
+        "ticker": "RIG",
+        "flag_reason": "Ticker 'RIG' has two usage periods separated by 1775 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1999-12-31",
+        "period_1_end": "2008-12-19",
+        "period_2_start": "2013-10-29",
+        "period_2_end": "2017-07-26",
+        "gap_days": 1775,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.232980+00:00"
+      },
+      {
+        "review_id": 45,
+        "ticker": "SNDK",
+        "flag_reason": "Ticker 'SNDK' has two usage periods separated by 3487 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2006-04-20",
+        "period_1_end": "2016-05-12",
+        "period_2_start": "2025-11-28",
+        "period_2_end": null,
+        "gap_days": 3487,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.240111+00:00"
+      },
+      {
+        "review_id": 46,
+        "ticker": "TEL",
+        "flag_reason": "Ticker 'TEL' has two usage periods separated by 843 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2007-07-02",
+        "period_1_end": "2009-06-26",
+        "period_2_start": "2011-10-17",
+        "period_2_end": null,
+        "gap_days": 843,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.246775+00:00"
+      },
+      {
+        "review_id": 47,
+        "ticker": "TER",
+        "flag_reason": "Ticker 'TER' has two usage periods separated by 2464 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "1999-11-15",
+        "period_1_end": "2013-12-23",
+        "period_2_start": "2020-09-21",
+        "period_2_end": null,
+        "gap_days": 2464,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.250884+00:00"
+      },
+      {
+        "review_id": 48,
+        "ticker": "TMUS",
+        "flag_reason": "Ticker 'TMUS' has two usage periods separated by 2266 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2009-06-30",
+        "period_1_end": "2013-05-01",
+        "period_2_start": "2019-07-15",
+        "period_2_end": null,
+        "gap_days": 2266,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.256514+00:00"
+      },
+      {
+        "review_id": 49,
+        "ticker": "TT",
+        "flag_reason": "Ticker 'TT' has two usage periods separated by 4288 days with no known CIK/ISIN to confirm they're the same entity -- could be the same company (e.g. reorganization) or an unrelated company reusing the ticker after the original was delisted.",
+        "period_1_start": "2002-05-13",
+        "period_1_end": "2008-06-06",
+        "period_2_start": "2020-03-03",
+        "period_2_end": null,
+        "gap_days": 4288,
+        "resolved": 0,
+        "resolution_note": null,
+        "flagged_at": "2026-08-12T18:33:35.260742+00:00"
+      }
+    ]
+  },
+  "membership": {
+    "total_membership_claims": 1259,
+    "conflicting_claims": 0,
+    "unresolved_membership_claims": 0
+  },
+  "price_coverage": {
+    "total_raw_price_rows": 2372308,
+    "earliest_date": "2010-01-04",
+    "latest_date": "2023-12-29",
+    "securities_with_zero_price_data": [
+      "MON",
+      "ABMD",
+      "AABA",
+      "AAMRQ",
+      "USW",
+      "RBD",
+      "OWENQ",
+      "MYL",
+      "ARG",
+      "XLNX",
+      "MJN",
+      "CPNLQ",
+      "ABKFQ",
+      "WIN",
+      "SFA",
+      "LDW.B",
+      "ACS",
+      "QEP",
+      "OMX",
+      "JNPR",
+      "FBF",
+      "SK",
+      "UN",
+      "ETS",
+      "BRCM",
+      "LUB",
+      "SOTR",
+      "KSE",
+      "CHA",
+      "HMA",
+      "MER",
+      "LLL",
+      "TXU",
+      "SWN",
+      "LVLT",
+      "NAE",
+      "AHM",
+      "FLT",
+      "DALRQ",
+      "DCNAQ",
+      "AMTM",
+      "LLTC",
+      "TOS",
+      "PMI",
+      "BMGCA",
+      "KRFT",
+      "BTUUQ",
+      "WAMUQ",
+      "UPR",
+      "HCP",
+      "AT",
+      "FDC",
+      "ABI",
+      "ACAS",
+      "ACKH",
+      "ADS",
+      "AFS.A",
+      "AGC",
+      "AGN",
+      "AKS",
+      "AL",
+      "ALTR",
+      "ALXN",
+      "AMCC",
+      "ANDW",
+      "ANRZQ",
+      "ANSS",
+      "ANTM",
+      "ANV",
+      "APC",
+      "APCC",
+      "APOL",
+      "ARC",
+      "ARNC",
+      "AS",
+      "ASN",
+      "ATGE",
+      "ATVI",
+      "AV",
+      "AVP",
+      "AW",
+      "AWE",
+      "AYE",
+      "AZA.A",
+      "BAY",
+      "BBI",
+      "BCR",
+      "BDK",
+      "BEV",
+      "BF.B",
+      "BFI",
+      "BFO",
+      "BGEN",
+      "BGG",
+      "BHGE",
+      "BHMSQ",
+      "BIG",
+      "BJS",
+      "BK",
+      "BKB",
+      "BLL",
+      "BLS",
+      "BMET",
+      "BNI",
+      "BRK.B",
+      "BRL",
+      "BSC",
+      "BT",
+      "BVSN",
+      "BXLT",
+      "CA",
+      "CAM",
+      "CBB",
+      "CBH",
+      "CBS",
+      "CBSS",
+      "CCTYQ",
+      "CDAY",
+      "CELG",
+      "CEN",
+      "CEPH",
+      "CERN",
+      "CFL",
+      "CFN",
+      "CGP",
+      "CHK",
+      "CIT.A",
+      "CITGQ",
+      "CMA",
+      "CMCSK",
+      "CNW",
+      "COC.B",
+      "COG",
+      "COV",
+      "CPGX",
+      "CRR",
+      "CTB",
+      "CTL",
+      "CTLT",
+      "CTRA",
+      "CTX",
+      "CTXS",
+      "CVC",
+      "CVH",
+      "CXO",
+      "CYM",
+      "CYR",
+      "DAY",
+      "DF",
+      "DFS",
+      "DI",
+      "DISCA",
+      "DISCK",
+      "DISH",
+      "DJ",
+      "DNB",
+      "DNR",
+      "DO",
+      "DPHIQ",
+      "DRE",
+      "DTV",
+      "DWDP",
+      "EDS",
+      "EKDKQ",
+      "ENDP",
+      "ENRNQ",
+      "EOP",
+      "ESV",
+      "ETFC",
+      "FBHS",
+      "FBO",
+      "FDO",
+      "FDXF",
+      "FI",
+      "FII",
+      "FJ",
+      "FL",
+      "FLIR",
+      "FLMIQ",
+      "FLTWQ",
+      "FRC",
+      "FRX",
+      "FSL",
+      "FTL.A",
+      "FTR",
+      "FWLT",
+      "GAPTQ",
+      "GAS",
+      "GDT",
+      "GEV",
+      "GFS.A",
+      "GGP",
+      "GIDL",
+      "GMCR",
+      "GPS",
+      "GPU",
+      "GRA",
+      "GSX",
+      "GTW",
+      "GWF",
+      "GX",
+      "HBI",
+      "HBOC",
+      "HCBK",
+      "HCR",
+      "HDLM",
+      "HES",
+      "HFC",
+      "HFS",
+      "HI",
+      "HNZ",
+      "HOLX",
+      "HONA",
+      "HPH",
+      "HRS",
+      "HSH",
+      "HSP",
+      "I",
+      "IAC",
+      "IGT",
+      "IKN",
+      "IMNX",
+      "INCLF",
+      "INFO",
+      "IPG",
+      "JCP",
+      "JEC",
+      "JH",
+      "JHF",
+      "JNS",
+      "JNY",
+      "JOS",
+      "JOY",
+      "JP",
+      "JWN",
+      "K",
+      "KATE",
+      "KORS",
+      "KRB",
+      "KSU",
+      "KWP",
+      "LB",
+      "LEHMQ",
+      "LIFE",
+      "LLX",
+      "LM",
+      "LO",
+      "LOR",
+      "LSI",
+      "LXK",
+      "MDP",
+      "MDR",
+      "MEA",
+      "MEL",
+      "MERQ",
+      "MFE",
+      "MIL",
+      "MKG",
+      "MMC",
+      "MNK",
+      "MRO",
+      "MST",
+      "MTL",
+      "MTLQQ",
+      "MWV",
+      "MWW",
+      "MXIM",
+      "MYG",
+      "MZIAQ",
+      "NAV",
+      "NBL",
+      "NCR",
+      "NFB",
+      "NFX",
+      "NLC",
+      "NLOK",
+      "NLSN",
+      "NMK",
+      "NOVL",
+      "NRTLQ",
+      "NVLS",
+      "NXTL",
+      "NYN",
+      "NYX",
+      "OAT",
+      "ODP",
+      "ONE",
+      "PBCT",
+      "PCH",
+      "PCL",
+      "PCP",
+      "PCS",
+      "PDCO",
+      "PEAK",
+      "PEL",
+      "PET",
+      "PETM",
+      "PGL",
+      "PGN",
+      "PHA",
+      "PHB",
+      "PKI",
+      "PLL",
+      "PMCS",
+      "PNU",
+      "POM",
+      "PRD",
+      "PSFT",
+      "PVT",
+      "PX",
+      "PXD",
+      "Q",
+      "QLGC",
+      "QTRN",
+      "RAD",
+      "RAI",
+      "RAL",
+      "RATL",
+      "RBK",
+      "RDC",
+      "RDS.A",
+      "RE",
+      "RHT",
+      "RLM",
+      "RML",
+      "RNB",
+      "ROH",
+      "RRD",
+      "RSHCQ",
+      "RTN",
+      "RYI",
+      "SAI",
+      "SAPE",
+      "SATS",
+      "SBL",
+      "SBNY",
+      "SEBL",
+      "SEE",
+      "SEG",
+      "SFS",
+      "SGID",
+      "SGP",
+      "SHN",
+      "SIAL",
+      "SIVB",
+      "SLR",
+      "SMS",
+      "SNDK",
+      "SNI",
+      "SNV",
+      "SOLS",
+      "SOLV",
+      "SOV",
+      "SPLS",
+      "SRCL",
+      "STJ",
+      "STO",
+      "STR",
+      "SUNEQ",
+      "SWY",
+      "SXCL",
+      "SYMC",
+      "TA",
+      "TCOMA",
+      "TEK",
+      "TGNA",
+      "TIF",
+      "TIN",
+      "TMC.A",
+      "TMK",
+      "TOY",
+      "TRB",
+      "TRW",
+      "TSG",
+      "TSS",
+      "TUP",
+      "TWC",
+      "TWTR",
+      "UAWGQ",
+      "UMG",
+      "USH",
+      "USHC",
+      "USS",
+      "UTX",
+      "VAR",
+      "VAT",
+      "VIAB",
+      "VIAC",
+      "VSTNQ",
+      "VTSS",
+      "WAI",
+      "WBA",
+      "WCG",
+      "WCOEQ",
+      "WFM",
+      "WFT",
+      "WLA",
+      "WLL",
+      "WLP",
+      "WLTW",
+      "WNDXQ",
+      "WPX",
+      "WRK",
+      "WWY",
+      "WYE",
+      "WYND",
+      "X",
+      "XEC",
+      "XL",
+      "XTO",
+      "YNR",
+      "YRCW"
+    ],
+    "count_zero_price_data": 412
+  },
+  "data_quality": {
+    "bad_ohlc_flagged": 1227,
+    "negative_volume_flagged": 0,
+    "flagged_rows_sample": [
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-01-05",
+        "open": 0.6346,
+        "high": 0.7115,
+        "low": 0.7115,
+        "close": 0.7115,
+        "volume": 15288.0
+      },
+      {
+        "primary_ticker": "CFC",
+        "date": "2010-01-06",
+        "open": 47.0,
+        "high": 46.5,
+        "low": 46.5,
+        "close": 46.5,
+        "volume": 500.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-01-06",
+        "open": 0.6346,
+        "high": 0.7019,
+        "low": 0.7019,
+        "close": 0.7019,
+        "volume": 64376.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-01-11",
+        "open": 0.6346,
+        "high": 0.7019,
+        "low": 0.7019,
+        "close": 0.7019,
+        "volume": 28080.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-01-12",
+        "open": 0.6346,
+        "high": 0.6827,
+        "low": 0.6827,
+        "close": 0.6827,
+        "volume": 14976.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-01-13",
+        "open": 0.6346,
+        "high": 0.7019,
+        "low": 0.7019,
+        "close": 0.7019,
+        "volume": 68432.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-01-14",
+        "open": 0.6346,
+        "high": 0.7019,
+        "low": 0.7019,
+        "close": 0.7019,
+        "volume": 832.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-01-19",
+        "open": 0.6346,
+        "high": 0.7019,
+        "low": 0.7019,
+        "close": 0.7019,
+        "volume": 66976.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-01-20",
+        "open": 0.6346,
+        "high": 0.7211,
+        "low": 0.7211,
+        "close": 0.7211,
+        "volume": 95368.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-01-21",
+        "open": 0.6346,
+        "high": 0.7308,
+        "low": 0.7308,
+        "close": 0.7308,
+        "volume": 61152.0
+      },
+      {
+        "primary_ticker": "CFC",
+        "date": "2010-01-25",
+        "open": 43.0,
+        "high": 44.5,
+        "low": 43.5,
+        "close": 43.75,
+        "volume": 34400.0
+      },
+      {
+        "primary_ticker": "CIN",
+        "date": "2010-01-25",
+        "open": 1198.92,
+        "high": 1198.92,
+        "low": 1191.61,
+        "close": 1218.42,
+        "volume": 564.0
+      },
+      {
+        "primary_ticker": "CFC",
+        "date": "2010-01-26",
+        "open": 43.75,
+        "high": 45.5,
+        "low": 44.0,
+        "close": 45.0,
+        "volume": 20600.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-01-26",
+        "open": 0.6346,
+        "high": 0.7019,
+        "low": 0.7019,
+        "close": 0.7019,
+        "volume": 12688.0
+      },
+      {
+        "primary_ticker": "CFC",
+        "date": "2010-01-28",
+        "open": 45.5,
+        "high": 45.0,
+        "low": 45.0,
+        "close": 45.0,
+        "volume": 12000.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-01-28",
+        "open": 0.6346,
+        "high": 0.7308,
+        "low": 0.7308,
+        "close": 0.7308,
+        "volume": 61152.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-02-02",
+        "open": 0.6346,
+        "high": 0.7019,
+        "low": 0.7019,
+        "close": 0.7019,
+        "volume": 30888.0
+      },
+      {
+        "primary_ticker": "CFC",
+        "date": "2010-02-03",
+        "open": 44.75,
+        "high": 45.0,
+        "low": 45.0,
+        "close": 45.0,
+        "volume": 38000.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-02-03",
+        "open": 0.6346,
+        "high": 0.7019,
+        "low": 0.7019,
+        "close": 0.7019,
+        "volume": 9672.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-02-04",
+        "open": 0.6346,
+        "high": 0.7115,
+        "low": 0.7115,
+        "close": 0.7115,
+        "volume": 19448.0
+      },
+      {
+        "primary_ticker": "CFC",
+        "date": "2010-02-05",
+        "open": 44.75,
+        "high": 45.0,
+        "low": 45.0,
+        "close": 45.0,
+        "volume": 21200.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-02-08",
+        "open": 0.6346,
+        "high": 0.7404,
+        "low": 0.7404,
+        "close": 0.7404,
+        "volume": 185536.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-02-09",
+        "open": 0.6346,
+        "high": 0.7404,
+        "low": 0.7404,
+        "close": 0.7404,
+        "volume": 53872.0
+      },
+      {
+        "primary_ticker": "CFC",
+        "date": "2010-02-10",
+        "open": 43.25,
+        "high": 45.0,
+        "low": 44.5,
+        "close": 44.5,
+        "volume": 48200.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-02-10",
+        "open": 0.6346,
+        "high": 0.7404,
+        "low": 0.7404,
+        "close": 0.7404,
+        "volume": 28704.0
+      },
+      {
+        "primary_ticker": "CFC",
+        "date": "2010-02-11",
+        "open": 44.5,
+        "high": 45.0,
+        "low": 44.75,
+        "close": 44.75,
+        "volume": 4400.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-02-11",
+        "open": 0.6346,
+        "high": 0.75,
+        "low": 0.75,
+        "close": 0.75,
+        "volume": 22360.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-02-16",
+        "open": 0.6346,
+        "high": 0.7308,
+        "low": 0.7308,
+        "close": 0.7308,
+        "volume": 59696.0
+      },
+      {
+        "primary_ticker": "TNB",
+        "date": "2010-02-17",
+        "open": 0.6346,
+        "high": 0.7308,
+        "low": 0.7308,
+        "close": 0.7308,
+        "volume": 3848.0
+      },
+      {
+        "primary_ticker": "CFC",
+        "date": "2010-02-18",
+        "open": 42.5,
+        "high": 44.0,
+        "low": 43.0,
+        "close": 43.0,
+        "volume": 19500.0
+      }
+    ],
+    "note": "Scoped to adj_type='raw' only -- the same root problem in raw data also propagates to its derived split_adjusted/total_return copies, which would otherwise inflate this count up to 3x for the same issue."
+  },
+  "dividends": {
+    "total_dividend_events": 5194,
+    "securities_with_dividends": 104,
+    "securities_without_dividends": 1101
+  },
+  "splits": {
+    "total_split_events": 49,
+    "details": [
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2010-12-13",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "MSI",
+        "ex_date": "2011-01-04",
+        "ratio_or_value": 0.24737167594310452
+      },
+      {
+        "primary_ticker": "FCX",
+        "ex_date": "2011-02-02",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "NDSN",
+        "ex_date": "2011-04-13",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "C",
+        "ex_date": "2011-05-09",
+        "ratio_or_value": 0.1
+      },
+      {
+        "primary_ticker": "MOH",
+        "ex_date": "2011-05-23",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "CHD",
+        "ex_date": "2011-06-02",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "FMC",
+        "ex_date": "2012-05-25",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "KO",
+        "ex_date": "2012-08-13",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "JCI",
+        "ex_date": "2012-10-01",
+        "ratio_or_value": 2.011667672500503
+      },
+      {
+        "primary_ticker": "PZE",
+        "ex_date": "2012-10-03",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "THC",
+        "ex_date": "2012-10-11",
+        "ratio_or_value": 0.25
+      },
+      {
+        "primary_ticker": "NKE",
+        "ex_date": "2012-12-26",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "EFU",
+        "ex_date": "2013-06-10",
+        "ratio_or_value": 0.25
+      },
+      {
+        "primary_ticker": "MUR",
+        "ex_date": "2013-09-03",
+        "ratio_or_value": 1.158
+      },
+      {
+        "primary_ticker": "VFC",
+        "ex_date": "2013-12-23",
+        "ratio_or_value": 4.0
+      },
+      {
+        "primary_ticker": "MA",
+        "ex_date": "2014-01-22",
+        "ratio_or_value": 10.0
+      },
+      {
+        "primary_ticker": "GOOGL",
+        "ex_date": "2014-04-03",
+        "ratio_or_value": 1.998
+      },
+      {
+        "primary_ticker": "SLM",
+        "ex_date": "2014-05-01",
+        "ratio_or_value": 2.798
+      },
+      {
+        "primary_ticker": "AAPL",
+        "ex_date": "2014-06-09",
+        "ratio_or_value": 7.0
+      },
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2015-03-11",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "V",
+        "ex_date": "2015-03-19",
+        "ratio_or_value": 4.0
+      },
+      {
+        "primary_ticker": "GHC",
+        "ex_date": "2015-07-01",
+        "ratio_or_value": 1.655
+      },
+      {
+        "primary_ticker": "NKE",
+        "ex_date": "2015-12-24",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "CHD",
+        "ex_date": "2016-09-02",
+        "ratio_or_value": 2.0
+      },
+      {
+        "primary_ticker": "JCI",
+        "ex_date": "2016-09-06",
+        "ratio_or_value": 0.955
+      },
+      {
+        "primary_ticker": "YUM",
+        "ex_date": "2016-11-01",
+        "ratio_or_value": 1.391
+      },
+      {
+        "primary_ticker": "CPWR",
+        "ex_date": "2017-03-28",
+        "ratio_or_value": 0.004
+      },
+      {
+        "primary_ticker": "CPWR",
+        "ex_date": "2017-05-25",
+        "ratio_or_value": 2.16759
+      },
+      {
+        "primary_ticker": "SVU",
+        "ex_date": "2017-08-02",
+        "ratio_or_value": 0.14285714285714285
+      },
+      {
+        "primary_ticker": "LEN",
+        "ex_date": "2017-11-09",
+        "ratio_or_value": 1.017
+      },
+      {
+        "primary_ticker": "PNR",
+        "ex_date": "2018-05-01",
+        "ratio_or_value": 1.489
+      },
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2018-12-11",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "FMC",
+        "ex_date": "2019-03-04",
+        "ratio_or_value": 1.153
+      },
+      {
+        "primary_ticker": "VFC",
+        "ex_date": "2019-05-23",
+        "ratio_or_value": 1.062
+      },
+      {
+        "primary_ticker": "TEN",
+        "ex_date": "2020-07-01",
+        "ratio_or_value": 0.2
+      },
+      {
+        "primary_ticker": "MTCH",
+        "ex_date": "2020-07-01",
+        "ratio_or_value": 3.502
+      },
+      {
+        "primary_ticker": "AAPL",
+        "ex_date": "2020-08-31",
+        "ratio_or_value": 4.0
+      },
+      {
+        "primary_ticker": "TSLA",
+        "ex_date": "2020-08-31",
+        "ratio_or_value": 5.0
+      },
+      {
+        "primary_ticker": "PFE",
+        "ex_date": "2020-11-17",
+        "ratio_or_value": 1.054
+      },
+      {
+        "primary_ticker": "ROL",
+        "ex_date": "2020-12-11",
+        "ratio_or_value": 1.5
+      },
+      {
+        "primary_ticker": "NVDA",
+        "ex_date": "2021-07-20",
+        "ratio_or_value": 4.0
+      },
+      {
+        "primary_ticker": "IBM",
+        "ex_date": "2021-11-04",
+        "ratio_or_value": 1.046
+      },
+      {
+        "primary_ticker": "T",
+        "ex_date": "2022-04-11",
+        "ratio_or_value": 1.324
+      },
+      {
+        "primary_ticker": "AMZN",
+        "ex_date": "2022-06-06",
+        "ratio_or_value": 20.0
+      },
+      {
+        "primary_ticker": "EHC",
+        "ex_date": "2022-07-01",
+        "ratio_or_value": 1.257
+      },
+      {
+        "primary_ticker": "GOOGL",
+        "ex_date": "2022-07-18",
+        "ratio_or_value": 20.0
+      },
+      {
+        "primary_ticker": "TSLA",
+        "ex_date": "2022-08-25",
+        "ratio_or_value": 3.0
+      },
+      {
+        "primary_ticker": "PCAR",
+        "ex_date": "2023-02-08",
+        "ratio_or_value": 1.5
+      }
+    ]
+  },
+  "unsupported_corporate_actions": [
+    {
+      "primary_ticker": "PFE",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.054 on 2020-11-17, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "LEN",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.017 on 2017-11-09, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "T",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.324 on 2022-04-11, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "IBM",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.046 on 2021-11-04, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. (Reclassified after Stage 1 initial run.)"
+    },
+    {
+      "primary_ticker": "ABBV",
+      "unsupported_corporate_action_note": "AbbVie spun off from Abbott Laboratories (ABT). Source: Abbott 8-K Item 2.01, https://www.sec.gov/Archives/edgar/data/0000001800/000110465913001016/a13-2169_18k.htm"
+    },
+    {
+      "primary_ticker": "SLM",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 2.798 on 2014-05-01, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "JCI",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 0.955 on 2016-09-06, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "YUM",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.391 on 2016-11-01, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "CPWR",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 0.004 on 2017-03-28, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation. | yfinance reported a 'split' ratio of 2.16759 on 2017-05-25, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "MUR",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.158 on 2013-09-03, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "VFC",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.062 on 2019-05-23, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "FMC",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.153 on 2019-03-04, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "GHC",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.655 on 2015-07-01, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "EHC",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 1.257 on 2022-07-01, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    },
+    {
+      "primary_ticker": "MTCH",
+      "unsupported_corporate_action_note": "yfinance reported a 'split' ratio of 3.502 on 2020-07-01, which does not match common whole-share-count split ratios. Likely a spinoff or other corporate action's residual price-adjustment factor, not a genuine split -- flagged for manual investigation."
+    }
+  ],
+  "delisted_securities": [
+    {
+      "primary_ticker": "MON",
+      "delisted_date": "2018-06-07",
+      "delisting_reason": "acquired",
+      "delisting_confidence": "verified"
+    },
+    {
+      "primary_ticker": "ABMD",
+      "delisted_date": "2022-12-22",
+      "delisting_reason": "acquired",
+      "delisting_confidence": "verified"
+    },
+    {
+      "primary_ticker": "AABA",
+      "delisted_date": "2019-10-02",
+      "delisting_reason": "dissolved",
+      "delisting_confidence": "verified"
+    },
+    {
+      "primary_ticker": "AAMRQ",
+      "delisted_date": "2012-01-30",
+      "delisting_reason": "bankrupt",
+      "delisting_confidence": "verified"
+    }
+  ],
+  "survivorship_style_breakdown": {
+    "total_securities_in_universe": 1205,
+    "securities_with_usable_price_data": 793,
+    "known_delisted_with_no_price_data": 4,
+    "known_delisted_WITH_price_data": 0
+  },
+  "point_in_time_spot_checks": [
+    {
+      "ticker": "A",
+      "as_of_date": "2016-01-04",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "A",
+      "as_of_date": "2020-01-02",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "A",
+      "as_of_date": "2023-01-03",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AABA",
+      "as_of_date": "2016-01-04",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AABA",
+      "as_of_date": "2020-01-02",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AABA",
+      "as_of_date": "2023-01-03",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AAL",
+      "as_of_date": "2016-01-04",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AAL",
+      "as_of_date": "2020-01-02",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AAL",
+      "as_of_date": "2023-01-03",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AAMRQ",
+      "as_of_date": "2016-01-04",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AAMRQ",
+      "as_of_date": "2020-01-02",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AAMRQ",
+      "as_of_date": "2023-01-03",
+      "eligible": false,
+      "has_any_historical_data": false
+    },
+    {
+      "ticker": "AAP",
+      "as_of_date": "2016-01-04",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AAP",
+      "as_of_date": "2020-01-02",
+      "eligible": true,
+      "has_any_historical_data": true
+    },
+    {
+      "ticker": "AAP",
+      "as_of_date": "2023-01-03",
+      "eligible": true,
+      "has_any_historical_data": true
+    }
+  ],
+  "timing": {
+    "securities_processed": 1206,
+    "securities_freshly_fetched": 412,
+    "securities_freshly_fetched_WITH_data": 0,
+    "securities_freshly_fetched_ZERO_data_fast_failures": 412,
+    "securities_skipped_resume": 794,
+    "total_wall_seconds_including_skips": 144.54,
+    "total_wall_seconds_fresh_fetch_only": 143.92,
+    "avg_seconds_per_security_INCLUDING_skips_MISLEADING": 0.1198,
+    "avg_seconds_per_security_ALL_FRESH_STILL_MISLEADING_IF_MANY_ZERO_DATA": 0.3493,
+    "avg_seconds_per_security_FRESH_WITH_DATA_ONLY_HONEST_METRIC": null,
+    "min_seconds_fresh_fetch": 0.19,
+    "max_seconds_fresh_fetch": 1.64,
+    "errors_encountered": 0,
+    "error_details": [],
+    "extrapolation_warning": "No freshly-fetched security in this run actually returned data -- extrapolation below falls back to the all-fresh average, which may still be biased toward fast zero-data lookups. Treat with caution; prefer a stage's estimate that had genuine fresh successful fetches.",
+    "extrapolated_estimates_based_on_fresh_WITH_DATA_avg": {
+      "200_securities_minutes": 1.2,
+      "500_securities_minutes": 2.9,
+      "1200_securities_minutes": 7.0
+    }
+  },
+  "survivorship_categorization": {
+    "full_usable_history": {
+      "count": 729,
+      "pct_of_total": 60.5,
+      "example_tickers": [
+        "A",
+        "AAP",
+        "AAPL",
+        "ABBV",
+        "ABC",
+        "ABNB",
+        "ABS",
+        "ABT",
+        "ABX",
+        "ACGL"
+      ]
+    },
+    "partial_history": {
+      "count": 28,
+      "pct_of_total": 2.3,
+      "example_tickers": [
+        "BLY",
+        "CCE",
+        "CMB",
+        "DGN",
+        "DWD",
+        "FPC",
+        "FSH",
+        "GDW",
+        "GLK",
+        "HET"
+      ]
+    },
+    "no_historical_price_data": {
+      "count": 0,
+      "pct_of_total": 0.0,
+      "example_tickers": []
+    },
+    "provider_empty": {
+      "count": 403,
+      "pct_of_total": 33.4,
+      "example_tickers": [
+        "AABA",
+        "AAMRQ",
+        "ABI",
+        "ABKFQ",
+        "ABMD",
+        "ACAS",
+        "ACKH",
+        "ACS",
+        "ADS",
+        "AFS.A"
+      ]
+    },
+    "download_failure": {
+      "count": 0,
+      "pct_of_total": 0.0,
+      "example_tickers": []
+    },
+    "identity_unresolved": {
+      "count": 45,
+      "pct_of_total": 3.7,
+      "example_tickers": [
+        "AAL",
+        "AMD",
+        "AMP",
+        "AN",
+        "BR",
+        "CBE",
+        "CCI",
+        "CE",
+        "CEG",
+        "CF"
+      ]
+    },
+    "other_unknown": {
+      "count": 0,
+      "pct_of_total": 0.0,
+      "example_tickers": []
+    }
+  },
+  "source_reliability_stats": {
+    "total_retry_attempts": 0,
+    "rate_limit_events": 0,
+    "transient_errors": 0,
+    "permanent_errors": 0,
+    "tickers_with_any_retry": 0
+  },
+  "resumability": {
+    "tickers_skipped_as_already_ingested": 794,
+    "tickers_freshly_fetched": 412
+  }
+}
