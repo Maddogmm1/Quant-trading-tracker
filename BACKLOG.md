@@ -276,3 +276,24 @@ stages — worth remembering for any future schema change: it migrates
 automatically now, but a new migration type beyond "new table" or "new
 column" (e.g. changing a column's type or constraint) will need a new
 case added explicitly to `migrations.py`.
+
+## 16. `price_data_quality` has an undocumented value: `'derived'`
+
+Found while investigating the Phase 5 overnight-gap result (see
+`PHASE5_CONCLUSION.md`). `schema.sql`'s column comment documents
+`price_data_quality` as `'ok'|'flagged'|'suspicious'`, but real
+`total_return`-adjusted rows in the production database carry the value
+`'derived'` — a fourth state the comment doesn't mention.
+
+Working assumption (not yet confirmed with Data Engineering): `'derived'`
+marks a row whose price was computed via corporate-action adjustment from
+a raw source row, as distinct from `'ok'` (an unadjusted raw print) or
+`'suspicious'` (flagged by `validate_ohlc()`). Nothing found during Phase 5
+contradicts this, and `validate_ohlc()` does flag genuinely bad rows to
+`'suspicious'` regardless of their current value, so `'derived'` does not
+appear to suppress quality flagging. But this is an inference from
+behaviour, not documented intent — worth a quick confirmation and a
+one-line update to the schema comment (and anywhere else the three-value
+enum is assumed, e.g. any code doing `== 'ok'` checks that would silently
+exclude legitimately fine `'derived'` rows) so the next researcher doesn't
+have to re-derive this from scratch.
