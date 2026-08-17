@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-08-17T08:53:35.261965Z",
+  "status": "EXPLORATORY -- train/validation only. The locked test window was never queried or computed by this script.",
+  "embargo_trading_days": 5,
+  "split_sizes": {
+    "train_dates": 1353,
+    "train_purged": 5,
+    "validation_dates": 335,
+    "validation_purged": 5,
+    "test_LOCKED_dates_NOT_QUERIED": 566
+  },
+  "train": {
+    "result": {
+      "n_days": 1353,
+      "block_length_used": 7,
+      "overnight_vs_zero_ci": {
+        "n_nominal": 1353,
+        "block_length_used": 7,
+        "n_bootstrap_resamples": 5000,
+        "point_estimate": 1.7076747354721732e-05,
+        "ci_level": 0.95,
+        "ci_low": -0.00045726179553343924,
+        "ci_high": 0.00042063124268191697,
+        "ci_excludes_zero": false
+      },
+      "overnight_vs_intraday_paired_ci": {
+        "n_nominal": 1353,
+        "block_length_used": 7,
+        "n_bootstrap_resamples": 5000,
+        "point_estimate": -3.886799209994134e-05,
+        "ci_level": 0.95,
+        "ci_low": -0.0005892233460520884,
+        "ci_high": 0.0004942944252551662,
+        "ci_excludes_zero": false
+      },
+      "annualised_overnight_pct": 0.4303340333389877,
+      "classification": "failure",
+      "classification_reason": "overnight-vs-zero CI or overnight-vs-intraday paired CI contains zero"
+    },
+    "n_dates_used": 1353,
+    "n_dates_missing_proxy": 0
+  },
+  "validation": {
+    "result": {
+      "n_days": 335,
+      "block_length_used": 9,
+      "overnight_vs_zero_ci": {
+        "n_nominal": 335,
+        "block_length_used": 9,
+        "n_bootstrap_resamples": 5000,
+        "point_estimate": 0.001260414409614763,
+        "ci_level": 0.95,
+        "ci_low": 0.0005968476888638942,
+        "ci_high": 0.002007630967185587,
+        "ci_excludes_zero": true
+      },
+      "overnight_vs_intraday_paired_ci": {
+        "n_nominal": 335,
+        "block_length_used": 9,
+        "n_bootstrap_resamples": 5000,
+        "point_estimate": 0.0013565101694154563,
+        "ci_level": 0.95,
+        "ci_low": 0.00039573081891385595,
+        "ci_high": 0.0023728653268811793,
+        "ci_excludes_zero": true
+      },
+      "annualised_overnight_pct": 31.762443122292026,
+      "classification": "genuine_effect_candidate",
+      "classification_reason": "CI excludes zero on both tests and magnitude clears the 1.0pp threshold -- spec section 8 ROBUSTNESS CHECKS NOT YET APPLIED, this is not a final result"
+    },
+    "n_dates_used": 335,
+    "n_dates_missing_proxy": 0
+  },
+  "train_plus_validation_combined": {
+    "result": {
+      "n_days": 1688,
+      "block_length_used": 7,
+      "overnight_vs_zero_ci": {
+        "n_nominal": 1688,
+        "block_length_used": 7,
+        "n_bootstrap_resamples": 5000,
+        "point_estimate": 0.0002638291862511162,
+        "ci_level": 0.95,
+        "ci_low": -0.00013359504725647155,
+        "ci_high": 0.000629023441101122,
+        "ci_excludes_zero": false
+      },
+      "overnight_vs_intraday_paired_ci": {
+        "n_nominal": 1688,
+        "block_length_used": 7,
+        "n_bootstrap_resamples": 5000,
+        "point_estimate": 0.00023805836104440594,
+        "ci_level": 0.95,
+        "ci_low": -0.0002522936256398087,
+        "ci_high": 0.0007314014208519746,
+        "ci_excludes_zero": false
+      },
+      "annualised_overnight_pct": 6.648495493528128,
+      "classification": "failure",
+      "classification_reason": "overnight-vs-zero CI or overnight-vs-intraday paired CI contains zero"
+    },
+    "n_dates_used": 1688
+  }
+}

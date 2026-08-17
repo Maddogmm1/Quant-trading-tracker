@@ -161,10 +161,18 @@ definition, a shorter/longer horizon than one trading session, or a
 sector-neutral version of the proxy (e.g. excluding travel/energy names to
 test whether a residual effect exists in the rest of the market) — any of
 those would be a new, separately pre-registered hypothesis, not a
-continuation of this one. The v2-corrected `run_phase5_open_price_data_check.py`
-and `run_phase5_sample_size_report.py` were delivered but never re-run
-against the real database after their bug fixes; that follow-up is now moot
-for this branch's conclusion (the Tier 0 result stands on its own, computed
-directly from per-date proxy series rather than from those summary
-diagnostics) and is not pursued further here. Per instruction, work on this
-hypothesis stops here.
+continuation of this one.
+
+The v2-corrected `run_phase5_open_price_data_check.py` and
+`run_phase5_sample_size_report.py` **were** re-run against the real
+database after their bug fixes (see `PHASE5_OVERNIGHT_GAP_SPECIFICATION.md`
+§2.3/§3.4 for the full corrected numbers). Headline: open-price coverage is
+essentially complete (0.01% missing on the resolved trading session, vs. an
+originally-reported 33% that turned out to be a diagnostic-script bug, not
+a data gap), and the corrected block-bootstrap effective-N estimator now
+produces sane, correctly-capped results in every split window. Neither
+correction changes this branch's conclusion — the Tier 0 result stands on
+its own, computed directly from per-date proxy series rather than from
+these summary diagnostics — but both are recorded for completeness rather
+than left as an open loose end. Per instruction, work on this hypothesis
+stops here.

@@ -1,0 +1,184 @@
+{
+  "generated_at": "2026-08-17T07:56:57.515031Z",
+  "script_version": 2,
+  "coverage_by_adj_type": {
+    "raw": {
+      "total_rows": 2372308,
+      "open_populated": 2372308,
+      "open_populated_pct": 1.0,
+      "close_populated": 2372308,
+      "close_populated_pct": 1.0
+    },
+    "split_adjusted": {
+      "total_rows": 2372308,
+      "open_populated": 2372308,
+      "open_populated_pct": 1.0,
+      "close_populated": 2372308,
+      "close_populated_pct": 1.0
+    },
+    "total_return": {
+      "total_rows": 2372308,
+      "open_populated": 2372308,
+      "open_populated_pct": 1.0,
+      "close_populated": 2372308,
+      "close_populated_pct": 1.0
+    }
+  },
+  "adjusted_ohlc_open_outside_high_low_count": {
+    "raw": 687,
+    "split_adjusted": 687,
+    "total_return": 687
+  },
+  "bad_ohlc_reconciliation": {
+    "total_open_outside_high_low_raw": 687,
+    "already_flagged_suspicious": 687,
+    "not_previously_flagged": 0,
+    "total_known_bad_ohlc_rows_raw_all_reasons": 1227,
+    "conclusion": "CONFIRMED subset of the known/documented bad-OHLC set -- no new problem."
+  },
+  "eligible_pairs_open_availability": {
+    "dates_sampled": 108,
+    "dates_with_no_resolvable_session": 0,
+    "total_eligible_security_date_pairs": 46277,
+    "pairs_missing_open_on_resolved_session": 4,
+    "pairs_missing_open_pct": 0.0001,
+    "note": "FIXED vs the first run: dates are resolved to the real trading session on-or-after each nominal monthly date before checking open availability, instead of matching the literal (often non-trading) calendar date string."
+  },
+  "corporate_action_open_spotcheck_sample": [
+    {
+      "ticker": "FRT",
+      "action_type": "dividend",
+      "ex_date": "2010-09-21",
+      "ratio_or_value": 0.67,
+      "resolved_ex_session_date": "2010-09-21",
+      "raw_open_on_ex_session": 82.73,
+      "raw_close_prior_session": 83.32
+    },
+    {
+      "ticker": "TKO",
+      "action_type": "dividend",
+      "ex_date": "2011-06-13",
+      "ratio_or_value": 0.12,
+      "resolved_ex_session_date": "2011-06-13",
+      "raw_open_on_ex_session": 9.23,
+      "raw_close_prior_session": 9.39
+    },
+    {
+      "ticker": "FCX",
+      "action_type": "dividend",
+      "ex_date": "2021-07-14",
+      "ratio_or_value": 0.075,
+      "resolved_ex_session_date": "2021-07-14",
+      "raw_open_on_ex_session": 35.7,
+      "raw_close_prior_session": 35.73
+    },
+    {
+      "ticker": "CHRW",
+      "action_type": "dividend",
+      "ex_date": "2015-12-10",
+      "ratio_or_value": 0.43,
+      "resolved_ex_session_date": "2015-12-10",
+      "raw_open_on_ex_session": 60.64,
+      "raw_close_prior_session": 60.55
+    },
+    {
+      "ticker": "MCD",
+      "action_type": "dividend",
+      "ex_date": "2023-02-28",
+      "ratio_or_value": 1.52,
+      "resolved_ex_session_date": "2023-02-28",
+      "raw_open_on_ex_session": 263.14,
+      "raw_close_prior_session": 264.78
+    },
+    {
+      "ticker": "SYF",
+      "action_type": "dividend",
+      "ex_date": "2019-02-01",
+      "ratio_or_value": 0.21,
+      "resolved_ex_session_date": "2019-02-01",
+      "raw_open_on_ex_session": 29.84,
+      "raw_close_prior_session": 30.04
+    },
+    {
+      "ticker": "WSM",
+      "action_type": "dividend",
+      "ex_date": "2021-10-21",
+      "ratio_or_value": 0.355,
+      "resolved_ex_session_date": "2021-10-21",
+      "raw_open_on_ex_session": 93.375,
+      "raw_close_prior_session": 93.565
+    },
+    {
+      "ticker": "T",
+      "action_type": "dividend",
+      "ex_date": "2019-01-09",
+      "ratio_or_value": 0.51,
+      "resolved_ex_session_date": "2019-01-09",
+      "raw_open_on_ex_session": 23.3233,
+      "raw_close_prior_session": 23.6254
+    },
+    {
+      "ticker": "IBM",
+      "action_type": "dividend",
+      "ex_date": "2011-08-08",
+      "ratio_or_value": 0.717017,
+      "resolved_ex_session_date": "2011-08-08",
+      "raw_open_on_ex_session": 161.4053,
+      "raw_close_prior_session": 165.3728
+    },
+    {
+      "ticker": "VFC",
+      "action_type": "dividend",
+      "ex_date": "2022-03-09",
+      "ratio_or_value": 0.5,
+      "resolved_ex_session_date": "2022-03-09",
+      "raw_open_on_ex_session": 53.11,
+      "raw_close_prior_session": 51.95
+    },
+    {
+      "ticker": "LEN",
+      "action_type": "dividend",
+      "ex_date": "2017-04-28",
+      "ratio_or_value": 0.038075,
+      "resolved_ex_session_date": "2017-04-28",
+      "raw_open_on_ex_session": 48.5169,
+      "raw_close_prior_session": 48.6502
+    },
+    {
+      "ticker": "PM",
+      "action_type": "dividend",
+      "ex_date": "2020-03-20",
+      "ratio_or_value": 1.17,
+      "resolved_ex_session_date": "2020-03-20",
+      "raw_open_on_ex_session": 64.9,
+      "raw_close_prior_session": 66.43
+    },
+    {
+      "ticker": "CCL",
+      "action_type": "dividend",
+      "ex_date": "2015-02-18",
+      "ratio_or_value": 0.25,
+      "resolved_ex_session_date": "2015-02-18",
+      "raw_open_on_ex_session": 43.94,
+      "raw_close_prior_session": 43.29
+    },
+    {
+      "ticker": "CHD",
+      "action_type": "dividend",
+      "ex_date": "2015-05-14",
+      "ratio_or_value": 0.1675,
+      "resolved_ex_session_date": "2015-05-14",
+      "raw_open_on_ex_session": 41.485,
+      "raw_close_prior_session": 41.4
+    },
+    {
+      "ticker": "WFC",
+      "action_type": "dividend",
+      "ex_date": "2021-02-04",
+      "ratio_or_value": 0.1,
+      "resolved_ex_session_date": "2021-02-04",
+      "raw_open_on_ex_session": 31.87,
+      "raw_close_prior_session": 31.7
+    }
+  ]
+}

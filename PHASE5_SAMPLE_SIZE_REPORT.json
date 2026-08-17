@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-08-17T08:05:29.917443Z",
+  "script_version": 2,
+  "date_range": [
+    "2015-01-01",
+    "2023-12-31"
+  ],
+  "nominal_security_date_pairs": 969687,
+  "trading_days_with_a_computed_proxy_return": 2263,
+  "average_eligible_breadth_per_month": 428.5,
+  "cross_sectional_correlation": {
+    "estimated_average_pairwise_rho": 0.4335,
+    "n_security_pairs_sampled": 2000,
+    "implied_cross_sectional_effective_breadth": 2.3,
+    "note": "Reported for context (per-day cross-sectional power), NOT multiplied into the time-block count below -- that would double-count the same shared-shock structure."
+  },
+  "serial_autocorrelation_full_sample": {
+    "n_nominal_days": 2263,
+    "acf_lag_1_to_10": [
+      -0.119,
+      0.1176,
+      0.0106,
+      -0.0674,
+      0.1072,
+      -0.1205,
+      0.1049,
+      -0.0496,
+      0.1283,
+      0.0095
+    ],
+    "two_sigma_band": 0.042,
+    "block_bootstrap": {
+      "block_length_used": 7,
+      "n_bootstrap_resamples": 1000,
+      "n_effective_uncapped": 2514.2,
+      "n_effective_independent_days": 2263,
+      "capped_at_nominal": true
+    },
+    "n_effective_independent_days": 2263
+  },
+  "serial_autocorrelation_by_split_window": {
+    "train": {
+      "n_nominal_days": 1358,
+      "acf_lag_1_to_10": [
+        -0.1212,
+        0.1576,
+        0.0303,
+        -0.1055,
+        0.1312,
+        -0.1374,
+        0.125,
+        -0.0443,
+        0.1495,
+        0.0209
+      ],
+      "two_sigma_band": 0.0543,
+      "block_bootstrap": {
+        "block_length_used": 7,
+        "n_bootstrap_resamples": 1000,
+        "n_effective_uncapped": 1454.3,
+        "n_effective_independent_days": 1358,
+        "capped_at_nominal": true
+      },
+      "n_effective_independent_days": 1358
+    },
+    "validation": {
+      "n_nominal_days": 339,
+      "acf_lag_1_to_10": [
+        -0.211,
+        0.1917,
+        -0.1156,
+        -0.0763,
+        0.0951,
+        -0.19,
+        0.1375,
+        -0.1827,
+        0.1224,
+        -0.0318
+      ],
+      "two_sigma_band": 0.1086,
+      "block_bootstrap": {
+        "block_length_used": 9,
+        "n_bootstrap_resamples": 1000,
+        "n_effective_uncapped": 507.4,
+        "n_effective_independent_days": 339,
+        "capped_at_nominal": true
+      },
+      "n_effective_independent_days": 339
+    },
+    "test_LOCKED": {
+      "n_nominal_days": 566,
+      "acf_lag_1_to_10": [
+        -0.0603,
+        -0.1055,
+        0.0313,
+        0.0606,
+        -0.0051,
+        -0.0302,
+        -0.0361,
+        -0.0154,
+        0.0458,
+        0.0043
+      ],
+      "two_sigma_band": 0.0841,
+      "block_bootstrap": {
+        "block_length_used": 5,
+        "n_bootstrap_resamples": 1000,
+        "n_effective_uncapped": 674.5,
+        "n_effective_independent_days": 566,
+        "capped_at_nominal": true
+      },
+      "n_effective_independent_days": 566
+    }
+  }
+}

@@ -1,0 +1,931 @@
+{
+  "generated_at": "2026-08-17T09:50:50.860165Z",
+  "purpose": "Explains the validation-only genuine_effect_candidate result from PHASE5_TIER0_EXPLORATORY_REPORT.json -- does not itself constitute a Tier 0 test result, and does not touch the locked test window.",
+  "validate_ohlc_rerun_result": {
+    "bad_ohlc_flagged": 3681,
+    "negative_volume_flagged": 0
+  },
+  "split_date_ranges": {
+    "train": {
+      "first": "2015-01-02",
+      "last": "2020-05-18",
+      "n_dates": 1353
+    },
+    "validation": {
+      "first": "2020-05-27",
+      "last": "2021-09-22",
+      "n_dates": 335
+    },
+    "test_LOCKED": {
+      "n_dates": 566,
+      "note": "date range deliberately not resolved/printed by this script"
+    }
+  },
+  "validation_full_sample_annualised_pct": 31.762443122292026,
+  "validation_by_calendar_year": {
+    "2020": {
+      "n_days": 153,
+      "mean_overnight_proxy": 0.0018510602237127832,
+      "annualised_pct": 46.64671763756213,
+      "sum_overnight_proxy": 0.2832122142280558
+    },
+    "2021": {
+      "n_days": 182,
+      "mean_overnight_proxy": 0.0007638824889719217,
+      "annualised_pct": 19.249838722092427,
+      "sum_overnight_proxy": 0.13902661299288976
+    }
+  },
+  "validation_removal_sensitivity": {
+    "exclude_top_1": {
+      "n_days_remaining": 334,
+      "mean_overnight_proxy": 0.0011003979664240366,
+      "annualised_pct": 27.730028753885723
+    },
+    "exclude_top_3": {
+      "n_days_remaining": 332,
+      "mean_overnight_proxy": 0.0011175562127390534,
+      "annualised_pct": 28.162416561024145
+    },
+    "exclude_top_5": {
+      "n_days_remaining": 330,
+      "mean_overnight_proxy": 0.0009186177599966687,
+      "annualised_pct": 23.149167551916054
+    },
+    "exclude_top_10": {
+      "n_days_remaining": 325,
+      "mean_overnight_proxy": 0.0010225805799260101,
+      "annualised_pct": 25.769030614135456
+    },
+    "exclude_top_20": {
+      "n_days_remaining": 315,
+      "mean_overnight_proxy": 0.0010517919328958758,
+      "annualised_pct": 26.50515670897607
+    }
+  },
+  "validation_top_extreme_days": [
+    {
+      "date": "2020-11-09",
+      "overnight_proxy": 0.05470590643531733,
+      "n_securities": 445
+    },
+    {
+      "date": "2020-06-11",
+      "overnight_proxy": -0.0390921573020104,
+      "n_securities": 443
+    },
+    {
+      "date": "2020-06-16",
+      "overnight_proxy": 0.03559641545827292,
+      "n_securities": 443
+    },
+    {
+      "date": "2020-06-12",
+      "overnight_proxy": 0.034311430711957046,
+      "n_securities": 443
+    },
+    {
+      "date": "2020-06-05",
+      "overnight_proxy": 0.03357337111850802,
+      "n_securities": 443
+    },
+    {
+      "date": "2020-06-15",
+      "overnight_proxy": -0.029325165620693178,
+      "n_securities": 443
+    },
+    {
+      "date": "2020-05-27",
+      "overnight_proxy": 0.019776837594289526,
+      "n_securities": 441
+    },
+    {
+      "date": "2020-10-28",
+      "overnight_proxy": -0.018839861216079605,
+      "n_securities": 444
+    },
+    {
+      "date": "2020-09-21",
+      "overnight_proxy": -0.01843661099315813,
+      "n_securities": 445
+    },
+    {
+      "date": "2020-11-16",
+      "overnight_proxy": 0.017629972558588794,
+      "n_securities": 445
+    },
+    {
+      "date": "2020-06-09",
+      "overnight_proxy": -0.017242323020141424,
+      "n_securities": 443
+    },
+    {
+      "date": "2020-06-19",
+      "overnight_proxy": 0.017180475964105917,
+      "n_securities": 443
+    },
+    {
+      "date": "2020-07-15",
+      "overnight_proxy": 0.016923677528926498,
+      "n_securities": 445
+    },
+    {
+      "date": "2020-10-02",
+      "overnight_proxy": -0.016565288135071844,
+      "n_securities": 444
+    },
+    {
+      "date": "2020-07-06",
+      "overnight_proxy": 0.016170741152269016,
+      "n_securities": 445
+    },
+    {
+      "date": "2021-09-20",
+      "overnight_proxy": -0.016039729468894,
+      "n_securities": 456
+    },
+    {
+      "date": "2020-07-02",
+      "overnight_proxy": 0.015729835321083394,
+      "n_securities": 445
+    },
+    {
+      "date": "2021-07-19",
+      "overnight_proxy": -0.01507910639302718,
+      "n_securities": 453
+    },
+    {
+      "date": "2020-12-21",
+      "overnight_proxy": -0.014850267034887291,
+      "n_securities": 446
+    },
+    {
+      "date": "2020-09-28",
+      "overnight_proxy": 0.014796213699389306,
+      "n_securities": 445
+    }
+  ],
+  "validation_extreme_day_detail": [
+    {
+      "date": "2020-11-09",
+      "prev_date": "2020-11-06",
+      "aggregate_overnight_proxy": 0.05470590643531733,
+      "n_securities_in_proxy": 445,
+      "top_contributing_securities": [
+        {
+          "ticker": "BIIB",
+          "overnight_return": -0.3541155672027525,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CCL",
+          "overnight_return": 0.2911132270595096,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "RCL",
+          "overnight_return": 0.2239286280701815,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "AAL",
+          "overnight_return": 0.22349253055348692,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "VNO",
+          "overnight_return": 0.21647003221260827,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-06-11",
+      "prev_date": "2020-06-10",
+      "aggregate_overnight_proxy": -0.0390921573020104,
+      "n_securities_in_proxy": 443,
+      "top_contributing_securities": [
+        {
+          "ticker": "NCLH",
+          "overnight_return": -0.20872022435310467,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "UAL",
+          "overnight_return": -0.1774993654121903,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CCL",
+          "overnight_return": -0.174677221344499,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "DAL",
+          "overnight_return": -0.17163299228759962,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "APA",
+          "overnight_return": -0.15269074358052553,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-06-16",
+      "prev_date": "2020-06-15",
+      "aggregate_overnight_proxy": 0.03559641545827292,
+      "n_securities_in_proxy": 443,
+      "top_contributing_securities": [
+        {
+          "ticker": "KSS",
+          "overnight_return": 0.12604072089536497,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "NCLH",
+          "overnight_return": 0.11650380079798862,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CCL",
+          "overnight_return": 0.11549418137263176,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "VMC",
+          "overnight_return": 0.10113008391654478,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "LLY",
+          "overnight_return": 0.09946413844294272,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-06-12",
+      "prev_date": "2020-06-11",
+      "aggregate_overnight_proxy": 0.034311430711957046,
+      "n_securities_in_proxy": 443,
+      "top_contributing_securities": [
+        {
+          "ticker": "AAL",
+          "overnight_return": 0.15673030225190138,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CCL",
+          "overnight_return": 0.1274204422296258,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "NCLH",
+          "overnight_return": 0.1266964936249954,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "UAL",
+          "overnight_return": 0.11844974679515397,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "ALK",
+          "overnight_return": 0.10979013965487049,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-06-05",
+      "prev_date": "2020-06-04",
+      "aggregate_overnight_proxy": 0.03357337111850802,
+      "n_securities_in_proxy": 443,
+      "top_contributing_securities": [
+        {
+          "ticker": "AAL",
+          "overnight_return": 0.2397512877138704,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "UAL",
+          "overnight_return": 0.22467690198519935,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "NCLH",
+          "overnight_return": 0.21174653899351778,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CCL",
+          "overnight_return": 0.1878976122525349,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "OXY",
+          "overnight_return": 0.140740074221466,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-06-15",
+      "prev_date": "2020-06-12",
+      "aggregate_overnight_proxy": -0.029325165620693178,
+      "n_securities_in_proxy": 443,
+      "top_contributing_securities": [
+        {
+          "ticker": "NCLH",
+          "overnight_return": -0.11025050095201806,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CCL",
+          "overnight_return": -0.09661232853341695,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "UAL",
+          "overnight_return": -0.09571369035151263,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "RCL",
+          "overnight_return": -0.09294292838252921,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "AAL",
+          "overnight_return": -0.09191094583078807,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-05-27",
+      "prev_date": "2020-05-26",
+      "aggregate_overnight_proxy": 0.019776837594289526,
+      "n_securities_in_proxy": 441,
+      "top_contributing_securities": [
+        {
+          "ticker": "AAL",
+          "overnight_return": 0.10957067102348178,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CCL",
+          "overnight_return": 0.109284012598753,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "NCLH",
+          "overnight_return": 0.10248677094256249,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "ALK",
+          "overnight_return": 0.09523232142867077,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "RCL",
+          "overnight_return": 0.08838922742521339,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-10-28",
+      "prev_date": "2020-10-27",
+      "aggregate_overnight_proxy": -0.018839861216079605,
+      "n_securities_in_proxy": 444,
+      "top_contributing_securities": [
+        {
+          "ticker": "ADP",
+          "overnight_return": 0.06090252769673821,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CHRW",
+          "overnight_return": -0.057611321722111364,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "GE",
+          "overnight_return": 0.05614074193360958,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "AKAM",
+          "overnight_return": -0.05321376576468338,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "IEX",
+          "overnight_return": -0.052199194121114484,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-21",
+      "prev_date": "2020-09-18",
+      "aggregate_overnight_proxy": -0.01843661099315813,
+      "n_securities_in_proxy": 445,
+      "top_contributing_securities": [
+        {
+          "ticker": "ILMN",
+          "overnight_return": -0.10190719515428585,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "UHS",
+          "overnight_return": -0.09623488432534044,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "FTI",
+          "overnight_return": -0.058187873837022286,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "RCL",
+          "overnight_return": -0.05270154697910744,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CNC",
+          "overnight_return": -0.05255973349421474,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-11-16",
+      "prev_date": "2020-11-13",
+      "aggregate_overnight_proxy": 0.017629972558588794,
+      "n_securities_in_proxy": 445,
+      "top_contributing_securities": [
+        {
+          "ticker": "VLO",
+          "overnight_return": 0.09509591704594339,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "NCLH",
+          "overnight_return": 0.08912777989600733,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "FTI",
+          "overnight_return": 0.08015301598537962,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CCL",
+          "overnight_return": 0.07980244434377239,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "UAL",
+          "overnight_return": 0.0786409720561226,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-06-09",
+      "prev_date": "2020-06-08",
+      "aggregate_overnight_proxy": -0.017242323020141424,
+      "n_securities_in_proxy": 443,
+      "top_contributing_securities": [
+        {
+          "ticker": "AAL",
+          "overnight_return": -0.09604900510575709,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "KIM",
+          "overnight_return": -0.08302143328026101,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "SPG",
+          "overnight_return": -0.08178943300847812,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "UAL",
+          "overnight_return": -0.07881118042428974,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "APA",
+          "overnight_return": -0.07493264287473575,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-06-19",
+      "prev_date": "2020-06-18",
+      "aggregate_overnight_proxy": 0.017180475964105917,
+      "n_securities_in_proxy": 443,
+      "top_contributing_securities": [
+        {
+          "ticker": "MPC",
+          "overnight_return": 0.08206022681017942,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "OXY",
+          "overnight_return": 0.05103906787035551,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "F",
+          "overnight_return": 0.047811727332257546,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "APA",
+          "overnight_return": 0.0473827044015522,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "EOG",
+          "overnight_return": 0.046331069011751665,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-15",
+      "prev_date": "2020-07-14",
+      "aggregate_overnight_proxy": 0.016923677528926498,
+      "n_securities_in_proxy": 445,
+      "top_contributing_securities": [
+        {
+          "ticker": "AAL",
+          "overnight_return": 0.07330508170513125,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "UAL",
+          "overnight_return": 0.07259904782035288,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CCL",
+          "overnight_return": 0.0699675736154238,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "RCL",
+          "overnight_return": 0.06706647581391549,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "WAT",
+          "overnight_return": 0.06565177512331048,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-10-02",
+      "prev_date": "2020-10-01",
+      "aggregate_overnight_proxy": -0.016565288135071844,
+      "n_securities_in_proxy": 444,
+      "top_contributing_securities": [
+        {
+          "ticker": "NCLH",
+          "overnight_return": -0.06307861077800145,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "NOV",
+          "overnight_return": -0.0558008247093658,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "IVZ",
+          "overnight_return": 0.054488185284069776,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "UAL",
+          "overnight_return": -0.05312016181886616,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "APA",
+          "overnight_return": -0.05293407667310716,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-06",
+      "prev_date": "2020-07-02",
+      "aggregate_overnight_proxy": 0.016170741152269016,
+      "n_securities_in_proxy": 445,
+      "top_contributing_securities": [
+        {
+          "ticker": "CCI",
+          "overnight_return": 0.04517987036294895,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "EXPE",
+          "overnight_return": 0.042662683674064575,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "FCX",
+          "overnight_return": 0.04255961441879569,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "KIM",
+          "overnight_return": 0.04144875731106431,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "D",
+          "overnight_return": -0.04072625999705325,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2021-09-20",
+      "prev_date": "2021-09-17",
+      "aggregate_overnight_proxy": -0.016039729468894,
+      "n_securities_in_proxy": 456,
+      "top_contributing_securities": [
+        {
+          "ticker": "FCX",
+          "overnight_return": -0.07180642166025196,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "NUE",
+          "overnight_return": -0.06978312686230152,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "BWA",
+          "overnight_return": -0.05458671402641612,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "FANG",
+          "overnight_return": -0.04759262442585873,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "MOS",
+          "overnight_return": -0.04721449455560731,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-02",
+      "prev_date": "2020-07-01",
+      "aggregate_overnight_proxy": 0.015729835321083394,
+      "n_securities_in_proxy": 445,
+      "top_contributing_securities": [
+        {
+          "ticker": "COTY",
+          "overnight_return": 0.051871830706840066,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "IVZ",
+          "overnight_return": 0.04385831590003261,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CCL",
+          "overnight_return": 0.041310872554924896,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "AAL",
+          "overnight_return": 0.04129026893761549,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "RCL",
+          "overnight_return": 0.04123898409762419,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-19",
+      "prev_date": "2021-07-16",
+      "aggregate_overnight_proxy": -0.01507910639302718,
+      "n_securities_in_proxy": 453,
+      "top_contributing_securities": [
+        {
+          "ticker": "NCLH",
+          "overnight_return": -0.06286892749719228,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "OXY",
+          "overnight_return": -0.06161296666046895,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "CCL",
+          "overnight_return": -0.05907229002223296,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "APA",
+          "overnight_return": -0.0554586226357038,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "FANG",
+          "overnight_return": -0.05414521194688442,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-12-21",
+      "prev_date": "2020-12-18",
+      "aggregate_overnight_proxy": -0.014850267034887291,
+      "n_securities_in_proxy": 446,
+      "top_contributing_securities": [
+        {
+          "ticker": "OXY",
+          "overnight_return": -0.08504982281026281,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "FANG",
+          "overnight_return": -0.08131606021857357,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "APA",
+          "overnight_return": -0.07305478616906322,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "DVN",
+          "overnight_return": -0.06406944797487987,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "NCLH",
+          "overnight_return": -0.0639562178469848,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-28",
+      "prev_date": "2020-09-25",
+      "aggregate_overnight_proxy": 0.014796213699389306,
+      "n_securities_in_proxy": 445,
+      "top_contributing_securities": [
+        {
+          "ticker": "DVN",
+          "overnight_return": 0.08056585704461,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "FTI",
+          "overnight_return": 0.03726625589611534,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "AAL",
+          "overnight_return": 0.03596072656607391,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "SPG",
+          "overnight_return": 0.03432088284861484,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        },
+        {
+          "ticker": "UAL",
+          "overnight_return": 0.03222373166719975,
+          "open_row_quality_on_date": "derived",
+          "close_row_quality_on_prev_date": "derived"
+        }
+      ]
+    }
+  ],
+  "n_extreme_day_contributor_price_rows_flagged_suspicious": 0
+}
